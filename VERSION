@@ -1,0 +1,7 @@
+commit 870c49cb78f5a888db9150acefa6b157aa1cc3f2
+Author: Emmett Lalish <elalish@google.com>
+Date:   Fri May 17 15:55:53 2024 -0700
+
+    Merge pull request #3 from KhronosGroup/fasterGoldens
+    
+    speed up golden rendering
