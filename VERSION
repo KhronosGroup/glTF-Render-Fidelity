@@ -1,0 +1,7 @@
+commit b6fe05b0e9293e1e9b38a0e55eb6639a41474040
+Author: Emmett Lalish <elalish@google.com>
+Date:   Thu Oct 31 15:40:12 2024 -0700
+
+    Merge pull request #8 from KhronosGroup/updateDeps
+    
+    update dependencies, improve robustness
