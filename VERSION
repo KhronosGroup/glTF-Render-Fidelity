@@ -1,0 +1,7 @@
+commit a4095170b3dc3f855e5316ce82ba0bac4d4e001f
+Author: Emmett Lalish <elalish@google.com>
+Date:   Wed Dec 11 08:53:44 2024 -0800
+
+    Merge pull request #9 from MikeFesta/blender-source-files-fix
+    
+    bug fix: blender-cycles path
