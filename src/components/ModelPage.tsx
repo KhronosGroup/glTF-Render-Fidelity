@@ -1,12 +1,12 @@
 "use client"
 import React from 'react';
-import { Typography, Button, Box, Grid2 as Grid, IconButton, Snackbar } from "@mui/material";
+import { Typography, Button, Box, Grid2 as Grid, IconButton, Snackbar, Link } from "@mui/material";
 import { useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import ModelRenderCard from "@/components/ModelRenderCard"
 import styles from "./ModelPage.module.css";
 import CompareIcon from '@mui/icons-material/Compare';
-import Link from 'next/link'
+import LinkNext from 'next/link'
 import InfoIcon from '@mui/icons-material/Info';
 import ShareIcon from '@mui/icons-material/Share';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
@@ -96,13 +96,16 @@ export default function ModelPage({name, label, renderViews, downloadUrl, descri
       </Box>
     </Box>
     <Typography>{description}</Typography>
+    <Box mt={1}>
+      <Link href={`https://github.com/KhronosGroup/glTF-Sample-Assets/blob/main/Models/${name}/README.md`} color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold'}}>More info</Link>
+    </Box>
   </Box>;
 
   return (
     <>
       <Button
         sx={{position:"fixed", height: "50px", zIndex:1,  right: "4vw", bottom: "15vh"}}
-        component={Link}
+        component={LinkNext}
         role={undefined}
         variant="contained"
         tabIndex={-1}

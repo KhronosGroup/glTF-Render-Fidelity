@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { Typography, Box, Grid2 as Grid, ButtonGroup, Button, Popper, Grow, Paper, ClickAwayListener, MenuItem , MenuList, IconButton, Snackbar } from "@mui/material";
+import { Typography, Box, Grid2 as Grid, ButtonGroup, Button, Popper, Grow, Paper, ClickAwayListener, MenuItem , MenuList, IconButton, Snackbar, Link } from "@mui/material";
 import ModelRenderCard from "@/components/ModelRenderCard"
 import ImageComparisonSlider from "@/components/ImageComparison/ImageComparisonSlider";
 import SideBySideComparison from './ImageComparison/SideBySideComparison'
@@ -121,6 +121,9 @@ export default function ComparePage({name, label, renderViews, description, down
       </Box>
     </Box>
     <Typography textAlign='justify'>{description}</Typography>
+    <Box mt={1}>
+      <Link href={`https://github.com/KhronosGroup/glTF-Sample-Assets/blob/main/Models/${name}/README.md`} color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold'}}>More info</Link>
+    </Box>
   </Box>;
 
   return (
