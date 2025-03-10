@@ -37,6 +37,10 @@ jobs:
         run: git status  # This is just to confirm the submodules were cloned correctly
       - name: Display folders
         run: ls
+      - name: Display generator folders
+        run: ls glTF-Render-Fidelity-Generator
+      - name: Display goldens generator folders
+        run: ls glTF-Render-Fidelity-Generator/test/goldens
       - name: Detect package manager
         id: detect-package-manager
         run: |
