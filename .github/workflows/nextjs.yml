@@ -40,7 +40,7 @@ jobs:
       - name: Display generator folders
         run: ls glTF-Render-Fidelity-Generator
       - name: Display goldens generator folders
-        run: ls glTF-Render-Fidelity-Generator/test/goldens
+        run: ls glTF-Render-Fidelity-Generator/test/goldens/khronos-ABeautifulGame
       - name: Detect package manager
         id: detect-package-manager
         run: |
