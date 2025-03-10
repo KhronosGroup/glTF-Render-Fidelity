@@ -33,6 +33,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: 'true'
+          lfs: 'true'
       - name: Display git status
         run: git status  # This is just to confirm the submodules were cloned correctly
       - name: Display folders
@@ -85,6 +86,10 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Image copy
         run: npm run images && git status 
+      - name: Display goldens generator folders
+        run: ls glTF-Render-Fidelity-Generator/test/goldens/khronos-ABeautifulGame
+      - name: Display goldens generator folders
+        run: ls glTF-Render-Fidelity-Generator/test/goldens/khronos-ABeautifulGame
       - name: Thumbnail extraction
         run: npm run thumbnail && git status 
       - name: Configure Git
