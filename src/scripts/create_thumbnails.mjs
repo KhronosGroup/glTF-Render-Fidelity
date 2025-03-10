@@ -16,8 +16,8 @@ async function* getFiles(dir) {
   }
 }
 
-//const image_directory = 'public/images';
-const image_directory = 'glTF-Render-Fidelity-Generator/test/goldens';
+const image_directory = 'public/images';
+//const image_directory = 'glTF-Render-Fidelity-Generator/test/goldens';
 const thumbnail_directory = 'public/thumbnails';
 //const image_directory = '/Users/vineek/Documents/Projects/Web/glTF-Render-Fidelity/test/goldens';
 
