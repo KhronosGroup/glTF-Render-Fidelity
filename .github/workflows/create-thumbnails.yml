@@ -1,0 +1,46 @@
+name: Create and Commit File
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'public/images/*.jpeg'  # Specify the folder and file type to watch
+
+  workflow_dispatch: # Allows manual triggering of the workflow
+
+jobs:
+  create-and-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Create or modify a file
+      - name: Create a new file
+        run: echo "Hello, world! This file was created by a GitHub Action." > newfile2.txt
+
+      # Step 3: Configure Git
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      
+      # Step 3a: Status Git
+      - name: Status Git
+        run: |
+          git status
+
+      # Step 4: Commit the changes
+      - name: Commit changes
+        run: |
+          git add newfile2.txt
+          git commit -m "Add newfile2.txt from GitHub Action"
+
+      # Step 5: Push changes
+      - name: Push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: echo "git push"
