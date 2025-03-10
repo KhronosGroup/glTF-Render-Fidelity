@@ -1,0 +1,28 @@
+.chip_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: flex-start;
+    width: 100%;
+    max-height: 96px;
+    max-width: calc(100vw - 160px);
+    align-items: flex-start; /* Align chips to the top for better appearance */
+}
+
+.text {
+    text-align: justify
+}
+
+@media (max-width: 600px) {
+    .chip_container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: initial;
+    }
+    .text {
+        display: none;
+        text-align: justify
+    }
+  }

@@ -1,0 +1,42 @@
+{
+    "three.js": {
+        "name": "three.js",
+        "label": "<model-viewer>",
+        "description": "Easily display interactive 3D models on the web & in AR"
+    },
+    "filament.js": {
+        "name": "filament.js",
+        "label": "Filament JS",
+        "description": "Filament is a real-time physically-based renderer written in C++. It is mobile-first, but also multi-platform. "
+    },
+    "babylon.js": {
+        "name": "babylon.js",
+        "label": "Babylon JS",
+        "description": "Babylon.js is a powerful, beautiful, simple, and completely open-source web rendering engine"
+    },
+    "gltf-sample-viewer": {
+        "name": "gltf-sample-viewer",
+        "label": "glTF Sample Viewer",
+        "description": "The glTF Sample Viewer is an essential part of the glTF ecosystem. Developed by the Khronos 3D Formats Working Group, this open-source JavaScript viewer highlights the latest features of glTF, renders glTF files directly in a web browser, and can be easily integrated into other JavaScript projects using glTF"
+    },
+    "three-gpu-pathtracer": {
+        "name": "three-gpu-pathtracer",
+        "label": "ThreeJS GPU Path Tracer",
+        "description": "Path tracing project using three-mesh-bvh and WebGL 2 to accelerate high quality, physically based rendering on the GPU. Features include support for GGX surface model, material information, textures, normal maps, emission, environment maps, tiled rendering, and more!"
+    },
+    "DassaultSTELLAR": {
+        "name": "Dassault STELLAR",
+        "label": "Dassault STELLAR",
+        "description": "The highest quality visual simulations, rendered images and videos are effectively produced with Stellar Physically Correct, the Dassault Systèmes Global Illumination renderer, using hardware-accelerated software libraries which run on high-performance devices like GPUs or multi-core CPUs"
+    },
+    "ChaosGroupV-Ray": {
+        "name": "Chaos Group V-Ray",
+        "label": "Chaos Group V-Ray",
+        "description": "V-Ray’s award-winning 3D rendering software helps artists, architects and designers visualize anything imaginable. Trusted by 92 of the top 100 number architecture firms, and integrated into the pipelines of the biggest film and visual effects companies, V-Ray® is built to handle your toughest scenes and biggest projects."
+    },
+    "BlenderCycles": {
+        "name": "Blender Cycles",
+        "label": "Blender Cycles",
+        "description": "Cycles is a physically based production renderer developed by the Blender project. The source code is available under the Apache License v2, and can be integrated in open source and commercial software"
+    }
+}

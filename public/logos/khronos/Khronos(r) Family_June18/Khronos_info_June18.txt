@@ -1,0 +1,16 @@
+Khronos Logo Family
+Revised June 2018
+
+See our style guide PDF for usage guidelines:
+https://www.khronos.org/files/legal/Khronos-Logo-Usage-Guide.pdf
+
+Colors
+	RGB: 204, 51, 51
+	Hex: #CC3333
+	CMYK: 14, 94, 88, 4
+	PMS: 186
+	
+Fonts	
+	Main Font: AvantGardeBK BT > Demi
+	TM/Registered TM: Helvetica Neue 75 Bold
+	Tagline: Pirulen

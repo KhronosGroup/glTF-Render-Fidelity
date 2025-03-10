@@ -1,0 +1,15 @@
+3DCommerce Logo
+Revised August 2020
+
+See our style guide PDF for usage guidelines:
+https://www.khronos.org/files/legal/Khronos-Logo-Usage-Guide.pdf
+
+Colors
+	RGB: 102, 157, 116
+	Hex: #669D74
+	CMYK: 64, 20, 66, 3
+	PMS: 556 C
+	
+Fonts	
+	Main Font: Helvetica Neue 55 Roman, Helvetica Neue 75 Bold
+	TM/Registered TM: Helvetica Neue 75 Bold

@@ -1,0 +1,46 @@
+.main {
+    flex-direction: column;
+    flex: 1;
+    overflow: auto;
+}
+
+.info {
+    margin: "auto 0";
+    cursor: pointer;
+}
+
+.infoBox {
+    display: initial;
+}
+
+.description {
+    height: 100%;
+    width: 20%;
+    overflow: "auto";
+    text-align: justify;
+}
+
+.selection {
+    height: 100%;
+    width: 80%;
+    overflow: "auto";
+    justify-content: space-evenly;
+}
+
+@media (max-width: 600px) {
+    .main {
+        flex-direction: column;
+        height: initial;
+    }
+    .description {
+        overflow: "auto";
+        height: initial;
+        width: 100%;
+    }
+    .selection {
+        height: 100%;
+        width: 100%;
+        overflow: "auto";
+        justify-content: space-evenly;
+    }
+  }

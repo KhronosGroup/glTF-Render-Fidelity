@@ -1,0 +1,40 @@
+{
+  "name": "rfw",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "images": "npx cpx 'glTF-Render-Fidelity-Generator/test/goldens/**/*' 'public/images/goldens'",
+    "thumbnail": "node src/scripts/create_thumbnails.mjs",
+    "metadata": "node src/scripts/extract_model_metadata.mjs"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.14.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.3.1",
+    "@mui/material": "^6.3.1",
+    "@mui/material-nextjs": "^6.3.1",
+    "fuse.js": "^7.0.0",
+    "image-js": "^0.36.0",
+    "next": "15.1.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/showdown": "^2.0.6",
+    "cpx": "^1.5.0",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.4",
+    "showdown": "^2.1.0",
+    "typescript": "^5"
+  }
+}

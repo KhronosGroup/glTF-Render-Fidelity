@@ -1,0 +1,26 @@
+.page {
+  min-height: 100svh;
+  font-family: var(--font-poppins);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 1900px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  .page {
+    /*padding-bottom: 80px;*/
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo {
+    filter: invert();
+  }
+}

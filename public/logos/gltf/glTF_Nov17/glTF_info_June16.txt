@@ -1,0 +1,15 @@
+glTF Logo
+Revised June 2016
+
+See our style guide PDF for usage guidelines:
+https://www.khronos.org/files/legal/Khronos-Logo-Usage-Guide.pdf
+
+Colors
+	RGB: 135, 197, 64
+	Hex: #87C540
+	CMYK: 52, 0, 100, 0
+	PMS: 376
+	
+Fonts	
+	Main Font: Helvetica Neue 55 Roman, Helvetica Neue 75 Bold
+	TM/Registered TM: Helvetica Neue 75 Bold

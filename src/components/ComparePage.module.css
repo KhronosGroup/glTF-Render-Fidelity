@@ -1,0 +1,44 @@
+.main {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+
+.description {
+    height: 100%;
+    width: 20%;
+    overflow: "auto";
+    padding-top: 10px;
+}
+
+.tool {
+    width: 60%;
+    overflow: "auto";
+    padding-top: 20px;
+}
+
+.side {
+    height: 100%;
+    width: 20%;
+    overflow: "auto";
+    justify-content: space-evenly;
+}
+
+@media (max-width: 600px) {
+    .main {
+        flex-direction: column;
+        height: initial;
+    }
+    .description {
+        overflow: "auto";
+        height: initial;
+        width: 100%;
+    }
+    .tool {
+        height: 100%;
+        width: 100%;
+        overflow: "auto";
+        margin: auto;
+        justify-content: space-evenly;
+    }
+}

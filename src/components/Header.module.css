@@ -1,0 +1,21 @@
+.header_style {
+    background-color: #333333;
+    color: white;
+}
+
+/* Default (Light Mode) */
+.themedimage {
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    background-color: 'yellow';
+  }
+  
+  /* Dark Mode */
+[data-theme="dark"] .themedimage {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    background-color: 'green';
+}
