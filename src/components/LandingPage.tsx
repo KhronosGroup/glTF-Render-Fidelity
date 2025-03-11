@@ -259,10 +259,6 @@ export default function LandingPage({models}: LandingPageProps) {
 
         {/* Components */}
         <Grid container style={{padding: 0, margin: 0}} spacing={1} sx={{ justifyContent: "center"}}>
-        {/*Object.entries(models).filter((e,i) => searchValue.length <= i).map((e,i) => { return <ModelCard key={e.name} name={e.name}/>})*/}
-        {/*Object.values(models).map((e,i) => { return <ModelCard key={e.name} name={e.name}/>})*/}
-        {/*result.map((e,i) => { return <ModelCard key={e.item.name} name={e.item.name} title={e.item.label} thumbnail={e.item.images[0].image} tags={e.item.tags}/>})*/}
-        {/*result.map((e,i) => { return <ModelCard key={e.item.name} name={e.item.name} title={e.item.label} thumbnail={e.item.images[0].thumbnail} tags={e.item.tags}/>})*/}
         {result.map((e,i) => { return <ModelCard key={e.item.name} name={e.item.name} title={e.item.label} thumbnail={(e.item.images.find((m) => m.name === "gltf-sample-viewer") || e.item.images[0]).thumbnail} tags={e.item.tags} selectTagCallback={(t)=>{handleChipReplace(t)}}/>})}
         </Grid>     
     </>
