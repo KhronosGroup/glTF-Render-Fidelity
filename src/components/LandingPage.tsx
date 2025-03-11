@@ -171,6 +171,10 @@ export default function LandingPage({models}: LandingPageProps) {
             (a rendering technique that uses far fewer approximations than are required by real-time renderers).
         </Typography>
 
+        <Typography className={styles.text}>
+          Select the model you would like to compare, use the tags or search to filter the list.  Then click on any two Renders that you would like to compare and select Compare.  You can also select the view mode (Side-by-side, Slider and Difference).
+        </Typography>
+
         <Box display='flex' flexDirection='column' alignItems='center' gap={2} >
           <Box display='flex' sx={{width: "100%"}} flexDirection='row' justifyContent={"space-between"} alignItems='center'>
             <Search searchValueChange={handleSearchValueChange}/>
