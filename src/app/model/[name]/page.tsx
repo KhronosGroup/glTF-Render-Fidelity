@@ -3,6 +3,7 @@ import { Button, Typography, Box, Grid2 as Grid } from "@mui/material";
 import type { Metadata, ResolvingMetadata  } from 'next'
 import ModelPage, { RenderView } from "@/components/ModelPage";
 import models from "@/data/model-index.Phasmatic.json"
+import { baseUrl } from '@/lib/paths';
 
 export const dynamicParams = false; // models that are not included in the list, generate 404
 
@@ -40,7 +41,7 @@ export async function generateMetadata( { params, searchParams }: Props, parent:
     openGraph: {
       title: model.label,
       description: model.description,
-      images: [model.images[0].thumbnail, ...previousImages],
+      images: [`${baseUrl}${model.images[0].thumbnail}`, ...previousImages],
     },
     robots: {
       index: false,
