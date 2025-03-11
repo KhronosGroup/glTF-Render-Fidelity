@@ -117,54 +117,10 @@ export default function Header() {
                 </IconButton>                
                 </Box>
             </Box>
-                {/*<Box flex={1}/>
-            <Box flex={2} display='flex' justifyContent='space-around'>
-                <Typography variant="h5">
-                    Render Fidelity
-                </Typography>
-            </Box>
-            <Box flex={1} display='flex' justifyContent='flex-end'>
-                <LightDarkButton />
-                <Menu
-                    id="basic-menu"
-                    anchorEl={anchorEl}
-                    open={open}
-                    onClose={handleBurgerClose}
-                    MenuListProps={{
-                        'aria-labelledby': 'basic-button',
-                    }}
-                    anchorOrigin={{
-                        vertical: 'bottom',
-                        horizontal: 'right',
-                    }}
-                    transformOrigin={{
-                        vertical: 'top',
-                        horizontal: 'right',
-                    }}
-                    disableScrollLock 
-                >
-                    <MenuItem onClick={handleBurgerClose} component={Link} href="/">Landing</MenuItem>
-                    <MenuItem onClick={handleBurgerClose} component={Link} href="/dashboard">Dashboard</MenuItem>
-                    <MenuItem onClick={handleBurgerClose} component={Link} href="/about">About</MenuItem>
-                </Menu>
-                <IconButton
-                    size="large"
-                    edge="start"
-                    color="inherit"
-                    aria-label="menu"
-                    onClick={handleBurgerClick}
-                    sx={{ mr: 1 }}
-                >
-                    <MenuIcon />
-                </IconButton>                
-            </Box>
-            */}
         </MyToolbar>
         <Box display='flex' pl={2} pr={2} style={{width: "100%", margin: "auto", justifyContent: 'space-between', flexWrap: 'wrap', background:"#333333", maxWidth: '1900px'}}>
             <Box display='flex' flexDirection='row' alignItems='center' justifyContent={"space-between"} sx={{width: "100%", /*maxWidth: "1900px",*/ margin: "auto"}}>
-                <Box flex={1}>
-                    
-                </Box>
+                <Box flex={1}></Box>
                 <Box justifyContent={"flex-start"}>
                     <Typography sx={{fontWeight:'bold', fontFamily: 'var(--font-chivo)', fontSize: {xs: '24px', sm: '36px'}}}>
                         glTF Render Fidelity Test Suite
