@@ -161,19 +161,6 @@ export default function LandingPage({models}: LandingPageProps) {
 
   return (
     <>
-        <Box display='flex' flexDirection='column' alignItems='center' gap={2} >
-          <Box display='flex' sx={{width: "100%"}} flexDirection='row' justifyContent={"space-between"} alignItems='center'>
-            <Search searchValueChange={handleSearchValueChange}/>
-            <Tooltip enterTouchDelay={1} placement="right" title={<p style={{ color: `${theme.palette.text.primary}`, fontSize: "16px" }}>Search in the description and the titles of the models. Tags can be used to further segment the search</p>}>
-              <HelpIcon sx={{margin: "5px"}}/>
-            </Tooltip>
-
-            <Box flex={1} display={{ xs: 'flex', sm: 'flex' }}  justifyContent='flex-end' flexWrap={"wrap"}>
-            </Box>
-          </Box>
-          {otherChips}
-        </Box>
-
         <Typography className={styles.text}>
             The purpose of glTF is to standardize Physically-Based Rendering (PBR) materials such that you 
             can be confident your model will appear as intended in any lighting environment in any renderer. 
@@ -183,6 +170,20 @@ export default function LandingPage({models}: LandingPageProps) {
             We are comparing the most popular real-time web renderers as well as path tracers 
             (a rendering technique that uses far fewer approximations than are required by real-time renderers).
         </Typography>
+
+        <Box display='flex' flexDirection='column' alignItems='center' gap={2} >
+          <Box display='flex' sx={{width: "100%"}} flexDirection='row' justifyContent={"space-between"} alignItems='center'>
+            <Search searchValueChange={handleSearchValueChange}/>
+            <Tooltip enterTouchDelay={1} placement="right" title={<p style={{ color: `${theme.palette.text.primary}`, fontSize: "16px" }}>Search in the description and the titles of the models. Tags can be used to further segment the search</p>}>
+              <HelpIcon sx={{margin: "5px"}}/>
+            </Tooltip>
+            <Box flex={1} display={{ xs: 'flex', sm: 'flex' }}  justifyContent='flex-end' flexWrap={"wrap"}>
+            </Box>
+          </Box>
+          {otherChips}
+        </Box>
+
+        
 
         {/* Models */}
         <Grid container style={{padding: 0, margin: 0}} spacing={1} sx={{ justifyContent: "center"}}>

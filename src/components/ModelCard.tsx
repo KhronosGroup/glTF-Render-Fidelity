@@ -42,7 +42,7 @@ export default function ModelCard({name, title, thumbnail, tags, selectTagCallba
           </Link>
         </Grid>
         <Box display="flex" flexDirection="column" p={1} >
-          <Typography fontSize={18} fontWeight={'bold'} sx={{overflowWrap: "anywhere"}}>{title}</Typography>
+          <Typography fontSize={18} fontWeight={'bold'} sx={{overflowWrap: "anywhere", textAlign:'center'}}>{title}</Typography>
           <Box sx={{mt:1}}>
             {tags.map(t=> <Chip size="small" key={t} label={t} color="success" sx={{m:0.5}} onClick={() => {if(selectTagCallback) selectTagCallback(t)}}/>)}
           </Box>
