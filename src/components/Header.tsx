@@ -46,8 +46,8 @@ export default function Header() {
 
     const imageSrc =
     theme.palette.mode === "light" 
-    ? `${basePath}/logos/khronos/Khronos(r) Family_June18/Khronos Tagline/Khronos Tagline for web/RGB/Khronos_Tagline_RGB_June18.svg`
-    : `${basePath}/logos/khronos/Khronos(r) Family_June18/Khronos Tagline/Khronos Tagline for web/white/Khronos_Tagline_White_June18.svg`;
+    ? `${basePath}/logos/khronos/Khronos(r) Family_June18/Khronos/Khronos for web/RGB/Khronos_RGB_June18.svg`
+    : `${basePath}/logos/khronos/Khronos(r) Family_June18/Khronos/Khronos for web/RGB Inverted/Khronos_Inverted_June18.svg`;
 
 
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -61,7 +61,7 @@ export default function Header() {
     }
     
     return (
-      <AppBar position="static">
+      <AppBar position="static" sx={{background:"#333333"}}>
         <MyToolbar sx={{paddingLeft: 2, paddingRight: 2, width: "100%", margin:"auto", display:'flex', justifyContent: 'space-between', flexWrap: 'wrap'}}>
             <Box display='flex' style={{width: "100%", maxWidth: "1900px", margin: "auto", justifyContent: 'space-between', flexWrap: 'wrap'}}>
 
@@ -160,7 +160,7 @@ export default function Header() {
             </Box>
             */}
         </MyToolbar>
-        <Box display='flex' pl={2} pr={2} style={{width: "100%", margin: "auto", justifyContent: 'space-between', flexWrap: 'wrap', background:"#333333"}}>
+        <Box display='flex' pl={2} pr={2} style={{width: "100%", margin: "auto", justifyContent: 'space-between', flexWrap: 'wrap', background:"#333333", maxWidth: '1900px'}}>
             <Box display='flex' flexDirection='row' alignItems='center' justifyContent={"space-between"} sx={{width: "100%", /*maxWidth: "1900px",*/ margin: "auto"}}>
                 <Box flex={1}>
                     
