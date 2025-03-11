@@ -36,12 +36,13 @@ export async function generateMetadata( { params, searchParams }: Props, parent:
   const previousImages = (await parent).openGraph?.images || []
  
   return {
+    metadataBase: new URL(baseUrl),
     title: model.label,
     description: model.description,
     openGraph: {
       title: model.label,
       description: model.description,
-      images: [`${baseUrl}${model.images[0].thumbnail}`, ...previousImages],
+      images: [model.images[0].thumbnail, ...previousImages],
     },
     robots: {
       index: false,
