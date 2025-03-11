@@ -64,7 +64,8 @@ export default function ModelRenderCard({name, thumbnail, marked, onSelection}: 
                     position: 'absolute',
                     top: 8,
                     right: 8,
-                    color: marked ? 'grey.500' : 'grey.400',
+                    //color: marked ? 'grey.500' : 'grey.400',
+                    color: 'grey.500',
                     '& .MuiSvgIcon-root': {
                         fontSize: 24,
                     },
