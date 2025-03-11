@@ -131,23 +131,6 @@ export default function LandingPage({models}: LandingPageProps) {
     })
   }
 
-  const accordionChips = (
-    <Accordion>
-    <AccordionSummary
-      expandIcon={<ExpandMoreIcon />}
-      aria-controls="panel1-content"
-      id="panel1-header"
-    >
-      {tags2.map((t,i) => {return (<Chip key={t.name} sx={{fontWeight: 'bold'}} label={t.name} color={t.selected? "success" : "default"} clickable onClick={() => handleChipSelection(t)} onDelete={t.selected? () => handleChipDelete(t) : undefined}/>)})}
-
-    </AccordionSummary>
-    <AccordionDetails>
-      <Typography>
-      {selectedTags.map((t,i) => {return (<Chip key={t.name} sx={{fontWeight: 'bold'}} label={t.name} color={t.selected? "success" : "default"} clickable onClick={() => handleChipSelection(t)} onDelete={t.selected? () => handleChipDelete(t) : undefined}/>)})}
-      </Typography>
-    </AccordionDetails>
-  </Accordion>
-  )
   const otherChips = (
     <Box ref={mainContainerRef} width={"100%"} justifyContent={"center"} display={"flex"} flexWrap={"nowrap"} flexDirection={"row"}>
       <Box ref={tagContainerRef} display={"flex"} flexWrap={"nowrap"} flexDirection={"row"}>
@@ -161,28 +144,6 @@ export default function LandingPage({models}: LandingPageProps) {
       </Box>
     </Box>
     )
-  const boxChip = (
-    <Box ref={scrollWrapperRef} className={styles.chip_container}
-            sx={{
-              display: "flex",
-              gap: 1,
-              p: 1,
-              overflowX: "auto",
-              overflowY: "hidden",
-              justifyContent: "flex-start",
-              width: '100%',
-              maxHeight: "96px",
-              "&::-webkit-scrollbar": { height: 8, width: 8 },
-              "&::-webkit-scrollbar-thumb": {
-                backgroundColor: "#aaa",
-                borderRadius: 4,
-              },
-              alignItems: "flex-start", // Align chips to the top for better appearance
-            }}
-          >
-            {selectedTags.map((t,i) => {return (<Chip key={t.name} sx={{fontWeight: 'bold'}} label={t.name} color={t.selected? "success" : "default"} clickable onClick={() => handleChipSelection(t)} onDelete={t.selected? () => handleChipDelete(t) : undefined}/>)})}
-          </Box>
-  )
 
   const options = {
     includeScore: true,
@@ -201,22 +162,6 @@ export default function LandingPage({models}: LandingPageProps) {
   return (
     <>
         <Box display='flex' flexDirection='column' alignItems='center' gap={2} >
-          {/*<Box display={{ xs: 'flex', sm: 'none' }} sx={{width: "100%"}} flexDirection='row' justifyContent={"space-between"} alignItems='center'>
-              <Image
-                width={100}
-                height={100}
-                        
-                src={`${basePath}/logos/3dcommerce/3DCommerce_Aug20/3DCommerce for web/3DCommerce RGB/3DCommerce_RGB_Aug20.svg`}
-                alt={"glTF"}  
-                loading="lazy" />
-              <Image
-                width={100}
-                height={100}
-                        
-                src={`${basePath}/logos/gltf/glTF_Nov17/glTF for web/glTF RGB/glTF_RGB_June16.svg`}
-                alt={"glTF"}  
-                loading="lazy" />
-          </Box>*/}
           <Box display='flex' sx={{width: "100%"}} flexDirection='row' justifyContent={"space-between"} alignItems='center'>
               <Search searchValueChange={handleSearchValueChange}/>
               <Tooltip enterTouchDelay={1} placement="right" title={<p style={{ color: `${theme.palette.text.primary}`, fontSize: "16px" }}>Search in the description and the titles of the models. Tags can be used to further segment the search</p>}>
@@ -224,26 +169,8 @@ export default function LandingPage({models}: LandingPageProps) {
               </Tooltip>
 
             <Box flex={1} display={{ xs: 'flex', sm: 'flex' }}  justifyContent='flex-end' flexWrap={"wrap"}>
-              {/*<Box display={{ xs: 'none', sm: 'flex' }}  sx={{width: "100%"}} flexDirection='row' justifyContent={"flex-end"} alignItems='center'>
-              <Image
-                width={100}
-                height={100}
-                        
-                src={`${basePath}/logos/3dcommerce/3DCommerce_Aug20/3DCommerce for web/3DCommerce RGB/3DCommerce_RGB_Aug20.svg`}
-                alt={"glTF"}  
-                loading="lazy" />
-              <Image
-                width={100}
-                height={100}
-                        
-                src={`${basePath}/logos/gltf/glTF_Nov17/glTF for web/glTF RGB/glTF_RGB_June16.svg`}
-                alt={"3D Commerce"}  
-                loading="lazy" />
-            </Box>*/}
             </Box>
             </Box>
-          {/*boxChip*/}
-          {/*accordionChips*/}
           {otherChips}
         </Box>
 
