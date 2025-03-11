@@ -5,6 +5,7 @@ import EnginePage from "@/components/EnginePage";
 import engines from "@/data/engines.json"
 import models from "@/data/model-index.Phasmatic.json"
 import type { RenderView } from '@/components/ModelPage';
+import { baseUrl } from '@/lib/paths';
 
 export const dynamicParams = false; // models that are not included in the list, generate 404
 
@@ -36,9 +37,10 @@ export async function generateMetadata( { params, searchParams }: Props, parent:
   const previousImages: string[] = [];
  
   return {
+    metadataBase: new URL(baseUrl),
     title: name,
     openGraph: {
-      images: ['/some-specific-page-image.jpg', ...previousImages],
+      images: [...previousImages],
     },
     robots: {
       index: false,

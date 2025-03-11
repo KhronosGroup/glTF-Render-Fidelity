@@ -3,7 +3,7 @@ import { Button, Typography, Box, Grid2 as Grid } from "@mui/material";
 import type { Metadata, ResolvingMetadata  } from 'next'
 import ComparePage from "@/components/ComparePage";
 import models from "@/data/model-index.Phasmatic.json"
-import { basePath } from '@/lib/paths';
+import { basePath, baseUrl } from '@/lib/paths';
 import { RenderView } from "@/components/ModelPage";
 
 export const dynamicParams = false; // models that are not included in the list, generate 404
@@ -39,6 +39,7 @@ export async function generateMetadata( { params, searchParams }: Props, parent:
   const previousImages = (await parent).openGraph?.images || []
  
   return {
+    metadataBase: new URL(baseUrl),
     title: model.label,
     description: model.description,
     openGraph: {
