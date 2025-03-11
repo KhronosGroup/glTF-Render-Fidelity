@@ -9,6 +9,7 @@ import { useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import styles from "./ComparePage.module.css";
 import InfoIcon from '@mui/icons-material/Info';
+import LaunchIcon from '@mui/icons-material/Launch';
 
 import CloseFullscreenIcon from '@mui/icons-material/CloseFullscreen';
 import OpenInFullIcon from '@mui/icons-material/OpenInFull';
@@ -122,7 +123,7 @@ export default function ComparePage({name, label, renderViews, description, down
     </Box>
     <Typography textAlign='justify'>{description}</Typography>
     <Box mt={1}>
-      <Link href={`https://github.com/KhronosGroup/glTF-Sample-Assets/blob/main/Models/${name}/README.md`} color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold'}}>More info</Link>
+      <Link href={`https://github.com/KhronosGroup/glTF-Sample-Assets/blob/main/Models/${name}/README.md`} color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>More info <LaunchIcon fontSize='small' sx={{ml:0.5}}/></Link>
     </Box>
   </Box>;
 

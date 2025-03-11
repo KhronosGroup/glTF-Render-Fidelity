@@ -10,6 +10,7 @@ import LinkNext from 'next/link'
 import InfoIcon from '@mui/icons-material/Info';
 import ShareIcon from '@mui/icons-material/Share';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
+import LaunchIcon from '@mui/icons-material/Launch';
 //import README from "@/data/README.md"
 
 export type RenderView = {
@@ -97,7 +98,7 @@ export default function ModelPage({name, label, renderViews, downloadUrl, descri
     </Box>
     <Typography>{description}</Typography>
     <Box mt={1}>
-      <Link href={`https://github.com/KhronosGroup/glTF-Sample-Assets/blob/main/Models/${name}/README.md`} color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold'}}>More info</Link>
+      <Link href={`https://github.com/KhronosGroup/glTF-Sample-Assets/blob/main/Models/${name}/README.md`} color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>More info <LaunchIcon fontSize='small' sx={{ml:0.5}}/></Link>
     </Box>
   </Box>;
 
