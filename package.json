@@ -7,7 +7,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "imagesOLD": "npx cpx 'glTF-Render-Fidelity-Generator/test/goldens/**/*' 'public/images/goldens'",
     "images": "cp -r 'glTF-Render-Fidelity-Generator/test/goldens/.' 'public/images/goldens'",
     "thumbnail": "node src/scripts/create_thumbnails.mjs",
     "metadata": "node src/scripts/extract_model_metadata.mjs"
@@ -32,7 +31,6 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/showdown": "^2.0.6",
-    "cpx": "^1.5.0",
     "eslint": "^9",
     "eslint-config-next": "15.1.4",
     "showdown": "^2.1.0",
