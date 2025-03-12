@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "images": "npx cpx 'glTF-Render-Fidelity-Generator/test/goldens/**/*' 'public/images/goldens'",
+    "imagesOLD": "npx cpx 'glTF-Render-Fidelity-Generator/test/goldens/**/*' 'public/images/goldens'",
+    "images": "cp -r 'glTF-Render-Fidelity-Generator/test/goldens/.' 'public/images/goldens'",
     "thumbnail": "node src/scripts/create_thumbnails.mjs",
     "metadata": "node src/scripts/extract_model_metadata.mjs"
   },
