@@ -122,8 +122,8 @@ export default function Header() {
             <Box display='flex' flexDirection='row' alignItems='center' justifyContent={"space-between"} sx={{width: "100%", /*maxWidth: "1900px",*/ margin: "auto"}}>
                 <Box flex={1} display={{ xs: 'none', md: 'flex' }}>
                     <Image
-                        width={80}
-                        height={50}
+                        width={100}
+                        height={75}
                                 
                         src={`${basePath}/logos/gltf/glTF_Nov17/glTF for web/glTF RGB/glTF_RGB_June16.svg`}
                         alt={"3D Commerce"}  
@@ -136,8 +136,8 @@ export default function Header() {
                 </Box>
                 <Box flex={1} display={{ xs: 'none', md: 'flex' }} flexDirection='row' justifyContent={"flex-end"} alignItems='center'>
                     <Image
-                        width={100}
-                        height={50}
+                        width={150}
+                        height={75}
                                 
                         src={`${basePath}/logos/3dcommerce/3DCommerce_Aug20/3DCommerce for web/3DCommerce RGB/3DCommerce_RGB_Aug20.svg`}
                         alt={"glTF"}  
