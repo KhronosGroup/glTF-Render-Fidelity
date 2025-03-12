@@ -144,7 +144,7 @@ export default function ComparePage({name, label, renderViews, description, down
         </Grid>}
         {/* Main */}
         <Box ref={zoomOffsetRef} className={styles.tool} width={{xs:'100%', sm: isMagnified? '100%' : '60%'}}>
-          <Box sx={{display:'flex', width: "100%", justifyContent: {xs: 'flex-end', sm:'space-between'}}}>
+          <Box pb={1} sx={{display:'flex', width: "100%", justifyContent: {xs: 'flex-end', sm:'space-between'}}}>
             {!isXs && isMagnified && <CloseFullscreenIcon onClick={() => toggleMagnified(false)} sx={{cursor: "pointer"}} /> }
             {!isXs && !isMagnified && <OpenInFullIcon onClick={() => toggleMagnified(true)} sx={{cursor: "pointer"}} /> }
             <ComparisonButton handleSelection={(index:number) => {setComparisonMode(index)}}/>
