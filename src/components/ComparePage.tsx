@@ -121,7 +121,7 @@ export default function ComparePage({name, label, renderViews, description, down
         {downloadUrl && <IconButton component="a" href={downloadUrl} download><FileDownloadIcon sx={{color: 'grey.100'}}/></IconButton>}
       </Box>
     </Box>
-    <Typography textAlign='justify'>{description}</Typography>
+    <Typography textAlign='left'>{description}</Typography>
     <Box mt={1}>
       <Link href={`https://github.com/KhronosGroup/glTF-Sample-Assets/blob/main/Models/${name}/README.md`} color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>More info <LaunchIcon fontSize='small' sx={{ml:0.5}}/></Link>
     </Box>
