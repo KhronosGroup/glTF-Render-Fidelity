@@ -7,7 +7,7 @@ import ModelList from "@/data/model-index.Phasmatic.json"
 
 export const metadata: Metadata = {
   title: 'Khronos Render Fidelity',
-  description: 'glTF Render Fidelity Test Suite',
+  description: 'glTF Render Fidelity Comparison',
 }
 
 export default function Home() {

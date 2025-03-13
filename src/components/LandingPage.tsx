@@ -162,7 +162,7 @@ export default function LandingPage({models}: LandingPageProps) {
   return (
     <>
         <Typography className={styles.text}>
-            The purpose of glTF is to standardize Physically-Based Rendering (PBR) materials such that you 
+            One goal of glTF is to standardize Physically-Based Rendering (PBR) materials such that you 
             can be confident your model will appear as intended in any lighting environment in any renderer. 
             This is a very ambitious goal, as real-time rendering at this level of quality is still very much 
             an area of active research with improvements being made constantly. This site demonstrates where 

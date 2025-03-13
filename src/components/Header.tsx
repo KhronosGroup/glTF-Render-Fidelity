@@ -131,7 +131,7 @@ export default function Header() {
                 </Box>
                 <Box justifyContent={"flex-start"}>
                     <Typography sx={{fontWeight:'bold', fontFamily: 'var(--font-chivo)', p:{xs: 'inherit', sm:'10px'}, fontSize: {xs: '24px', sm: '36px'}}}>
-                        glTF Render Fidelity Test Suite
+                        glTF Render Fidelity Comparison
                     </Typography>
                 </Box>
                 <Box flex={1} display={{ xs: 'none', md: 'flex' }} flexDirection='row' justifyContent={"flex-end"} alignItems='center'>
