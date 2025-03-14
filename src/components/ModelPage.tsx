@@ -85,7 +85,7 @@ export default function ModelPage({name, label, renderViews, downloadUrl, descri
     <Box display='flex' justifyContent='space-between'>
       <Typography variant='h6'>Description</Typography>
       <Box>
-        <IconButton onClick={onShare}><ShareIcon sx={{color: 'grey.100'}}/></IconButton>
+        {false && <IconButton onClick={onShare}><ShareIcon sx={{color: 'grey.100'}}/></IconButton>}
         <Snackbar
           open={shareSnackbarOpen}
           onClose={() => {setShareSnackbarOpen(false)}}
@@ -97,8 +97,11 @@ export default function ModelPage({name, label, renderViews, downloadUrl, descri
       </Box>
     </Box>
     <Typography>{description}</Typography>
-    <Box mt={1}>
+    <Box mt={2}>
       <Link href={`https://github.com/KhronosGroup/glTF-Sample-Assets/blob/main/Models/${name}/README.md`} color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>More info <LaunchIcon fontSize='small' sx={{ml:0.5}}/></Link>
+    </Box>
+    <Box display='flex' alignItems='center' mt={1}>
+      <Link onClick={onShare} href="#" color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>Share <ShareIcon fontSize='small' sx={{color: 'grey.100', ml: 0.5}}/></Link>
     </Box>
   </Box>;
 
