@@ -10,6 +10,7 @@
   }
   a {
     font-weight: bold;
+    text-decoration: underline;
   }
 </style>
 
@@ -19,7 +20,7 @@
 ## Overview 
 <br>
 
-The Render Fidelity web site provides users a means to compare the rendering of 3D models from the Khronos glTF Sample Asset Repository using different renderers in glTF viewers. The viewers include real-time ones such as Babylon.js and <model-viewer> and path tracing glTF viewers such as Blender Cycles and Dassault’s STELLAR.
+The Render Fidelity web site provides users a means to compare the rendering of 3D models from the Khronos glTF Sample Asset Repository using different renderers in glTF viewers. The viewers include real-time ones such as Babylon.js and &lt;model-viewer&gt; and path tracing glTF viewers such as Blender Cycles and Dassault’s STELLAR.
 <br>
 <br>
 
@@ -35,6 +36,7 @@ The Render Fidelity web site provides users a means to compare the rendering of 
 | [three-gpu-pathtracer](https://phasmatic3d.github.io/rfw/engine/three-gpu-pathtracer) | Path Tracing | Web |
 | [Dassault STELLAR](https://phasmatic3d.github.io/rfw/engine/DassaultSTELLAR) | Real-Time | Windows, Linux |
 | [Chaos Group V-Ray](https://phasmatic3d.github.io/rfw/engine/ChaosGroupV-Ray) (via vray_gltf) | Path Tracing | Linux, Windows, MacOS |
+| [Blender Cycles](https://docs.blender.org/manual/en/latest/render/cycles/introduction.html) | Path Tracing | Linux, Windows, MacOS |
 
 <br>
 

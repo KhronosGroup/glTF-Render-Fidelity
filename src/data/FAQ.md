@@ -14,7 +14,7 @@
 
 **Q: How do I provide feedback on The Rendering Fidelity Website?**
 
-**A:** Please open an issue on Github for this repository. <br><br>
+**A:** Please open an issue on [Github](https://github.com/KhronosGroup/glTF-temp-RF) for this repository. <br><br>
 
 **Q: Can I put my own engine in The Render Fidelity Website?**
 
