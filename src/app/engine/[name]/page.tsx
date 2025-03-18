@@ -3,7 +3,7 @@ import { Button, Typography, Box, Grid2 as Grid } from "@mui/material";
 import type { Metadata, ResolvingMetadata  } from 'next'
 import EnginePage from "@/components/EnginePage";
 import engines from "@/data/engines.json"
-import models from "@/data/model-index.Phasmatic.json"
+import models from "@/data/model-index.Fidelity.json"
 import type { RenderView } from '@/components/ModelPage';
 import { baseUrl } from '@/lib/paths';
 

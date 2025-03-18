@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import styles from "./page.module.css";
 import { Box, Typography } from "@mui/material";
 import LandingPage from "@/components/LandingPage";
-import ModelList from "@/data/model-index.Phasmatic.json"
+import ModelList from "@/data/model-index.Fidelity.json"
 
 export const metadata: Metadata = {
   title: 'Khronos Render Fidelity',

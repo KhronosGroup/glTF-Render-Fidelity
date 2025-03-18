@@ -211,7 +211,7 @@ for (const tag in ModelTags) {
 }
 
 const jsonData = JSON.stringify(ModelMap2, null, 2); // The `null, 2` makes the output pretty-printed
-fs.writeFileSync('src/data/model-index.Phasmatic.json', jsonData);
+fs.writeFileSync('src/data/model-index.Fidelity.json', jsonData);
 
 const jsonDataTagList = JSON.stringify(TagList, null, 2); // The `null, 2` makes the output pretty-printed
 fs.writeFileSync('src/data/tags.json', jsonDataTagList);

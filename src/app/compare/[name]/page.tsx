@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Typography, Box, Grid2 as Grid } from "@mui/material";
 import type { Metadata, ResolvingMetadata  } from 'next'
 import ComparePage from "@/components/ComparePage";
-import models from "@/data/model-index.Phasmatic.json"
+import models from "@/data/model-index.Fidelity.json"
 import { basePath, baseUrl } from '@/lib/paths';
 import { RenderView } from "@/components/ModelPage";
 

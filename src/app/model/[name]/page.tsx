@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Typography, Box, Grid2 as Grid } from "@mui/material";
 import type { Metadata, ResolvingMetadata  } from 'next'
 import ModelPage, { RenderView } from "@/components/ModelPage";
-import models from "@/data/model-index.Phasmatic.json"
+import models from "@/data/model-index.Fidelity.json"
 import { baseUrl } from '@/lib/paths';
 
 export const dynamicParams = false; // models that are not included in the list, generate 404
