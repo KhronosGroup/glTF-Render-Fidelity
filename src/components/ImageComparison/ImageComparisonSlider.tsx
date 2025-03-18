@@ -57,60 +57,51 @@ const ImageComparison2 = ({imgSrc1, imgSrc2}: ImageComparisonSliderProps) => {
         });
     };
 
-    const handleOnLoad = () => {
-
-      if(imageRef.current == null)
+    const toolReisze = () => {
+      if(imageRef.current == null || image2Ref.current == null
+      || containerRef.current == null || containerRootRef.current == null)
         return;
-      if(containerRef.current == null)
-        return;
-      if(containerRootRef.current == null)
-        return;
-      if(image2Ref.current == null)
-        return;
-
+    
       const vhToPixels = (vh: number) => (vh * window.innerHeight) / 100;
 
       const imageContainer = imageRef.current;
 
+      const maxWidth = containerRootRef.current.clientWidth ;  // Set max width
+      const maxHeight = Math.max(containerRootRef.current.clientHeight, vhToPixels(70)); // Set max height
+      
+      const image_width = imageContainer.clientWidth;
+      const image_height = imageContainer.clientHeight;
+      const aspectRatio = image_height / image_width;
+
+      // Calculate new dimensions while maintaining aspect ratio
+      const width = containerRootRef.current.clientWidth;
+      const height = containerRootRef.current.clientWidth * aspectRatio;
+
+      if(width > maxWidth)
+      {
+        //width = maxWidth;
+        //height = maxWidth / aspectRatio;
+      }
+      if(height > maxHeight)
+      {
+        //height = maxHeight;
+        //width = maxHeight * aspectRatio;
+      }
+
+      containerRef.current.style.width = width+"px";
+      containerRef.current.style.height = height+"px";
+
+      imageRef.current.style.width = width+"px";
+      imageRef.current.style.height = height+"px";
+
+      image2Ref.current.style.width = width+"px";
+      image2Ref.current.style.height = height+"px";
+    }
+
+    const handleOnLoad = () => {
       const resizeObserver = new ResizeObserver(() => {
         requestAnimationFrame(() => {
-
-          if(imageRef.current == null)
-            return;
-          if(image2Ref.current == null)
-            return;
-          if(containerRef.current == null)
-            return;
-          if(containerRootRef.current == null)
-            return;
-      
-          const maxWidth = containerRootRef.current.clientWidth ;  // Set max width
-          const maxHeight = Math.max(containerRootRef.current.clientHeight, vhToPixels(70)); // Set max height
-          
-          // Calculate new dimensions while maintaining aspect ratio
-          let width = imageContainer.naturalWidth;
-          let height = imageContainer.naturalHeight;
-
-          const aspectRatio = width / height;
-          if(width > maxWidth)
-          {
-            width = maxWidth;
-            height = maxWidth / aspectRatio;
-          }
-          if(height > maxHeight)
-          {
-            height = maxHeight;
-            width = maxHeight * aspectRatio;
-          }
-    
-          containerRef.current.style.width = width+"px";
-          containerRef.current.style.height = height+"px";
-
-          imageRef.current.style.width = width+"px";
-          imageRef.current.style.height = height+"px";
-
-          image2Ref.current.style.width = width+"px";
-          image2Ref.current.style.height = height+"px";
+          toolReisze();
         });
       });
       
@@ -118,7 +109,7 @@ const ImageComparison2 = ({imgSrc1, imgSrc2}: ImageComparisonSliderProps) => {
       //resizeObserver.observe(containerRootRef.current);
       resizeObserver.observe(document.body);
     }
-  
+
     return (
       <Box 
         display='flex'
@@ -138,7 +129,6 @@ const ImageComparison2 = ({imgSrc1, imgSrc2}: ImageComparisonSliderProps) => {
         sx={{
           position: "relative",
           width: "100%",        
-          height: "70vh",  
           overflow: "hidden",
           cursor: "pointer",
           userSelect: "none",

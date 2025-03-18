@@ -21,13 +21,16 @@ export default function ImageDifferenceView({imgSrc1, imgSrc2}: ImageComparisonS
 
   const canvasRef = React.useRef<HTMLCanvasElement>(null);
   const canvasContainerRef = React.useRef<HTMLDivElement>(null);
+  const canvasContainerWrapperRef = React.useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
     if(canvasRef == null || canvasRef.current == null) { return; }
     if(canvasContainerRef == null || canvasContainerRef.current == null) { return; }
+    if(canvasContainerWrapperRef == null || canvasContainerWrapperRef.current == null) { return; }
     
     const canvas = canvasRef.current;
     const canvasContainer = canvasContainerRef.current;
+    const canvasContainerWrapper = canvasContainerWrapperRef.current;
     const context = canvas.getContext('2d') as CanvasRenderingContext2D;
 
     const vhToPixels = (vh: number) => (vh * window.innerHeight) / 100;
@@ -39,46 +42,37 @@ export default function ImageDifferenceView({imgSrc1, imgSrc2}: ImageComparisonS
 
       const width = img1.width;
       const height = img1.height;
-      const ar = width / height;
+      const ar = height / width;
       
-      const drawCanvas = () => {      
-        //context.putImageData(img1Data, 0, 0, 0, 0, canvas.width, canvas.height);
-      }
-  
-      const resizeObserver = new ResizeObserver(() => {
-        requestAnimationFrame(() => {
-         if (canvasContainer.clientWidth == 0 || canvasContainer.clientHeight == 0) return;
-        //if ( canvas.style.width === `${canvasContainer.clientWidth}px` ) return;
+      const toolReisze = () => {
+        if (canvasContainer.clientWidth == 0 || canvasContainer.clientHeight == 0) return;
           canvas.width = canvasContainer.clientWidth; // Update the actual width
-          canvas.height = canvasContainer.clientWidth; // Update the actual height
+          canvas.height = canvasContainer.clientHeight; // Update the actual height
           
-          canvas.style.width = `${canvasContainer.clientWidth}px`;
-          canvas.style.height = `${canvasContainer.clientWidth}px`;
-          //canvas.style.maxHeight = `${vhToPixels(70)}px`;
-          //canvas.style.maxWidth = `${vhToPixels(70)}px`;
-
-          const maxWidth = canvas.width;  // Set max width
-          const maxHeight = vhToPixels(70);//canvas.height; // Set max height
+          const maxWidth = 1920;  // Set max width
+          const maxHeight = canvas.height; // Set max height
   
           // Create a temporary canvas to resize the image
           const tempCanvas = document.createElement("canvas");
           const tempCtx = tempCanvas.getContext("2d", { willReadFrequently: true }) as CanvasRenderingContext2D;
           
           // Calculate new dimensions while maintaining aspect ratio
-          let width = img1.width;
-          let height = img1.height;
-          const aspectRatio = width / height;
+          const width = canvasContainer.clientWidth;
+          const height = canvasContainer.clientWidth * ar;
           if(width > maxWidth)
           {
-            width = maxWidth;
-            height = maxWidth / aspectRatio;
+            //width = maxWidth;
+            //height = maxWidth * ar;
           }
           if(height > maxHeight)
           {
-            height = maxHeight;
-            width = maxHeight * aspectRatio;
+            //height = maxHeight;
+            //width = maxHeight * aspectRatio;
           }
 
+          canvasContainerWrapper.style.width = `${width}px`;
+          canvasContainerWrapper.style.height = `${height}px`;
+    
           canvas.width = width;
           canvas.height = height;
           canvas.style.width = `${width}px`;
@@ -128,7 +122,12 @@ export default function ImageDifferenceView({imgSrc1, imgSrc2}: ImageComparisonS
             diffData.data[i + 2] = Math.min(255, 255 * heatmap[2]); // Blue
             diffData.data[i + 3] = 255; // Alpha
           }
-          context.putImageData(diffData, 0, 0);
+          context.putImageData(diffData, 0, 0);  
+      };
+
+      const resizeObserver = new ResizeObserver(() => {
+        requestAnimationFrame(() => {
+          toolReisze();
         });
       });
         
@@ -145,8 +144,10 @@ export default function ImageDifferenceView({imgSrc1, imgSrc2}: ImageComparisonS
   }, [imgSrc1, imgSrc2]);
   
     return (
-      <Box ref={canvasContainerRef} width='100%' sx={{textAlign: "center", margin: "auto", width: "100%"}}>
-        <canvas ref={canvasRef}/>
+      <Box ref={canvasContainerRef}>
+        <Box ref={canvasContainerWrapperRef} sx={{textAlign: "center", margin: "auto"}}>
+          <canvas ref={canvasRef}/>
+        </Box>
       </Box>
     );
 };
