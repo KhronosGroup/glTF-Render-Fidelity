@@ -90,7 +90,7 @@ export default function ComparePage({name, label, renderViews, description, down
   image2 = `${basePath}${image2}`;
 
   const onShare = () => {
-    const shareURL = `https://phasmatic3d.github.io/rfw/compare/${name}?engine1=${engine1}&engine2=${engine2}`;
+    const shareURL = `${basePath}/compare/${name}?engine1=${engine1}&engine2=${engine2}`;
     if (navigator.share) {
       navigator.share({
         title: `Khronos Render Fidelity`,

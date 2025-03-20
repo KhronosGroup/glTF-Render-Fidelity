@@ -11,6 +11,7 @@ import InfoIcon from '@mui/icons-material/Info';
 import ShareIcon from '@mui/icons-material/Share';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import LaunchIcon from '@mui/icons-material/Launch';
+import { basePath } from '@/lib/paths';
 //import README from "@/data/README.md"
 
 export type RenderView = {
@@ -65,7 +66,7 @@ export default function ModelPage({name, label, renderViews, downloadUrl, descri
   const count = Number(engineA === "") + Number(engineB === "");
 
   const onShare = () => {
-    const shareURL = `https://phasmatic3d.github.io/rfw/model/${name}`;
+    const shareURL = `${basePath}/model/${name}`;
     if (navigator.share) {
       navigator.share({
         title: `Khronos Render Fidelity`,
