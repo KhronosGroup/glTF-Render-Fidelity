@@ -51,5 +51,5 @@ The Render Fidelity web site provides users a means to compare the rendering of 
 <br>
 <br>
 
-© 2025 The Khronos Group Inc. All Rights Reserved. glTF is a trademark of The Khronos Group Inc. See Appendix for full Khronos Copyright Statement.
+© 2025 The Khronos Group Inc. All Rights Reserved. glTF is a trademark of The Khronos Group Inc. See [Appendix](https://github.com/KhronosGroup/glTF/blob/main/extensions/2.0/Khronos/KHR_materials_iridescence/README.md#appendix-full-khronos-copyright-statement) for full Khronos Copyright Statement.
 
