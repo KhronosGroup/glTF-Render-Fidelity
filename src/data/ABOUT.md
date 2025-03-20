@@ -29,14 +29,14 @@ The Render Fidelity web site provides users a means to compare the rendering of 
 
 | Engine | Rendering Type |  Platform|
 |----------|----------|----------|
-| [three.js](https://phasmatic3d.github.io/rfw/engine/three.js) (represented by <model-viewer\>)   | Real-Time | Web |
-| [filament.js](https://phasmatic3d.github.io/rfw/engine/filament.js) | Real-Time | Web, Android |
-| [babylon.js](https://phasmatic3d.github.io/rfw/engine/babylon.js) | Real-Time | Web |
-| [gltf-sample-viewer](https://phasmatic3d.github.io/rfw/engine/gltf-sample-viewer) | Real-Time | Web |
-| [three-gpu-pathtracer](https://phasmatic3d.github.io/rfw/engine/three-gpu-pathtracer) | Path Tracing | Web |
-| [Dassault STELLAR](https://phasmatic3d.github.io/rfw/engine/DassaultSTELLAR) | Real-Time | Windows, Linux |
-| [Chaos Group V-Ray](https://phasmatic3d.github.io/rfw/engine/ChaosGroupV-Ray) (via vray_gltf) | Path Tracing | Linux, Windows, MacOS |
-| [Blender Cycles](https://docs.blender.org/manual/en/latest/render/cycles/introduction.html) | Path Tracing | Linux, Windows, MacOS |
+| [three.js](/engine/three.js) (represented by <model-viewer\>)   | Real-Time | Web |
+| [filament.js](/engine/filament.js) | Real-Time | Web, Android |
+| [babylon.js](/engine/babylon.js) | Real-Time | Web |
+| [gltf-sample-viewer](/engine/gltf-sample-viewer) | Real-Time | Web |
+| [three-gpu-pathtracer](w/engine/three-gpu-pathtracer) | Path Tracing | Web |
+| [Dassault STELLAR](/engine/DassaultSTELLAR) | Path Tracing | Windows, Linux |
+| [Chaos Group V-Ray](/engine/ChaosGroupV-Ray) (via vray_gltf) | Path Tracing | Linux, Windows, MacOS |
+| [Blender Cycles](/engine/BlenderCycles) | Path Tracing | Linux, Windows, MacOS |
 
 <br>
 
@@ -45,9 +45,9 @@ The Render Fidelity web site provides users a means to compare the rendering of 
 - Anastasios Gkaravelis, Phasmatic
 - Nikolaos Vitsas, Phasmatic
 - Andreas Vasilakis, Phasmatic
-- Daniel Frith, London Dynamics, Chair 3D Commerce
+- Daniel Frith, London Dynamics, Chair of 3D Commerce
 - Mike Festa, Vice-Chair of 3D Commerce
-- Eric Chadwick,
+- Eric Chadwick, DGG
 <br>
 <br>
 
