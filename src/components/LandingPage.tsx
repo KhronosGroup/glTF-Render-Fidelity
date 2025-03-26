@@ -147,12 +147,14 @@ export default function LandingPage({models}: LandingPageProps) {
 
   const options = {
     includeScore: true,
-    // Search in `summary` and in `name`
-    keys: ['summary', 'name']
+    shouldSort: true,
+    ignoreLocation: true,
+    threshold: 0.25,
+    // Search in `description` and in `name`
+    keys: ['description', 'name']
   }
-  
   const fuse = new Fuse(Object.values(models), options)
-  
+
   const tagsArray = selectedTags.filter(e => e.selected == true).map(e => e.name);
   const result = ((searchValue === "") ? Object.values(models).map(e => {return {item: e}}) : fuse.search(searchValue)).filter((e,i) => {
     if(tagsArray.length == 0) return true;
