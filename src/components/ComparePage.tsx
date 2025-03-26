@@ -10,7 +10,8 @@ import { useTheme } from '@mui/material/styles';
 import styles from "./ComparePage.module.css";
 import InfoIcon from '@mui/icons-material/Info';
 import LaunchIcon from '@mui/icons-material/Launch';
-
+import SwitchLeftIcon from '@mui/icons-material/SwitchLeft';
+import SwitchRightIcon from '@mui/icons-material/SwitchRight';
 import CloseFullscreenIcon from '@mui/icons-material/CloseFullscreen';
 import OpenInFullIcon from '@mui/icons-material/OpenInFull';
 import EngineSelection from './EngineSelection';
@@ -34,9 +35,9 @@ type ComparePageProps = {
 }
 
 export default function ComparePage({name, label, renderViews, description, downloadUrl}: ComparePageProps) {  
-  
   const theme = useTheme();
   const isXs = useMediaQuery(theme.breakpoints.only('xs'));
+  const [sliderPosition, setSliderPosition] = React.useState(50); // Initial slider position (50%)
   const [isVisible, setIsVisible] = React.useState(!isXs); 
   const [isMagnified, setMagnified] = React.useState(false);
   const [engine1, setEngine1] = React.useState('three.js');
@@ -130,6 +131,10 @@ export default function ComparePage({name, label, renderViews, description, down
     </Box>
   </Box>;
 
+  const changePosition = (value: number) => {
+    setSliderPosition(value);
+  };
+
   return (
     <>
       <Grid container direction={{xs:"column-reverse", sm:'row'}} className={styles.main} sx={{flexWrap: "nowrap"}} spacing={2}>
@@ -147,13 +152,18 @@ export default function ComparePage({name, label, renderViews, description, down
         </Grid>}
         {/* Main */}
         <Box ref={zoomOffsetRef} className={styles.tool} width={{xs:'100%', sm: isMagnified? '100%' : '60%'}}>
-          <Box pb={1} sx={{display:'flex', width: "100%", justifyContent: {xs: 'flex-end', sm:'space-between'}}}>
+          <Box pb={1} sx={{display:'flex', width: "100%", justifyContent: {xs: 'space-between', sm:'space-between'}}}>
             {!isXs && isMagnified && <CloseFullscreenIcon onClick={() => toggleMagnified(false)} sx={{cursor: "pointer"}} /> }
             {!isXs && !isMagnified && <OpenInFullIcon onClick={() => toggleMagnified(true)} sx={{cursor: "pointer"}} /> }
+            {isXs && <Box width={"24px"}/>}
+
+            {comparisonMode===1 && sliderPosition <  50 && <SwitchLeftIcon onClick={() => setSliderPosition(100)} sx={{cursor: "pointer"}} />}
+            {comparisonMode===1 && sliderPosition >= 50 && <SwitchRightIcon onClick={() => setSliderPosition(0)} sx={{cursor: "pointer"}} />}
+                
             <ComparisonButton handleSelection={(index:number) => {setComparisonMode(index)}}/>
           </Box>
           {comparisonMode===0 && <SideBySideComparison imgSrc1={image1} imgSrc2={image2}/>}
-          {comparisonMode===1 && <ImageComparisonSlider key={isMagnified.toString()} imgSrc1={image1} imgSrc2={image2}/>}
+          {comparisonMode===1 && <ImageComparisonSlider key={isMagnified.toString()} imgSrc1={image1} imgSrc2={image2} setSliderPosition={changePosition} sliderPosition={sliderPosition}/>}
           {comparisonMode===2 && <ImageDifferenceView key={isMagnified.toString()} imgSrc1={image1} imgSrc2={image2}/>}
           <Box display={{xs: 'flex', sm:'none'}} justifyContent='space-between' width='100%' pl={1} pr={1}>
             <Box flex={1}><EngineSelection engineName={engine1} engineList={renderViews.map(e=> e.name)} handleChange={(name) => { if(name!==engine1 && name!==engine2) {setEngine1(name)} }}/></Box>

@@ -1,14 +1,17 @@
 "use client"
 import React from 'react'
 import { Box } from "@mui/material";
+import SwitchLeftIcon from '@mui/icons-material/SwitchLeft';
+import SwitchRightIcon from '@mui/icons-material/SwitchRight';
 
 export type ImageComparisonSliderProps = {
   imgSrc1: string,
-  imgSrc2: string
+  imgSrc2: string,
+  setSliderPosition: (value: number) => void,
+  sliderPosition: number
 }
 
-const ImageComparison2 = ({imgSrc1, imgSrc2}: ImageComparisonSliderProps) => {
-    const [sliderPosition, setSliderPosition] = React.useState(50); // Initial slider position (50%)
+const ImageComparison2 = ({imgSrc1, imgSrc2, sliderPosition, setSliderPosition}: ImageComparisonSliderProps) => {
     const imageRef = React.useRef<HTMLImageElement>(null);
     const image2Ref = React.useRef<HTMLImageElement>(null);
     const containerRef = React.useRef<HTMLDivElement>(null);
