@@ -980,7 +980,7 @@
     ]
   },
   "BoxTexturednot2%5EN": {
-    "name": "BoxTexturednot2^N",
+    "name": "BoxTexturednot2%5EN",
     "label": "Box Textured not 2^N",
     "description": "Box with a non-power-of-2 (NPOT) texture. Not all implementations support NPOT textures. [Issues: non-Khronos mark]",
     "tags": [
