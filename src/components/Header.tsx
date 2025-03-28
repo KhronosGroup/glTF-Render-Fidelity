@@ -44,8 +44,7 @@ export default function Header() {
 
     const { mode } = useColorScheme();
 
-    const imageSrc =
-    theme.palette.mode === "light" 
+    const imageSrc = theme.palette.mode === "light" 
     ? `${basePath}/logos/khronos/Khronos(r) Family_June18/Khronos/Khronos for web/RGB/Khronos_RGB_June18.svg`
     : `${basePath}/logos/khronos/Khronos(r) Family_June18/Khronos/Khronos for web/RGB Inverted/Khronos_Inverted_June18.svg`;
 
@@ -68,7 +67,7 @@ export default function Header() {
             <Box flex={1} display='flex' justifyContent='flex-start'>
                 {mode && <a href="https://www.khronos.org/"><img
                     style={{width: "100%", maxWidth: "250px"}}
-                    src={imageSrc}
+                    src={encodeURI(imageSrc)}
                     loading="lazy"
                     alt={"The Khronos Group: Connecting Software to Silicon"}  
                 /></a>}
@@ -125,7 +124,7 @@ export default function Header() {
                         width={100}
                         height={75}
                                 
-                        src={`${basePath}/logos/gltf/glTF_Nov17/glTF for web/glTF RGB/glTF_RGB_June16.svg`}
+                        src={encodeURI(`${basePath}/logos/gltf/glTF_Nov17/glTF for web/glTF RGB/glTF_RGB_June16.svg`)}
                         alt={"3D Commerce"}  
                         loading="lazy" />
                 </Box>
@@ -139,7 +138,7 @@ export default function Header() {
                         width={150}
                         height={75}
                                 
-                        src={`${basePath}/logos/3dcommerce/3DCommerce_Aug20/3DCommerce for web/3DCommerce RGB/3DCommerce_RGB_Aug20.svg`}
+                        src={encodeURI(`${basePath}/logos/3dcommerce/3DCommerce_Aug20/3DCommerce for web/3DCommerce RGB/3DCommerce_RGB_Aug20.svg`)}
                         alt={"glTF"}  
                         loading="lazy" />
                     

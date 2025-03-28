@@ -3,22 +3,12 @@
 import React from 'react';
 import { Typography, Box, Link } from "@mui/material";
 import { basePath } from '@/lib/paths';
-import { useTheme } from "@mui/material/styles";
 
 export const currentYear = new Date().getFullYear()
 
 export default function Footer() {  
-    const theme = useTheme();
 
-    /*const imageSrc =
-    theme.palette.mode === "light" 
-    ? `${basePath}/logos/khronos/Khronos(r) Family_June18/Khronos Tagline/Khronos Tagline for web/RGB/Khronos_Tagline_RGB_June18.svg`
-    : `${basePath}/logos/khronos/Khronos(r) Family_June18/Khronos Tagline/Khronos Tagline for web/white/Khronos_Tagline_White_June18.svg`;
-
-    const bgColor = theme.palette.mode === "light" ? `#fff` : `#333333`;
-    const fontColor = theme.palette.mode === "light" ? '#182136' : `#fff`;*/
-
-    const imageSrc = `${basePath}/logos/khronos/Khronos(r) Family_June18/Khronos Tagline/Khronos Tagline for web/RGB inverted/Khronos_Tagline_Inverted_June18.svg`
+    const imageSrc = encodeURI(`${basePath}/logos/khronos/Khronos(r) Family_June18/Khronos Tagline/Khronos Tagline for web/RGB inverted/Khronos_Tagline_Inverted_June18.svg`)
     const bgColor = "#0d1720";
     const fontColor = `#fff`;
 
