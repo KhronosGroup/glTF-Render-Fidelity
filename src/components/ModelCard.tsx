@@ -28,7 +28,7 @@ export default function ModelCard({name, title, thumbnail, tags, selectTagCallba
           },
         }}>
         <Grid container justifyContent="center">
-          <Link component={NextLink} width={{xs: '100%', sm: '400px' }} height={"250px"} href={`/model/${name}`}>
+          <Link component={NextLink} width={{xs: '100%', sm: '400px' }} height={"250px"} href={encodeURI(`/model/${name}`)}>
             <Image
               width={512}
               height={512}
