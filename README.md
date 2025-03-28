@@ -33,9 +33,8 @@ Push commits to the main branch and automatic actions on the repo will build and
 
 ## Security 
 
-As of commit [`e982a93`](https://github.com/KhronosGroup/glTF-temp-RF/commit/e982a93cae9dea7756aee347f6b2037a2a282cd7), this repository has two reported vulnerabilities that have been automatically detected by GitHub's Dependabot. 
+As of commit [`be33293c`](https://github.com/KhronosGroup/glTF-temp-RF/commit/be3329cf5b13349ca946c9fc60de98be4cd64e75), this repository has one reported vulnerability that have been automatically detected by GitHub's Dependabot. 
 
-- [CVE-2025-29927](https://nvd.nist.gov/vuln/detail/CVE-2025-29927) concerns an authorization check bypass vulnerability but the deployment currently does not use any form of authorization.
 - [CVE-2025-27789](https://nvd.nist.gov/vuln/detail/CVE-2025-27789) concerns runtime complexity and does not affect the Render Fidelity website.
 
 Future work on this repository will completely address these issues by updating the dependencies.
