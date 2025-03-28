@@ -25,4 +25,4 @@
 
 **Q: Can I put my own engine in The Render Fidelity Website?**
 
-**A:** Go to [Contribute](/contribute) page. <br><br>
+**A:** Go to [Contribute](https://github.khronos.org/glTF-temp-RF/contribute) page. <br><br>

@@ -137,7 +137,7 @@ export default function LandingPage({models}: LandingPageProps) {
         <Box display={"flex"} flexWrap={"wrap"} flexDirection={"row"} height={tagsExpanded ? "100%" : 37} justifyContent={"flex-start"} style={{overflow: "hidden" }}>
           {selectedTags.map((t,i) => {return (<Chip key={t.name} sx={{margin: "5px 5px", fontWeight: 'bold'}} label={t.name} color={t.selected? "success" : "default"} clickable onClick={() => handleChipSelection(t)} onDelete={t.selected? () => handleChipDelete(t) : undefined}/>)})}
         </Box>
-        <Box display={"flex"} alignItems={"top"} sx={{position: "relative"}}>
+        <Box display={"flex"} alignItems={"flex-start"} sx={{position: "relative"}}>
           {!tagsExpanded && isOverflown && <ExpandMoreIcon onClick={() => setTagsExpanded(true)}/>}
           { tagsExpanded && isOverflown && <ExpandLessIcon onClick={() => setTagsExpanded(false)}/>}
         </Box>

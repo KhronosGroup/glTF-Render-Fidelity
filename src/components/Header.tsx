@@ -66,12 +66,12 @@ export default function Header() {
             <Box display='flex' style={{width: "100%", maxWidth: "1900px", margin: "auto", justifyContent: 'space-between', flexWrap: 'wrap'}}>
 
             <Box flex={1} display='flex' justifyContent='flex-start'>
-                {mode && <img
+                {mode && <a href="https://www.khronos.org/"><img
                     style={{width: "100%", maxWidth: "250px"}}
                     src={imageSrc}
                     loading="lazy"
                     alt={"The Khronos Group: Connecting Software to Silicon"}  
-                />}
+                /></a>}
             </Box>
             <Box flex={1} display={{ xs: 'none', sm: 'flex' }}  justifyContent='flex-end' margin={"auto"}>
                 <LightDarkButton />

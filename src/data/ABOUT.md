@@ -12,6 +12,9 @@
     font-weight: bold;
     text-decoration: underline;
   }
+  li {
+    margin-left: 2em;
+  }
 </style>
 
 # About Page
