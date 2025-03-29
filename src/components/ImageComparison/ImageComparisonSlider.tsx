@@ -169,6 +169,7 @@ const ImageComparison2 = ({imgSrc1, imgSrc2, sliderPosition, setSliderPosition}:
             top: 0,
             //left: 0,
             clipPath: `inset(0 ${100 - sliderPosition}% 0 0)`, // Adjust visible area
+            backgroundColor: "inherit"
           }}
         />
   
