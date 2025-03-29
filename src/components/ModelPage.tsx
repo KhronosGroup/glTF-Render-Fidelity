@@ -120,7 +120,7 @@ export default function ModelPage({name, label, renderViews, downloadUrl, descri
       <Grid container direction="row" className={styles.main} pt={1}>
         <Box sx={{overflow: "auto"}} className={styles.description}>
           <Box sx={{display: "flex", justifyContent: "space-between", alignItems: "center" }} pb={1}> 
-            <Typography variant='h6'>{label}</Typography>
+            <Typography variant='h6' component="h1">{label}</Typography>
             <Box onClick={toggleDiv} display={{ xs: 'inline-block', sm: 'none' }}>
               <Box sx={{display: "flex", justifyContent: "space-between", alignItems: "center", height: "100%" }}>
                 {isXs && <InfoIcon />}

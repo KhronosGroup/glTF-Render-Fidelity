@@ -140,7 +140,7 @@ export default function ComparePage({name, label, renderViews, description, down
       <Grid container direction={{xs:"column-reverse", sm:'row'}} className={styles.main} sx={{flexWrap: "nowrap"}} spacing={2}>
         {!isMagnified && <Grid className={styles.description} height={"70vh"} sx={{overflow: "auto"}}>
           <Box sx={{display: "flex", justifyContent: "space-between", alignItems: "center" }}> 
-            <Typography variant='h6'>{label}</Typography>
+            <Typography variant='h6' component="h1">{label}</Typography>
             <Box onClick={toggleDiv} display={{ xs: 'inline-block', sm: 'none' }}>
               <Box sx={{display: "flex", justifyContent: "space-between", alignItems: "center", height: "100%" }}>
                 {isXs && <InfoIcon />}
