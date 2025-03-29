@@ -64,13 +64,14 @@ export default function Header() {
         <MyToolbar sx={{paddingLeft: 2, paddingRight: 2, width: "100%", margin:"auto", display:'flex', justifyContent: 'space-between', flexWrap: 'wrap'}}>
             <Box display='flex' style={{width: "100%", maxWidth: "1900px", margin: "auto", justifyContent: 'space-between', flexWrap: 'wrap'}}>
 
-            <Box flex={1} display='flex' justifyContent='flex-start'>
-                {mode && <a href="https://www.khronos.org/"><img
-                    style={{width: "100%", maxWidth: "250px"}}
-                    src={encodeURI(imageSrc)}
-                    loading="lazy"
-                    alt={"The Khronos Group: Connecting Software to Silicon"}  
-                /></a>}
+            <Box flex={1} display='flex' justifyContent='flex-start' alignItems='center'>
+                {mode && <a href="https://www.khronos.org/">
+                    <img
+                        style={{width: "100%", maxWidth: "250px", transform: 'translate(-5%, 0px)'}}
+                        src={encodeURI(imageSrc)}
+                        loading="lazy"
+                        alt={"The Khronos® Group: Connecting Software to Silicon"} />
+                </a>}
             </Box>
             <Box flex={1} display={{ xs: 'none', sm: 'flex' }}  justifyContent='flex-end' margin={"auto"}>
                 <LightDarkButton />
