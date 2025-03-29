@@ -8,5 +8,5 @@ export default function Contribute() {
     const text      = string;
     const html      = converter.makeHtml(text);
     
-    return <div style={{margin: "auto", maxWidth: "1900px"}} dangerouslySetInnerHTML={{ __html: html }} />
+    return <div style={{margin: "auto", maxWidth: "1900px", padding:'2em 0'}} dangerouslySetInnerHTML={{ __html: html }} />
 }
