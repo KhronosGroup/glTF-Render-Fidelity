@@ -14,9 +14,9 @@ export default function Footer() {
 
     return (
       <footer style={{background:bgColor}}>
-        <Box display='flex' style={{width: "100%"}}>
+        {false && <Box display='flex' style={{width: "100%"}}>
           <Box display='flex' flexDirection='column' height={"10px"} minHeight={"10px"} alignItems='start' sx={{width: "100%", margin: "auto", background:"#333333"}}></Box>
-        </Box>
+        </Box>}
         <Box display='flex' flexDirection='column' pl={{xs:2, sm:3}} pr={{xs:2, sm:3}} style={{width: "100%", /*maxWidth: "1900px",*/ margin: 'auto', background:bgColor}}>
           <Box flex={1} width={"100%"} sx={{maxWidth: "1900px", margin: "auto", pt:"20px"}} display='flex' justifyContent='flex-start'>
             <a href="https://www.khronos.org/">
