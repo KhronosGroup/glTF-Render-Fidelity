@@ -3,6 +3,7 @@ import React from 'react'
 import { Box } from "@mui/material";
 import SwitchLeftIcon from '@mui/icons-material/SwitchLeft';
 import SwitchRightIcon from '@mui/icons-material/SwitchRight';
+import { useTheme } from '@mui/material/styles';
 
 export type ImageComparisonSliderProps = {
   imgSrc1: string,
@@ -16,6 +17,8 @@ const ImageComparison2 = ({imgSrc1, imgSrc2, sliderPosition, setSliderPosition}:
     const image2Ref = React.useRef<HTMLImageElement>(null);
     const containerRef = React.useRef<HTMLDivElement>(null);
     const containerRootRef = React.useRef<HTMLDivElement>(null);
+
+    const theme = useTheme();
 
     const containerCurrent = imageRef && imageRef.current;
 
@@ -169,7 +172,7 @@ const ImageComparison2 = ({imgSrc1, imgSrc2, sliderPosition, setSliderPosition}:
             top: 0,
             //left: 0,
             clipPath: `inset(0 ${100 - sliderPosition}% 0 0)`, // Adjust visible area
-            backgroundColor: "inherit"
+            background: `${theme.palette.background.default}`
           }}
         />
   
