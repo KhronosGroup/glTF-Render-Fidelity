@@ -138,8 +138,8 @@ export default function LandingPage({models}: LandingPageProps) {
           {selectedTags.map((t,i) => {return (<Chip key={t.name} sx={{margin: "5px 5px", fontWeight: 'bold'}} label={t.name} color={t.selected? "success" : "default"} clickable onClick={() => handleChipSelection(t)} onDelete={t.selected? () => handleChipDelete(t) : undefined}/>)})}
         </Box>
         <Box display={"flex"} alignItems={"flex-start"} sx={{position: "relative"}}>
-          {!tagsExpanded && isOverflown && <ExpandMoreIcon onClick={() => setTagsExpanded(true)}/>}
-          { tagsExpanded && isOverflown && <ExpandLessIcon onClick={() => setTagsExpanded(false)}/>}
+          {!tagsExpanded && isOverflown && <Tooltip enterTouchDelay={1} placement="top" title={<p style={{ color: `${theme.palette.text.primary}`, fontSize: "16px" }}>Click for more tags</p>}><ExpandMoreIcon onClick={() => setTagsExpanded(true)}/></Tooltip>}
+          { tagsExpanded && isOverflown && <Tooltip enterTouchDelay={1} placement="top" title={<p style={{ color: `${theme.palette.text.primary}`, fontSize: "16px" }}>Click for less tags</p>}><ExpandLessIcon onClick={() => setTagsExpanded(false)}/></Tooltip>}
         </Box>
       </Box>
     </Box>
