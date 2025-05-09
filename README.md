@@ -1,6 +1,6 @@
 # Render Fidelity Website
 
-The purpose of glTF is to standardize Physically-Based Rendering (PBR) materials such that you can be confident your model will appear as intended in any lighting environment in any renderer. This is a very ambitious goal, as real-time rendering at this level of quality is still very much an area of active research with improvements being made constantly. This site demonstrates where we are on that path to convergence and highlights areas that could still use improvement. We are comparing the most popular real-time web renderers as well as path tracers (a rendering technique that uses far fewer approximations than are required by real-time renderers).
+The purpose of glTF is to standardize Physically-Based Rendering (PBR) materials such that you can be confident your model will appear as intended in any lighting environment in any renderer. This is a very ambitious goal, as real-time rendering at this level of quality is still very much an area of active research with improvements being made constantly. This [Render Fidelity website](https://github.khronos.org/glTF-Render-Fidelity/) demonstrates where we are on that path to convergence and highlights areas that could still use improvement. We are comparing the most popular real-time web renderers as well as path tracers (a rendering technique that uses far fewer approximations than are required by real-time renderers).
 
 ## Getting Started
 
