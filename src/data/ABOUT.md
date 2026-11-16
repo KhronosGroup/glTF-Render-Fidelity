@@ -46,6 +46,7 @@ The Render Fidelity web site provides users a means to compare the rendering of 
 
 ## Contributors
 <br>
+
 - Anastasios Gkaravelis, Phasmatic
 - Nikolaos Vitsas, Phasmatic
 - Andreas Vasilakis, Phasmatic
