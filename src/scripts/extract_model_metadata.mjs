@@ -23,7 +23,7 @@ async function readJSON(path)
   return await fs.promises.readFile(path, "utf-8").then(res => {return JSON.parse(res);}).catch(e => {return {}})
 }
 
-const SAMPLE_ASSETS_PATH = "./glTf-Render-Fidelity-Generator/glTF-Sample-Assets"
+const SAMPLE_ASSETS_PATH = "./glTF-Render-Fidelity-Generator/glTF-Sample-Assets"
 const ModelList = await readJSON(`${SAMPLE_ASSETS_PATH}/Models/model-index.json`);
 const ModelTags = {};
 const ModelMap = {};
