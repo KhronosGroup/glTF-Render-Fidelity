@@ -7,20 +7,15 @@
       "Showcase",
       "Extension",
       "Transmission",
-      "Volume",
-      "Draco",
-      "KTX"
+      "Volume"
     ],
     "variants": {
-      "glTF": "ABeautifulGame.gltf",
-      "glTF-Binary": "ABeautifulGame.glb",
-      "glTF-Binary-KTX-ETC1S-Draco": "ABeautifulGame.glb"
+      "glTF": "ABeautifulGame.gltf"
     },
     "extensionsUsed": [
       "KHR_materials_transmission",
       "KHR_materials_volume"
     ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ABeautifulGame/glTF-Binary/ABeautifulGame.glb",
     "images": [
       {
         "name": "babylon.js",
@@ -73,6 +68,7 @@
       "Core"
     ],
     "variants": {
+      "glTF-Embedded": "AlphaBlendModeTest.gltf",
       "glTF": "AlphaBlendModeTest.gltf",
       "glTF-Binary": "AlphaBlendModeTest.glb"
     },
@@ -117,62 +113,6 @@
         "name": "Chaos Group V-Ray",
         "image": "/images/goldens/khronos-AlphaBlendModeTest/vray-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-AlphaBlendModeTest/vray-golden.thumb.webp"
-      }
-    ]
-  },
-  "AnimatedColorsCube": {
-    "name": "AnimatedColorsCube",
-    "label": "Animated Colors Cube",
-    "description": "This model demonstrates animating a base color with KHR_animation_pointer.",
-    "tags": [
-      "Extension",
-      "Testing",
-      "Animation Pointer",
-      "Animation"
-    ],
-    "variants": {
-      "glTF": "AnimatedColorsCube.gltf",
-      "glTF-Binary": "AnimatedColorsCube.glb"
-    },
-    "extensionsUsed": [
-      "KHR_animation_pointer"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnimatedColorsCube/glTF-Binary/AnimatedColorsCube.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-AnimatedColorsCube/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-AnimatedColorsCube/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-AnimatedColorsCube/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-AnimatedColorsCube/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-AnimatedColorsCube/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-AnimatedColorsCube/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-AnimatedColorsCube/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-AnimatedColorsCube/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-AnimatedColorsCube/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-AnimatedColorsCube/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-AnimatedColorsCube/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-AnimatedColorsCube/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-AnimatedColorsCube/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-AnimatedColorsCube/vk-gltf-renderer-golden.thumb.webp"
       }
     ]
   },
@@ -299,8 +239,8 @@
       "Core"
     ],
     "variants": {
-      "glTF": "AnimatedTriangle.gltf",
-      "glTF-Embedded": "AnimatedTriangle.gltf"
+      "glTF-Embedded": "AnimatedTriangle.gltf",
+      "glTF": "AnimatedTriangle.gltf"
     },
     "images": [
       {
@@ -342,79 +282,6 @@
         "name": "Chaos Group V-Ray",
         "image": "/images/goldens/khronos-AnimatedTriangle/vray-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-AnimatedTriangle/vray-golden.thumb.webp"
-      }
-    ]
-  },
-  "AnimationPointerUVs": {
-    "name": "AnimationPointerUVs",
-    "label": "AnimationPointerUVs",
-    "description": "This model tests UV transform animations with KHR_animation_pointer.",
-    "tags": [
-      "Extension",
-      "Testing",
-      "Transmission",
-      "Volume",
-      "Specular",
-      "Sheen",
-      "Clearcoat",
-      "Texture Transform",
-      "Animation Pointer",
-      "Anisotropy",
-      "Iridescence",
-      "Diffuse Transmission",
-      "Unlit",
-      "Lights",
-      "Animation"
-    ],
-    "variants": {
-      "glTF": "AnimationPointerUVs.gltf",
-      "glTF-Binary": "AnimationPointerUVs.glb"
-    },
-    "extensionsUsed": [
-      "KHR_materials_transmission",
-      "KHR_materials_volume",
-      "KHR_materials_specular",
-      "KHR_materials_sheen",
-      "KHR_materials_clearcoat",
-      "KHR_texture_transform",
-      "KHR_animation_pointer",
-      "KHR_materials_anisotropy",
-      "KHR_materials_iridescence",
-      "KHR_materials_diffuse_transmission",
-      "KHR_materials_unlit",
-      "KHR_lights_punctual"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnimationPointerUVs/glTF-Binary/AnimationPointerUVs.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-AnimationPointerUVs/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-AnimationPointerUVs/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-AnimationPointerUVs/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-AnimationPointerUVs/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-AnimationPointerUVs/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-AnimationPointerUVs/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-AnimationPointerUVs/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-AnimationPointerUVs/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-AnimationPointerUVs/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-AnimationPointerUVs/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-AnimationPointerUVs/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-AnimationPointerUVs/vk-gltf-renderer-golden.thumb.webp"
       }
     ]
   },
@@ -1021,10 +888,10 @@
       "Draco"
     ],
     "variants": {
+      "glTF-Embedded": "Box.gltf",
       "glTF": "Box.gltf",
       "glTF-Binary": "Box.glb",
-      "glTF-Draco": "Box.gltf",
-      "glTF-Embedded": "Box.gltf"
+      "glTF-Draco": "Box.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Box/glTF-Binary/Box.glb",
     "images": [
@@ -1129,9 +996,9 @@
       "Core"
     ],
     "variants": {
+      "glTF-Embedded": "BoxAnimated.gltf",
       "glTF": "BoxAnimated.gltf",
-      "glTF-Binary": "BoxAnimated.glb",
-      "glTF-Embedded": "BoxAnimated.gltf"
+      "glTF-Binary": "BoxAnimated.glb"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxAnimated/glTF-Binary/BoxAnimated.glb",
     "images": [
@@ -1186,9 +1053,9 @@
       "Core"
     ],
     "variants": {
+      "glTF-Embedded": "BoxInterleaved.gltf",
       "glTF": "BoxInterleaved.gltf",
-      "glTF-Binary": "BoxInterleaved.glb",
-      "glTF-Embedded": "BoxInterleaved.gltf"
+      "glTF-Binary": "BoxInterleaved.glb"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxInterleaved/glTF-Binary/BoxInterleaved.glb",
     "images": [
@@ -1243,9 +1110,9 @@
       "Core"
     ],
     "variants": {
+      "glTF-Embedded": "BoxTextured.gltf",
       "glTF": "BoxTextured.gltf",
-      "glTF-Binary": "BoxTextured.glb",
-      "glTF-Embedded": "BoxTextured.gltf"
+      "glTF-Binary": "BoxTextured.glb"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxTextured/glTF-Binary/BoxTextured.glb",
     "images": [
@@ -1300,9 +1167,9 @@
       "Core"
     ],
     "variants": {
+      "glTF-Embedded": "BoxTexturedNonPowerOfTwo.gltf",
       "glTF": "BoxTexturedNonPowerOfTwo.gltf",
-      "glTF-Binary": "BoxTexturedNonPowerOfTwo.glb",
-      "glTF-Embedded": "BoxTexturedNonPowerOfTwo.gltf"
+      "glTF-Binary": "BoxTexturedNonPowerOfTwo.glb"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxTexturedNonPowerOfTwo/glTF-Binary/BoxTexturedNonPowerOfTwo.glb",
     "images": [
@@ -1351,15 +1218,15 @@
   "BoxVertexColors": {
     "name": "BoxVertexColors",
     "label": "Box Vertex Colors",
-    "description": "A simple unit cube that uses vertex colors, stored in the `COLORS_0` attribute.",
+    "description": "A simple unit cube that uses vertex colors, stored in the `COLORS_0` attribute. ",
     "tags": [
       "Testing",
       "Core"
     ],
     "variants": {
+      "glTF-Embedded": "BoxVertexColors.gltf",
       "glTF": "BoxVertexColors.gltf",
-      "glTF-Binary": "BoxVertexColors.glb",
-      "glTF-Embedded": "BoxVertexColors.gltf"
+      "glTF-Binary": "BoxVertexColors.glb"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxVertexColors/glTF-Binary/BoxVertexColors.glb",
     "images": [
@@ -1415,12 +1282,10 @@
       "Draco"
     ],
     "variants": {
+      "glTF-Embedded": "BrainStem.gltf",
       "glTF": "BrainStem.gltf",
       "glTF-Binary": "BrainStem.glb",
-      "glTF-Draco": "BrainStem.gltf",
-      "glTF-Embedded": "BrainStem.gltf",
-      "glTF-Meshopt": "BrainStem.gltf",
-      "glTF-Meshopt-EXT": "BrainStem.gltf"
+      "glTF-Draco": "BrainStem.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BrainStem/glTF-Binary/BrainStem.glb",
     "images": [
@@ -1475,8 +1340,8 @@
       "Core"
     ],
     "variants": {
-      "glTF": "Cameras.gltf",
-      "glTF-Embedded": "Cameras.gltf"
+      "glTF-Embedded": "Cameras.gltf",
+      "glTF": "Cameras.gltf"
     },
     "images": [
       {
@@ -1570,76 +1435,6 @@
       }
     ]
   },
-  "CarConcept": {
-    "name": "CarConcept",
-    "label": "Car Concept",
-    "description": "Concept car with Khronos logos and material variants",
-    "tags": [
-      "Showcase",
-      "Extension",
-      "Clearcoat",
-      "Emissive",
-      "Iridescence",
-      "Transmission",
-      "Variants",
-      "Texture Transform",
-      "Draco",
-      "KTX"
-    ],
-    "variants": {
-      "glTF": "CarConcept.gltf",
-      "glTF-Binary": "CarConcept.glb",
-      "glTF-JPG": "CarConcept.gltf",
-      "glTF-KTX-BasisU-Draco": "CarConcept.gltf",
-      "glTF-WEBP": "CarConcept.gltf"
-    },
-    "extensionsUsed": [
-      "KHR_materials_clearcoat",
-      "KHR_materials_emissive_strength",
-      "KHR_materials_iridescence",
-      "KHR_materials_transmission",
-      "KHR_materials_variants",
-      "KHR_texture_transform"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CarConcept/glTF-Binary/CarConcept.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-CarConcept/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CarConcept/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-CarConcept/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CarConcept/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-CarConcept/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CarConcept/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-CarConcept/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CarConcept/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-CarConcept/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CarConcept/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-CarConcept/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CarConcept/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-CarConcept/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CarConcept/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
   "CesiumMan": {
     "name": "CesiumMan",
     "label": "Cesium Man",
@@ -1650,10 +1445,10 @@
       "Draco"
     ],
     "variants": {
+      "glTF-Embedded": "CesiumMan.gltf",
       "glTF": "CesiumMan.gltf",
       "glTF-Binary": "CesiumMan.glb",
-      "glTF-Draco": "CesiumMan.gltf",
-      "glTF-Embedded": "CesiumMan.gltf"
+      "glTF-Draco": "CesiumMan.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMan/glTF-Binary/CesiumMan.glb",
     "images": [
@@ -1714,10 +1509,10 @@
       "Draco"
     ],
     "variants": {
+      "glTF-Embedded": "CesiumMilkTruck.gltf",
       "glTF": "CesiumMilkTruck.gltf",
       "glTF-Binary": "CesiumMilkTruck.glb",
-      "glTF-Draco": "CesiumMilkTruck.gltf",
-      "glTF-Embedded": "CesiumMilkTruck.gltf"
+      "glTF-Draco": "CesiumMilkTruck.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMilkTruck/glTF-Binary/CesiumMilkTruck.glb",
     "images": [
@@ -1826,73 +1621,10 @@
       }
     ]
   },
-  "ChronographWatch": {
-    "name": "ChronographWatch",
-    "label": "Chronograph Watch",
-    "description": "Wrist watch with Khronos logos and material variants",
-    "tags": [
-      "Showcase",
-      "Extension",
-      "Transmission",
-      "Variants",
-      "Texture Transform",
-      "Animation",
-      "KTX"
-    ],
-    "variants": {
-      "glTF": "ChronographWatch.gltf",
-      "glTF-Binary": "ChronographWatch.glb",
-      "glTF-KTX-BasisU": "ChronographWatch.gltf",
-      "glTF-WEBP": "ChronographWatch.gltf"
-    },
-    "extensionsUsed": [
-      "KHR_materials_transmission",
-      "KHR_materials_variants",
-      "KHR_texture_transform"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ChronographWatch/glTF-Binary/ChronographWatch.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-ChronographWatch/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-ChronographWatch/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-ChronographWatch/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-ChronographWatch/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-ChronographWatch/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-ChronographWatch/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-ChronographWatch/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-ChronographWatch/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-ChronographWatch/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-ChronographWatch/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-ChronographWatch/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-ChronographWatch/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-ChronographWatch/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-ChronographWatch/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
   "ClearCoatCarPaint": {
     "name": "ClearCoatCarPaint",
     "label": "Clear Coat Car Paint",
-    "description": "This model is a sphere using the glTF ClearCoat extension overtop a car paint base material.",
+    "description": "This model is a sphere using the glTF ClearCoat extension overtop a car paint base material. ",
     "tags": [
       "Extension",
       "Testing",
@@ -2066,943 +1798,10 @@
       }
     ]
   },
-  "CommercialRefrigerator": {
-    "name": "CommercialRefrigerator",
-    "label": "Commercial Refrigerator",
-    "description": "Commercial refrigerator with glass condensation, champagne bottles, and door animation.",
-    "tags": [
-      "Showcase",
-      "Extension",
-      "Clearcoat",
-      "Transmission",
-      "Animation"
-    ],
-    "variants": {
-      "glTF": "CommercialRefrigerator.gltf",
-      "glTF-Binary": "CommercialRefrigerator.glb"
-    },
-    "extensionsUsed": [
-      "KHR_materials_clearcoat",
-      "KHR_materials_transmission"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CommercialRefrigerator/glTF-Binary/CommercialRefrigerator.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-CommercialRefrigerator/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CommercialRefrigerator/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-CommercialRefrigerator/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CommercialRefrigerator/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-CommercialRefrigerator/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CommercialRefrigerator/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-CommercialRefrigerator/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CommercialRefrigerator/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-CommercialRefrigerator/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CommercialRefrigerator/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-CommercialRefrigerator/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CommercialRefrigerator/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-CommercialRefrigerator/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CommercialRefrigerator/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
-  "CompareAlphaCoverage": {
-    "name": "CompareAlphaCoverage",
-    "label": "Compare Alpha Coverage",
-    "description": "This model compares alpha coverage methods.",
-    "tags": [
-      "Testing",
-      "Core"
-    ],
-    "variants": {
-      "glTF": "CompareAlphaCoverage.gltf",
-      "glTF-Binary": "CompareAlphaCoverage.glb"
-    },
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareAlphaCoverage/glTF-Binary/CompareAlphaCoverage.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-CompareAlphaCoverage/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareAlphaCoverage/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-CompareAlphaCoverage/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareAlphaCoverage/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-CompareAlphaCoverage/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareAlphaCoverage/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-CompareAlphaCoverage/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareAlphaCoverage/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-CompareAlphaCoverage/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareAlphaCoverage/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-CompareAlphaCoverage/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareAlphaCoverage/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-CompareAlphaCoverage/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareAlphaCoverage/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
-  "CompareAmbientOcclusion": {
-    "name": "CompareAmbientOcclusion",
-    "label": "Compare Ambient Occlusion",
-    "description": "This model compares without occlusion versus with occlusion.",
-    "tags": [
-      "Testing",
-      "Core"
-    ],
-    "variants": {
-      "glTF": "CompareAmbientOcclusion.gltf",
-      "glTF-Binary": "CompareAmbientOcclusion.glb"
-    },
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareAmbientOcclusion/glTF-Binary/CompareAmbientOcclusion.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-CompareAmbientOcclusion/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareAmbientOcclusion/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-CompareAmbientOcclusion/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareAmbientOcclusion/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-CompareAmbientOcclusion/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareAmbientOcclusion/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-CompareAmbientOcclusion/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareAmbientOcclusion/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-CompareAmbientOcclusion/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareAmbientOcclusion/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-CompareAmbientOcclusion/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareAmbientOcclusion/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-CompareAmbientOcclusion/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareAmbientOcclusion/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
-  "CompareAnisotropy": {
-    "name": "CompareAnisotropy",
-    "label": "Compare Anisotropy",
-    "description": "This model compares without anisotropy vs. with anisotropy.",
-    "tags": [
-      "Extension",
-      "Testing",
-      "Texture Transform",
-      "Anisotropy"
-    ],
-    "variants": {
-      "glTF": "CompareAnisotropy.gltf",
-      "glTF-Binary": "CompareAnisotropy.glb"
-    },
-    "extensionsUsed": [
-      "KHR_texture_transform",
-      "KHR_materials_anisotropy"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareAnisotropy/glTF-Binary/CompareAnisotropy.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-CompareAnisotropy/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareAnisotropy/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-CompareAnisotropy/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareAnisotropy/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-CompareAnisotropy/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareAnisotropy/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-CompareAnisotropy/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareAnisotropy/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-CompareAnisotropy/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareAnisotropy/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-CompareAnisotropy/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareAnisotropy/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-CompareAnisotropy/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareAnisotropy/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
-  "CompareBaseColor": {
-    "name": "CompareBaseColor",
-    "label": "Compare Base Color",
-    "description": "This model compares base color methods.",
-    "tags": [
-      "Testing",
-      "Texture Transform"
-    ],
-    "variants": {
-      "glTF": "CompareBaseColor.gltf",
-      "glTF-Binary": "CompareBaseColor.glb"
-    },
-    "extensionsUsed": [
-      "KHR_texture_transform"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareBaseColor/glTF-Binary/CompareBaseColor.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-CompareBaseColor/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareBaseColor/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-CompareBaseColor/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareBaseColor/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-CompareBaseColor/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareBaseColor/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-CompareBaseColor/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareBaseColor/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-CompareBaseColor/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareBaseColor/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-CompareBaseColor/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareBaseColor/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-CompareBaseColor/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareBaseColor/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
-  "CompareClearcoat": {
-    "name": "CompareClearcoat",
-    "label": "Compare Clearcoat",
-    "description": "This model compares clearcoat methods.",
-    "tags": [
-      "Extension",
-      "Testing",
-      "Clearcoat",
-      "IOR"
-    ],
-    "variants": {
-      "glTF": "CompareClearcoat.gltf",
-      "glTF-Binary": "CompareClearcoat.glb"
-    },
-    "extensionsUsed": [
-      "KHR_materials_clearcoat",
-      "KHR_materials_ior"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareClearcoat/glTF-Binary/CompareClearcoat.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-CompareClearcoat/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareClearcoat/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-CompareClearcoat/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareClearcoat/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-CompareClearcoat/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareClearcoat/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-CompareClearcoat/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareClearcoat/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-CompareClearcoat/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareClearcoat/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-CompareClearcoat/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareClearcoat/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-CompareClearcoat/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareClearcoat/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
-  "CompareDispersion": {
-    "name": "CompareDispersion",
-    "label": "Compare Dispersion",
-    "description": "This model compares dispersion methods.",
-    "tags": [
-      "Extension",
-      "Testing",
-      "Transmission",
-      "Volume",
-      "IOR",
-      "Dispersion"
-    ],
-    "variants": {
-      "glTF": "CompareDispersion.gltf",
-      "glTF-Binary": "CompareDispersion.glb"
-    },
-    "extensionsUsed": [
-      "KHR_materials_transmission",
-      "KHR_materials_volume",
-      "KHR_materials_ior",
-      "KHR_materials_dispersion"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareDispersion/glTF-Binary/CompareDispersion.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-CompareDispersion/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareDispersion/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-CompareDispersion/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareDispersion/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-CompareDispersion/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareDispersion/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-CompareDispersion/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareDispersion/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-CompareDispersion/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareDispersion/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-CompareDispersion/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareDispersion/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-CompareDispersion/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareDispersion/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
-  "CompareEmissiveStrength": {
-    "name": "CompareEmissiveStrength",
-    "label": "Compare Emissive Strength",
-    "description": "This model compares emissive versus emissive plus emissive strength.",
-    "tags": [
-      "Extension",
-      "Testing",
-      "Emissive"
-    ],
-    "variants": {
-      "glTF": "CompareEmissiveStrength.gltf",
-      "glTF-Binary": "CompareEmissiveStrength.glb"
-    },
-    "extensionsUsed": [
-      "KHR_materials_emissive_strength"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareEmissiveStrength/glTF-Binary/CompareEmissiveStrength.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-CompareEmissiveStrength/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareEmissiveStrength/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-CompareEmissiveStrength/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareEmissiveStrength/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-CompareEmissiveStrength/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareEmissiveStrength/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-CompareEmissiveStrength/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareEmissiveStrength/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-CompareEmissiveStrength/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareEmissiveStrength/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-CompareEmissiveStrength/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareEmissiveStrength/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-CompareEmissiveStrength/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareEmissiveStrength/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
-  "CompareIOR": {
-    "name": "CompareIOR",
-    "label": "Compare IOR",
-    "description": "This model compares IOR methods.",
-    "tags": [
-      "Extension",
-      "Testing",
-      "Transmission",
-      "Volume",
-      "IOR"
-    ],
-    "variants": {
-      "glTF": "CompareIor.gltf",
-      "glTF-Binary": "CompareIor.glb"
-    },
-    "extensionsUsed": [
-      "KHR_materials_transmission",
-      "KHR_materials_volume",
-      "KHR_materials_ior"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareIor/glTF-Binary/CompareIor.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-CompareIor/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareIor/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-CompareIor/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareIor/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-CompareIor/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareIor/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-CompareIor/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareIor/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-CompareIor/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareIor/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-CompareIor/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareIor/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-CompareIor/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareIor/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
-  "CompareIridescence": {
-    "name": "CompareIridescence",
-    "label": "Compare Iridescence",
-    "description": "This model compares iridescence methods.",
-    "tags": [
-      "Extension",
-      "Testing",
-      "Iridescence"
-    ],
-    "variants": {
-      "glTF": "CompareIridescence.gltf",
-      "glTF-Binary": "CompareIridescence.glb"
-    },
-    "extensionsUsed": [
-      "KHR_materials_iridescence"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareIridescence/glTF-Binary/CompareIridescence.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-CompareIridescence/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareIridescence/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-CompareIridescence/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareIridescence/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-CompareIridescence/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareIridescence/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-CompareIridescence/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareIridescence/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-CompareIridescence/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareIridescence/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-CompareIridescence/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareIridescence/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-CompareIridescence/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareIridescence/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
-  "CompareMetallic": {
-    "name": "CompareMetallic",
-    "label": "Compare Metallic",
-    "description": "This model compares metallic methods.",
-    "tags": [
-      "Testing",
-      "Core"
-    ],
-    "variants": {
-      "glTF": "CompareMetallic.gltf",
-      "glTF-Binary": "CompareMetallic.glb"
-    },
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareMetallic/glTF-Binary/CompareMetallic.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-CompareMetallic/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareMetallic/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-CompareMetallic/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareMetallic/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-CompareMetallic/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareMetallic/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-CompareMetallic/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareMetallic/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-CompareMetallic/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareMetallic/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-CompareMetallic/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareMetallic/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-CompareMetallic/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareMetallic/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
-  "CompareNormal": {
-    "name": "CompareNormal",
-    "label": "Compare Normal",
-    "description": "This model compares normal methods.",
-    "tags": [
-      "Testing",
-      "Core"
-    ],
-    "variants": {
-      "glTF": "CompareNormal.gltf",
-      "glTF-Binary": "CompareNormal.glb"
-    },
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareNormal/glTF-Binary/CompareNormal.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-CompareNormal/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareNormal/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-CompareNormal/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareNormal/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-CompareNormal/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareNormal/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-CompareNormal/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareNormal/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-CompareNormal/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareNormal/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-CompareNormal/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareNormal/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-CompareNormal/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareNormal/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
-  "CompareRoughness": {
-    "name": "CompareRoughness",
-    "label": "Compare Roughness",
-    "description": "This model compares roughness methods.",
-    "tags": [
-      "Testing",
-      "Core"
-    ],
-    "variants": {
-      "glTF": "CompareRoughness.gltf",
-      "glTF-Binary": "CompareRoughness.glb"
-    },
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareRoughness/glTF-Binary/CompareRoughness.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-CompareRoughness/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareRoughness/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-CompareRoughness/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareRoughness/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-CompareRoughness/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareRoughness/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-CompareRoughness/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareRoughness/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-CompareRoughness/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareRoughness/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-CompareRoughness/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareRoughness/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-CompareRoughness/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareRoughness/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
-  "CompareSheen": {
-    "name": "CompareSheen",
-    "label": "Compare Sheen",
-    "description": "This model compares sheen methods.",
-    "tags": [
-      "Extension",
-      "Testing",
-      "Sheen"
-    ],
-    "variants": {
-      "glTF": "CompareSheen.gltf",
-      "glTF-Binary": "CompareSheen.glb"
-    },
-    "extensionsUsed": [
-      "KHR_materials_sheen"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareSheen/glTF-Binary/CompareSheen.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-CompareSheen/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareSheen/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-CompareSheen/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareSheen/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-CompareSheen/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareSheen/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-CompareSheen/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareSheen/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-CompareSheen/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareSheen/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-CompareSheen/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareSheen/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-CompareSheen/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareSheen/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
-  "CompareSpecular": {
-    "name": "CompareSpecular",
-    "label": "Compare Specular",
-    "description": "This model compares specular methods.",
-    "tags": [
-      "Extension",
-      "Testing",
-      "Specular"
-    ],
-    "variants": {
-      "glTF": "CompareSpecular.gltf",
-      "glTF-Binary": "CompareSpecular.glb"
-    },
-    "extensionsUsed": [
-      "KHR_materials_specular"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareSpecular/glTF-Binary/CompareSpecular.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-CompareSpecular/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareSpecular/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-CompareSpecular/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareSpecular/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-CompareSpecular/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareSpecular/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-CompareSpecular/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareSpecular/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-CompareSpecular/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareSpecular/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-CompareSpecular/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareSpecular/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-CompareSpecular/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareSpecular/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
-  "CompareTransmission": {
-    "name": "CompareTransmission",
-    "label": "Compare Transmission",
-    "description": "This model compares transmission methods.",
-    "tags": [
-      "Extension",
-      "Testing",
-      "Transmission"
-    ],
-    "variants": {
-      "glTF": "CompareTransmission.gltf",
-      "glTF-Binary": "CompareTransmission.glb"
-    },
-    "extensionsUsed": [
-      "KHR_materials_transmission"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareTransmission/glTF-Binary/CompareTransmission.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-CompareTransmission/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareTransmission/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-CompareTransmission/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareTransmission/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-CompareTransmission/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareTransmission/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-CompareTransmission/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareTransmission/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-CompareTransmission/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareTransmission/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-CompareTransmission/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareTransmission/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-CompareTransmission/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareTransmission/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
-  "CompareVolume": {
-    "name": "CompareVolume",
-    "label": "Compare Volume",
-    "description": "This model compares volume methods.",
-    "tags": [
-      "Extension",
-      "Testing",
-      "Transmission",
-      "Volume"
-    ],
-    "variants": {
-      "glTF": "CompareVolume.gltf",
-      "glTF-Binary": "CompareVolume.glb"
-    },
-    "extensionsUsed": [
-      "KHR_materials_transmission",
-      "KHR_materials_volume"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CompareVolume/glTF-Binary/CompareVolume.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-CompareVolume/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareVolume/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-CompareVolume/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareVolume/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-CompareVolume/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareVolume/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-CompareVolume/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareVolume/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-CompareVolume/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareVolume/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-CompareVolume/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareVolume/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-CompareVolume/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CompareVolume/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
   "Corset": {
     "name": "Corset",
     "label": "Corset",
-    "description": "A female fabric mannequin with a corset and a collar.",
+    "description": " ",
     "tags": [
       "Testing",
       "Draco"
@@ -3120,58 +1919,6 @@
       }
     ]
   },
-  "CubeVisibility": {
-    "name": "CubeVisibility",
-    "label": "CubeVisibility",
-    "description": "This model demonstrates the `KHR_node_visibility` extension and its interaction with `KHR_animation_pointer`.",
-    "tags": [
-      "Testing",
-      "Animation Pointer",
-      "Node Visibility",
-      "Animation"
-    ],
-    "variants": {
-      "glTF": "CubeVisibility.gltf",
-      "glTF-Binary": "CubeVisibility.glb"
-    },
-    "extensionsUsed": [
-      "KHR_animation_pointer",
-      "KHR_node_visibility"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CubeVisibility/glTF-Binary/CubeVisibility.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-CubeVisibility/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CubeVisibility/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-CubeVisibility/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CubeVisibility/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-CubeVisibility/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CubeVisibility/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-CubeVisibility/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CubeVisibility/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-CubeVisibility/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CubeVisibility/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-CubeVisibility/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-CubeVisibility/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
   "DamagedHelmet": {
     "name": "DamagedHelmet",
     "label": "Damaged Helmet",
@@ -3182,9 +1929,9 @@
       "Core"
     ],
     "variants": {
+      "glTF-Embedded": "DamagedHelmet.gltf",
       "glTF": "DamagedHelmet.gltf",
-      "glTF-Binary": "DamagedHelmet.glb",
-      "glTF-Embedded": "DamagedHelmet.gltf"
+      "glTF-Binary": "DamagedHelmet.glb"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DamagedHelmet/glTF-Binary/DamagedHelmet.glb",
     "images": [
@@ -3237,21 +1984,18 @@
   },
   "DiffuseTransmissionPlant": {
     "name": "DiffuseTransmissionPlant",
-    "label": "Diffuse Transmission Plant",
+    "label": "DiffuseTransmissionPlant",
     "description": "Potted plant asset using Diffuse Transmission extension.",
     "tags": [
       "Showcase",
       "Extension",
-      "Lights",
-      "Diffuse Transmission",
-      "Animation"
+      "Diffuse Transmission"
     ],
     "variants": {
       "glTF": "DiffuseTransmissionPlant.gltf",
       "glTF-Binary": "DiffuseTransmissionPlant.glb"
     },
     "extensionsUsed": [
-      "KHR_lights_punctual",
       "KHR_materials_diffuse_transmission"
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DiffuseTransmissionPlant/glTF-Binary/DiffuseTransmissionPlant.glb",
@@ -3295,7 +2039,7 @@
   },
   "DiffuseTransmissionTeacup": {
     "name": "DiffuseTransmissionTeacup",
-    "label": "Diffuse Transmission Teacup",
+    "label": "DiffuseTransmissionTeacup",
     "description": "DiffuseTransmissionTeacup model using Diffuse Transmission extension.",
     "tags": [
       "Showcase",
@@ -3345,64 +2089,6 @@
         "name": "Vulkan RTX Path Tracer",
         "image": "/images/goldens/khronos-DiffuseTransmissionTeacup/vk-gltf-renderer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-DiffuseTransmissionTeacup/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
-  "DiffuseTransmissionTest": {
-    "name": "DiffuseTransmissionTest",
-    "label": "DiffuseTransmissionTest",
-    "description": "Test model for KHR_materials_diffuse_transmission extension.",
-    "tags": [
-      "Extension",
-      "Diffuse Transmission",
-      "Unlit",
-      "Lights"
-    ],
-    "variants": {
-      "glTF": "DiffuseTransmissionTest.gltf",
-      "glTF-Binary": "DiffuseTransmissionTest.glb"
-    },
-    "extensionsUsed": [
-      "KHR_materials_diffuse_transmission",
-      "KHR_materials_unlit",
-      "KHR_lights_punctual"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DiffuseTransmissionTest/glTF-Binary/DiffuseTransmissionTest.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-DiffuseTransmissionTest/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-DiffuseTransmissionTest/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-DiffuseTransmissionTest/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-DiffuseTransmissionTest/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-DiffuseTransmissionTest/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-DiffuseTransmissionTest/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-DiffuseTransmissionTest/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-DiffuseTransmissionTest/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-DiffuseTransmissionTest/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-DiffuseTransmissionTest/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-DiffuseTransmissionTest/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-DiffuseTransmissionTest/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-DiffuseTransmissionTest/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-DiffuseTransmissionTest/vk-gltf-renderer-golden.thumb.webp"
       }
     ]
   },
@@ -3526,6 +2212,7 @@
     "label": "Dragon Attenuation",
     "description": "Dragon with background, using material variants, transmission, and volume.",
     "tags": [
+      "Showcase",
       "Extension",
       "Transmission",
       "Volume",
@@ -3533,9 +2220,7 @@
     ],
     "variants": {
       "glTF": "DragonAttenuation.gltf",
-      "glTF-Binary": "DragonAttenuation.glb",
-      "glTF-Meshopt": "DragonAttenuation.gltf",
-      "glTF-Meshopt-EXT": "DragonAttenuation.gltf"
+      "glTF-Binary": "DragonAttenuation.glb"
     },
     "extensionsUsed": [
       "KHR_materials_transmission",
@@ -3591,6 +2276,7 @@
     "label": "Dragon Dispersion",
     "description": "Dragon with background, using dispersion, transmission, and volume.",
     "tags": [
+      "Showcase",
       "Extension",
       "Transmission",
       "Volume",
@@ -3655,10 +2341,10 @@
       "Draco"
     ],
     "variants": {
+      "glTF-Embedded": "Duck.gltf",
       "glTF": "Duck.gltf",
       "glTF-Binary": "Duck.glb",
       "glTF-Draco": "Duck.gltf",
-      "glTF-Embedded": "Duck.gltf",
       "glTF-Quantized": "Duck.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Duck/glTF-Binary/Duck.glb",
@@ -3838,12 +2524,10 @@
     "tags": [
       "Showcase",
       "Testing",
-      "Transmission",
-      "KTX"
+      "Transmission"
     ],
     "variants": {
-      "glTF": "FlightHelmet.gltf",
-      "glTF-KTX-BasisU": "FlightHelmet.gltf"
+      "glTF": "FlightHelmet.gltf"
     },
     "extensionsUsed": [
       "KHR_materials_transmission"
@@ -4249,6 +2933,7 @@
     "label": "IORTestGrid",
     "description": "Grid of spheres over a checkered backdrop to test IOR rendering.",
     "tags": [
+      "Showcase",
       "Extension",
       "Transmission",
       "Volume",
@@ -4422,8 +3107,7 @@
       "Extension",
       "Transmission",
       "Volume",
-      "Iridescence",
-      "IOR"
+      "Iridescence"
     ],
     "variants": {
       "glTF": "IridescenceLamp.gltf",
@@ -4432,8 +3116,7 @@
     "extensionsUsed": [
       "KHR_materials_transmission",
       "KHR_materials_volume",
-      "KHR_materials_iridescence",
-      "KHR_materials_ior"
+      "KHR_materials_iridescence"
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/IridescenceLamp/glTF-Binary/IridescenceLamp.glb",
     "images": [
@@ -4789,60 +3472,6 @@
       }
     ]
   },
-  "LightVisibility": {
-    "name": "LightVisibility",
-    "label": "LightVisibility",
-    "description": "This model demonstrates the `KHR_node_visibility` extension and its interaction with `KHR_animation_pointer`.",
-    "tags": [
-      "Testing",
-      "Animation Pointer",
-      "Lights",
-      "Node Visibility",
-      "Animation"
-    ],
-    "variants": {
-      "glTF": "LightVisibility.gltf",
-      "glTF-Binary": "LightVisibility.glb"
-    },
-    "extensionsUsed": [
-      "KHR_animation_pointer",
-      "KHR_lights_punctual",
-      "KHR_node_visibility"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/LightVisibility/glTF-Binary/LightVisibility.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-LightVisibility/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-LightVisibility/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-LightVisibility/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-LightVisibility/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-LightVisibility/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-LightVisibility/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-LightVisibility/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-LightVisibility/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-LightVisibility/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-LightVisibility/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-LightVisibility/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-LightVisibility/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
   "MandarinOrange": {
     "name": "MandarinOrange",
     "label": "MandarinOrange",
@@ -4956,63 +3585,6 @@
       }
     ]
   },
-  "MeshoptCubeTest": {
-    "name": "MeshoptCubeTest",
-    "label": "Meshopt Cube Test",
-    "description": "This model tests the KHR_meshopt_compression extension.",
-    "tags": [
-      "Extension",
-      "Testing",
-      "Quantization",
-      "Meshopt",
-      "Animation"
-    ],
-    "variants": {
-      "glTF": "MeshoptCubeTest.gltf",
-      "glTF-Meshopt": "MeshoptCubeTest.gltf"
-    },
-    "extensionsUsed": [
-      "KHR_mesh_quantization",
-      "KHR_meshopt_compression"
-    ],
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-MeshoptCubeTest/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-MeshoptCubeTest/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-MeshoptCubeTest/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-MeshoptCubeTest/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-MeshoptCubeTest/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-MeshoptCubeTest/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-MeshoptCubeTest/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-MeshoptCubeTest/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-MeshoptCubeTest/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-MeshoptCubeTest/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-MeshoptCubeTest/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-MeshoptCubeTest/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-MeshoptCubeTest/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-MeshoptCubeTest/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
   "MeshPrimitiveModes": {
     "name": "MeshPrimitiveModes",
     "label": "Mesh Primitive Modes",
@@ -5022,8 +3594,8 @@
       "Core"
     ],
     "variants": {
-      "glTF": "MeshPrimitiveModes.gltf",
-      "glTF-Embedded": "MeshPrimitiveModes.gltf"
+      "glTF-Embedded": "MeshPrimitiveModes.gltf",
+      "glTF": "MeshPrimitiveModes.gltf"
     },
     "images": [
       {
@@ -5072,9 +3644,9 @@
       "Core"
     ],
     "variants": {
+      "glTF-Embedded": "MetalRoughSpheres.gltf",
       "glTF": "MetalRoughSpheres.gltf",
-      "glTF-Binary": "MetalRoughSpheres.glb",
-      "glTF-Embedded": "MetalRoughSpheres.gltf"
+      "glTF-Binary": "MetalRoughSpheres.glb"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MetalRoughSpheres/glTF-Binary/MetalRoughSpheres.glb",
     "images": [
@@ -5365,14 +3937,14 @@
   "MultipleScenes": {
     "name": "MultipleScenes",
     "label": "Multiple Scenes",
-    "description": "A simple glTF asset with two scenes. Each scene consists of one node with one mesh.",
+    "description": "A simple glTF asset with two scenes. Each scene consists of one node with one mesh. ",
     "tags": [
       "Testing",
       "Core"
     ],
     "variants": {
-      "glTF": "MultipleScenes.gltf",
-      "glTF-Embedded": "MultipleScenes.gltf"
+      "glTF-Embedded": "MultipleScenes.gltf",
+      "glTF": "MultipleScenes.gltf"
     },
     "images": [
       {
@@ -5421,9 +3993,9 @@
       "Core"
     ],
     "variants": {
+      "glTF-Embedded": "MultiUVTest.gltf",
       "glTF": "MultiUVTest.gltf",
-      "glTF-Binary": "MultiUVTest.glb",
-      "glTF-Embedded": "MultiUVTest.gltf"
+      "glTF-Binary": "MultiUVTest.glb"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MultiUVTest/glTF-Binary/MultiUVTest.glb",
     "images": [
@@ -5517,114 +4089,6 @@
         "name": "Vulkan RTX Path Tracer",
         "image": "/images/goldens/khronos-NegativeScaleTest/vk-gltf-renderer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-NegativeScaleTest/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
-  "NodePerformanceTest": {
-    "name": "NodePerformanceTest",
-    "label": "NodePerformanceTest",
-    "description": "Node, mesh, primitive and texture count performance test",
-    "tags": [
-      "Testing",
-      "Lights"
-    ],
-    "variants": {
-      "glTF": "NodePerformanceTest.gltf",
-      "glTF-Binary": "NodePerformanceTest.glb"
-    },
-    "extensionsUsed": [
-      "KHR_lights_punctual"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/NodePerformanceTest/glTF-Binary/NodePerformanceTest.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-NodePerformanceTest/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-NodePerformanceTest/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-NodePerformanceTest/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-NodePerformanceTest/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-NodePerformanceTest/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-NodePerformanceTest/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-NodePerformanceTest/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-NodePerformanceTest/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-NodePerformanceTest/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-NodePerformanceTest/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-NodePerformanceTest/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-NodePerformanceTest/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-NodePerformanceTest/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-NodePerformanceTest/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
-  "NodeVisibilityTest": {
-    "name": "NodeVisibilityTest",
-    "label": "NodeVisibilityTest",
-    "description": "A test for the KHR_node_visibility extension",
-    "tags": [
-      "Testing",
-      "Node Visibility"
-    ],
-    "variants": {
-      "glTF": "NodeVisibilityTest.gltf",
-      "glTF-Binary": "NodeVisibilityTest.glb"
-    },
-    "extensionsUsed": [
-      "KHR_node_visibility"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/NodeVisibilityTest/glTF-Binary/NodeVisibilityTest.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-NodeVisibilityTest/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-NodeVisibilityTest/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-NodeVisibilityTest/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-NodeVisibilityTest/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-NodeVisibilityTest/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-NodeVisibilityTest/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-NodeVisibilityTest/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-NodeVisibilityTest/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-NodeVisibilityTest/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-NodeVisibilityTest/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-NodeVisibilityTest/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-NodeVisibilityTest/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-NodeVisibilityTest/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-NodeVisibilityTest/vk-gltf-renderer-golden.thumb.webp"
       }
     ]
   },
@@ -5749,9 +4213,9 @@
       "Core"
     ],
     "variants": {
+      "glTF-Embedded": "OrientationTest.gltf",
       "glTF": "OrientationTest.gltf",
-      "glTF-Binary": "OrientationTest.glb",
-      "glTF-Embedded": "OrientationTest.gltf"
+      "glTF-Binary": "OrientationTest.glb"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/OrientationTest/glTF-Binary/OrientationTest.glb",
     "images": [
@@ -5794,118 +4258,6 @@
         "name": "Chaos Group V-Ray",
         "image": "/images/goldens/khronos-OrientationTest/vray-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-OrientationTest/vray-golden.thumb.webp"
-      }
-    ]
-  },
-  "PlaysetLightTest": {
-    "name": "PlaysetLightTest",
-    "label": "PlaysetLightTest",
-    "description": "A 3D scene with IKEA assets",
-    "tags": [
-      "Lights",
-      "Emissive"
-    ],
-    "variants": {
-      "glTF": "PlaysetLightTest.gltf",
-      "glTF-Binary": "PlaysetLightTest.glb"
-    },
-    "extensionsUsed": [
-      "KHR_lights_punctual",
-      "KHR_materials_emissive_strength"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/PlaysetLightTest/glTF-Binary/PlaysetLightTest.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-PlaysetLightTest/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-PlaysetLightTest/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-PlaysetLightTest/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-PlaysetLightTest/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-PlaysetLightTest/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-PlaysetLightTest/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-PlaysetLightTest/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-PlaysetLightTest/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-PlaysetLightTest/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-PlaysetLightTest/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-PlaysetLightTest/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-PlaysetLightTest/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-PlaysetLightTest/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-PlaysetLightTest/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
-  "PointLightIntensityTest": {
-    "name": "PointLightIntensityTest",
-    "label": "Point Light Intensity Test",
-    "description": "This model tests KHR_lights_punctual intensity vs lamp color.",
-    "tags": [
-      "Extension",
-      "Testing",
-      "Lights",
-      "Unlit"
-    ],
-    "variants": {
-      "glTF": "PointLightIntensityTest.gltf",
-      "glTF-Binary": "PointLightIntensityTest.glb"
-    },
-    "extensionsUsed": [
-      "KHR_lights_punctual",
-      "KHR_materials_unlit"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/PointLightIntensityTest/glTF-Binary/PointLightIntensityTest.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-PointLightIntensityTest/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-PointLightIntensityTest/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-PointLightIntensityTest/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-PointLightIntensityTest/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-PointLightIntensityTest/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-PointLightIntensityTest/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-PointLightIntensityTest/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-PointLightIntensityTest/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-PointLightIntensityTest/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-PointLightIntensityTest/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-PointLightIntensityTest/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-PointLightIntensityTest/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-PointLightIntensityTest/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-PointLightIntensityTest/vk-gltf-renderer-golden.thumb.webp"
       }
     ]
   },
@@ -5961,72 +4313,6 @@
         "name": "Vulkan RTX Path Tracer",
         "image": "/images/goldens/khronos-PotOfCoals/vk-gltf-renderer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-PotOfCoals/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
-  "PotofCoalsAnimationPointer": {
-    "name": "PotofCoalsAnimationPointer",
-    "label": "Pot of Coals Animation Pointer",
-    "description": "Burnt copper pot with a clearcoat, containing emissive hot coals, and animated heat refraction.",
-    "tags": [
-      "Showcase",
-      "Extension",
-      "Animation Pointer",
-      "Clearcoat",
-      "Specular",
-      "Transmission",
-      "Volume",
-      "Texture Transform",
-      "Animation"
-    ],
-    "variants": {
-      "glTF": "PotOfCoalsAnimationPointer.gltf",
-      "glTF-Binary": "PotOfCoalsAnimationPointer.glb"
-    },
-    "extensionsUsed": [
-      "KHR_animation_pointer",
-      "KHR_materials_clearcoat",
-      "KHR_materials_specular",
-      "KHR_materials_transmission",
-      "KHR_materials_volume",
-      "KHR_texture_transform"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/PotOfCoalsAnimationPointer/glTF-Binary/PotOfCoalsAnimationPointer.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-PotOfCoalsAnimationPointer/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-PotOfCoalsAnimationPointer/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-PotOfCoalsAnimationPointer/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-PotOfCoalsAnimationPointer/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-PotOfCoalsAnimationPointer/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-PotOfCoalsAnimationPointer/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-PotOfCoalsAnimationPointer/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-PotOfCoalsAnimationPointer/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-PotOfCoalsAnimationPointer/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-PotOfCoalsAnimationPointer/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-PotOfCoalsAnimationPointer/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-PotOfCoalsAnimationPointer/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-PotOfCoalsAnimationPointer/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-PotOfCoalsAnimationPointer/vk-gltf-renderer-golden.thumb.webp"
       }
     ]
   },
@@ -6146,10 +4432,10 @@
       "Draco"
     ],
     "variants": {
+      "glTF-Embedded": "RiggedFigure.gltf",
       "glTF": "RiggedFigure.gltf",
       "glTF-Binary": "RiggedFigure.glb",
-      "glTF-Draco": "RiggedFigure.gltf",
-      "glTF-Embedded": "RiggedFigure.gltf"
+      "glTF-Draco": "RiggedFigure.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedFigure/glTF-Binary/RiggedFigure.glb",
     "images": [
@@ -6205,10 +4491,10 @@
       "Draco"
     ],
     "variants": {
+      "glTF-Embedded": "RiggedSimple.gltf",
       "glTF": "RiggedSimple.gltf",
       "glTF-Binary": "RiggedSimple.glb",
-      "glTF-Draco": "RiggedSimple.gltf",
-      "glTF-Embedded": "RiggedSimple.gltf"
+      "glTF-Draco": "RiggedSimple.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedSimple/glTF-Binary/RiggedSimple.glb",
     "images": [
@@ -6251,70 +4537,6 @@
         "name": "Chaos Group V-Ray",
         "image": "/images/goldens/khronos-RiggedSimple/vray-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-RiggedSimple/vray-golden.thumb.webp"
-      }
-    ]
-  },
-  "Skull": {
-    "name": "Skull",
-    "label": "Skull",
-    "description": "Human skull model with subsurface scattering.",
-    "tags": [
-      "Testing",
-      "XMP JSON LD",
-      "Diffuse Transmission",
-      "Volume",
-      "Dispersion",
-      "Volume Scatter",
-      "IOR"
-    ],
-    "variants": {
-      "glTF": "ScatteringSkull.gltf",
-      "glTF-Binary": "ScatteringSkull.glb"
-    },
-    "extensionsUsed": [
-      "KHR_xmp_json_ld",
-      "KHR_materials_diffuse_transmission",
-      "KHR_materials_volume",
-      "KHR_materials_dispersion",
-      "KHR_materials_volume_scatter",
-      "KHR_materials_ior"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ScatteringSkull/glTF-Binary/ScatteringSkull.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-ScatteringSkull/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-ScatteringSkull/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-ScatteringSkull/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-ScatteringSkull/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-ScatteringSkull/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-ScatteringSkull/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-ScatteringSkull/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-ScatteringSkull/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-ScatteringSkull/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-ScatteringSkull/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-ScatteringSkull/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-ScatteringSkull/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-ScatteringSkull/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-ScatteringSkull/vk-gltf-renderer-golden.thumb.webp"
       }
     ]
   },
@@ -6379,7 +4601,7 @@
   },
   "SheenChair": {
     "name": "SheenChair",
-    "label": "Sheen Chair",
+    "label": "SheenChair",
     "description": "Chair using material variants and sheen.",
     "tags": [
       "Showcase",
@@ -6511,6 +4733,7 @@
     "label": "SheenTestGrid",
     "description": "Grid of spheres over a checkered backdrop to test Sheen rendering.",
     "tags": [
+      "Showcase",
       "Extension",
       "Sheen"
     ],
@@ -6557,62 +4780,6 @@
         "name": "Vulkan RTX Path Tracer",
         "image": "/images/goldens/khronos-SheenTestGrid/vk-gltf-renderer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-SheenTestGrid/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
-  "SheenWoodLeatherSofa": {
-    "name": "SheenWoodLeatherSofa",
-    "label": "Sheen Wood Leather Sofa",
-    "description": "Sofa asset using sheen, specular, and high-quality tiling textures.",
-    "tags": [
-      "Showcase",
-      "Extension",
-      "Specular",
-      "Sheen",
-      "Texture Transform",
-      "WebP"
-    ],
-    "variants": {
-      "glTF": "SheenWoodLeatherSofa.gltf",
-      "glTF-Binary": "SheenWoodLeatherSofa.glb"
-    },
-    "extensionsUsed": [
-      "KHR_materials_specular",
-      "KHR_materials_sheen",
-      "KHR_texture_transform",
-      "EXT_texture_webp"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SheenWoodLeatherSofa/glTF-Binary/SheenWoodLeatherSofa.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-SheenWoodLeatherSofa/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-SheenWoodLeatherSofa/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-SheenWoodLeatherSofa/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-SheenWoodLeatherSofa/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-SheenWoodLeatherSofa/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-SheenWoodLeatherSofa/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-SheenWoodLeatherSofa/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-SheenWoodLeatherSofa/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-SheenWoodLeatherSofa/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-SheenWoodLeatherSofa/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-SheenWoodLeatherSofa/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-SheenWoodLeatherSofa/vk-gltf-renderer-golden.thumb.webp"
       }
     ]
   },
@@ -6680,8 +4847,8 @@
       "Core"
     ],
     "variants": {
-      "glTF": "SimpleMaterial.gltf",
-      "glTF-Embedded": "SimpleMaterial.gltf"
+      "glTF-Embedded": "SimpleMaterial.gltf",
+      "glTF": "SimpleMaterial.gltf"
     },
     "images": [
       {
@@ -6730,8 +4897,8 @@
       "Core"
     ],
     "variants": {
-      "glTF": "SimpleMeshes.gltf",
-      "glTF-Embedded": "SimpleMeshes.gltf"
+      "glTF-Embedded": "SimpleMeshes.gltf",
+      "glTF": "SimpleMeshes.gltf"
     },
     "images": [
       {
@@ -6787,8 +4954,8 @@
       "Core"
     ],
     "variants": {
-      "glTF": "SimpleMorph.gltf",
-      "glTF-Embedded": "SimpleMorph.gltf"
+      "glTF-Embedded": "SimpleMorph.gltf",
+      "glTF": "SimpleMorph.gltf"
     },
     "images": [
       {
@@ -6843,8 +5010,8 @@
       "Core"
     ],
     "variants": {
-      "glTF": "SimpleSkin.gltf",
-      "glTF-Embedded": "SimpleSkin.gltf"
+      "glTF-Embedded": "SimpleSkin.gltf",
+      "glTF": "SimpleSkin.gltf"
     },
     "images": [
       {
@@ -6898,8 +5065,8 @@
       "Core"
     ],
     "variants": {
-      "glTF": "SimpleSparseAccessor.gltf",
-      "glTF-Embedded": "SimpleSparseAccessor.gltf"
+      "glTF-Embedded": "SimpleSparseAccessor.gltf",
+      "glTF": "SimpleSparseAccessor.gltf"
     },
     "images": [
       {
@@ -6953,8 +5120,8 @@
       "Core"
     ],
     "variants": {
-      "glTF": "SimpleTexture.gltf",
-      "glTF-Embedded": "SimpleTexture.gltf"
+      "glTF-Embedded": "SimpleTexture.gltf",
+      "glTF": "SimpleTexture.gltf"
     },
     "images": [
       {
@@ -7056,7 +5223,7 @@
   },
   "SpecularSilkPouf": {
     "name": "SpecularSilkPouf",
-    "label": "Specular Silk Pouf",
+    "label": "SpecularSilkPouf",
     "description": "Wayfair SpecularSilkPouf model using sheen and specular extensions.",
     "tags": [
       "Showcase",
@@ -7221,8 +5388,8 @@
   },
   "StainedGlassLamp": {
     "name": "StainedGlassLamp",
-    "label": "Stained Glass Lamp",
-    "description": "A real product, a Tiffany-style stained glass table lamp sold on the Wayfair website.",
+    "label": "StainedGlassLamp",
+    "description": " ",
     "tags": [
       "Showcase",
       "Extension",
@@ -7234,8 +5401,8 @@
       "KTX"
     ],
     "variants": {
-      "glTF": "StainedGlassLamp.gltf",
       "glTF-JPG-PNG": "StainedGlassLamp.gltf",
+      "glTF": "StainedGlassLamp.gltf",
       "glTF-KTX-BasisU": "StainedGlassLamp.gltf"
     },
     "extensionsUsed": [
@@ -7280,69 +5447,6 @@
         "name": "Vulkan RTX Path Tracer",
         "image": "/images/goldens/khronos-StainedGlassLamp/vk-gltf-renderer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-StainedGlassLamp/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
-  "SunglassesKhronos": {
-    "name": "SunglassesKhronos",
-    "label": "Sunglasses Khronos",
-    "description": "Sunglasses with Khronos logos and iridescent lenses",
-    "tags": [
-      "Showcase",
-      "Extension",
-      "Transmission",
-      "Volume",
-      "IOR",
-      "Iridescence",
-      "Draco"
-    ],
-    "variants": {
-      "glTF": "SunglassesKhronos.gltf",
-      "glTF-Binary": "SunglassesKhronos.glb",
-      "glTF-Draco": "SunglassesKhronos.gltf"
-    },
-    "extensionsUsed": [
-      "KHR_materials_transmission",
-      "KHR_materials_volume",
-      "KHR_materials_ior",
-      "KHR_materials_iridescence"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SunglassesKhronos/glTF-Binary/SunglassesKhronos.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-SunglassesKhronos/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-SunglassesKhronos/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-SunglassesKhronos/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-SunglassesKhronos/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-SunglassesKhronos/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-SunglassesKhronos/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-SunglassesKhronos/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-SunglassesKhronos/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-SunglassesKhronos/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-SunglassesKhronos/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-SunglassesKhronos/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-SunglassesKhronos/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-SunglassesKhronos/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-SunglassesKhronos/vk-gltf-renderer-golden.thumb.webp"
       }
     ]
   },
@@ -7414,9 +5518,9 @@
       "Core"
     ],
     "variants": {
+      "glTF-Embedded": "TextureCoordinateTest.gltf",
       "glTF": "TextureCoordinateTest.gltf",
-      "glTF-Binary": "TextureCoordinateTest.glb",
-      "glTF-Embedded": "TextureCoordinateTest.gltf"
+      "glTF-Binary": "TextureCoordinateTest.glb"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TextureCoordinateTest/glTF-Binary/TextureCoordinateTest.glb",
     "images": [
@@ -7583,9 +5687,9 @@
       "Core"
     ],
     "variants": {
+      "glTF-Embedded": "TextureSettingsTest.gltf",
       "glTF": "TextureSettingsTest.gltf",
-      "glTF-Binary": "TextureSettingsTest.glb",
-      "glTF-Embedded": "TextureSettingsTest.gltf"
+      "glTF-Binary": "TextureSettingsTest.glb"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TextureSettingsTest/glTF-Binary/TextureSettingsTest.glb",
     "images": [
@@ -7638,18 +5742,18 @@
     "tags": [
       "Testing",
       "Extension",
-      "Clearcoat",
+      "Texture Transform",
       "Unlit",
-      "Texture Transform"
+      "Clearcoat"
     ],
     "variants": {
       "glTF": "TextureTransformMultiTest.gltf",
       "glTF-Binary": "TextureTransformMultiTest.glb"
     },
     "extensionsUsed": [
-      "KHR_materials_clearcoat",
+      "KHR_texture_transform",
       "KHR_materials_unlit",
-      "KHR_texture_transform"
+      "KHR_materials_clearcoat"
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TextureTransformMultiTest/glTF-Binary/TextureTransformMultiTest.glb",
     "images": [
@@ -7819,123 +5923,6 @@
       }
     ]
   },
-  "TrafficCone": {
-    "name": "TrafficCone",
-    "label": "Traffic Cone",
-    "description": "A traffic cone demonstrating the KHR_materials_retroreflection extension, which simulates materials that reflect light back toward its source.",
-    "tags": [
-      "Extension",
-      "Specular",
-      "Retroreflection",
-      "Lights",
-      "Unlit"
-    ],
-    "variants": {
-      "glTF": "TrafficCone.gltf",
-      "glTF-Binary": "TrafficCone.glb"
-    },
-    "extensionsUsed": [
-      "KHR_materials_specular",
-      "KHR_materials_retroreflection",
-      "KHR_lights_punctual",
-      "KHR_materials_unlit"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TrafficCone/glTF-Binary/TrafficCone.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-TrafficCone/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-TrafficCone/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-TrafficCone/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-TrafficCone/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-TrafficCone/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-TrafficCone/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-TrafficCone/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-TrafficCone/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-TrafficCone/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-TrafficCone/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-TrafficCone/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-TrafficCone/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-TrafficCone/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-TrafficCone/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
-  "TransmissionOrderTest": {
-    "name": "TransmissionOrderTest",
-    "label": "Transmission Order Test",
-    "description": "This model tests the interactions between blend modes and transmission.",
-    "tags": [
-      "Extension",
-      "Testing",
-      "Transmission",
-      "Volume"
-    ],
-    "variants": {
-      "glTF": "TransmissionOrderTest.gltf",
-      "glTF-Binary": "TransmissionOrderTest.glb"
-    },
-    "extensionsUsed": [
-      "KHR_materials_transmission",
-      "KHR_materials_volume"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TransmissionOrderTest/glTF-Binary/TransmissionOrderTest.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-TransmissionOrderTest/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-TransmissionOrderTest/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-TransmissionOrderTest/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-TransmissionOrderTest/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-TransmissionOrderTest/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-TransmissionOrderTest/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-TransmissionOrderTest/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-TransmissionOrderTest/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-TransmissionOrderTest/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-TransmissionOrderTest/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-TransmissionOrderTest/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-TransmissionOrderTest/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-TransmissionOrderTest/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-TransmissionOrderTest/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
   "TransmissionRoughnessTest": {
     "name": "TransmissionRoughnessTest",
     "label": "Transmission Roughness Test",
@@ -8067,6 +6054,7 @@
     "label": "TransmissionThinwallTestGrid",
     "description": "Grid of spheres over a checkered backdrop to test Thinfilm and IOR rendering.",
     "tags": [
+      "Showcase",
       "Extension",
       "Transmission",
       "Volume",
@@ -8129,8 +6117,8 @@
       "Core"
     ],
     "variants": {
-      "glTF": "Triangle.gltf",
-      "glTF-Embedded": "Triangle.gltf"
+      "glTF-Embedded": "Triangle.gltf",
+      "glTF": "Triangle.gltf"
     },
     "images": [
       {
@@ -8184,8 +6172,8 @@
       "Core"
     ],
     "variants": {
-      "glTF": "TriangleWithoutIndices.gltf",
-      "glTF-Embedded": "TriangleWithoutIndices.gltf"
+      "glTF-Embedded": "TriangleWithoutIndices.gltf",
+      "glTF": "TriangleWithoutIndices.gltf"
     },
     "images": [
       {
@@ -8384,63 +6372,6 @@
       }
     ]
   },
-  "USDShaderBallforglTF": {
-    "name": "USDShaderBallforglTF",
-    "label": "USD Shader Ball for glTF",
-    "description": "USD Shader Ball converted for glTF",
-    "tags": [
-      "Showcase",
-      "Extension",
-      "Transmission",
-      "Volume"
-    ],
-    "variants": {
-      "glTF": "USDShaderBallForGltf.gltf",
-      "glTF-Binary": "USDShaderBallForGltf.glb"
-    },
-    "extensionsUsed": [
-      "KHR_materials_transmission",
-      "KHR_materials_volume"
-    ],
-    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/USDShaderBallForGltf/glTF-Binary/USDShaderBallForGltf.glb",
-    "images": [
-      {
-        "name": "babylon.js",
-        "image": "/images/goldens/khronos-USDShaderBallForGltf/babylon-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-USDShaderBallForGltf/babylon-golden.thumb.webp"
-      },
-      {
-        "name": "Blender Cycles",
-        "image": "/images/goldens/khronos-USDShaderBallForGltf/blender-cycles-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-USDShaderBallForGltf/blender-cycles-golden.thumb.webp"
-      },
-      {
-        "name": "filament.js",
-        "image": "/images/goldens/khronos-USDShaderBallForGltf/filament-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-USDShaderBallForGltf/filament-golden.thumb.webp"
-      },
-      {
-        "name": "gltf-sample-viewer",
-        "image": "/images/goldens/khronos-USDShaderBallForGltf/gltf-sample-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-USDShaderBallForGltf/gltf-sample-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three.js",
-        "image": "/images/goldens/khronos-USDShaderBallForGltf/model-viewer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-USDShaderBallForGltf/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "three-gpu-pathtracer",
-        "image": "/images/goldens/khronos-USDShaderBallForGltf/three-gpu-pathtracer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-USDShaderBallForGltf/three-gpu-pathtracer-golden.thumb.webp"
-      },
-      {
-        "name": "Vulkan RTX Path Tracer",
-        "image": "/images/goldens/khronos-USDShaderBallForGltf/vk-gltf-renderer-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-USDShaderBallForGltf/vk-gltf-renderer-golden.thumb.webp"
-      }
-    ]
-  },
   "VertexColorTest": {
     "name": "VertexColorTest",
     "label": "Vertex Color Test",
@@ -8450,9 +6381,9 @@
       "Core"
     ],
     "variants": {
+      "glTF-Embedded": "VertexColorTest.gltf",
       "glTF": "VertexColorTest.gltf",
-      "glTF-Binary": "VertexColorTest.glb",
-      "glTF-Embedded": "VertexColorTest.gltf"
+      "glTF-Binary": "VertexColorTest.glb"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/VertexColorTest/glTF-Binary/VertexColorTest.glb",
     "images": [
@@ -8508,10 +6439,10 @@
       "Draco"
     ],
     "variants": {
+      "glTF-Embedded": "VirtualCity.gltf",
       "glTF": "VirtualCity.gltf",
       "glTF-Binary": "VirtualCity.glb",
-      "glTF-Draco": "VirtualCity.gltf",
-      "glTF-Embedded": "VirtualCity.gltf"
+      "glTF-Draco": "VirtualCity.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/VirtualCity/glTF-Binary/VirtualCity.glb",
     "images": [
