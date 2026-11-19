@@ -213,7 +213,6 @@ const SampleViewer = React.forwardRef<ViewerRef, SampleViewerProps>(({ src, styl
           lut_charlie_file: `${basePath}/assets/lut_charlie.png`,
           lut_sheen_E_file: `${basePath}/assets/lut_sheen_E.png`
         }).then((environment: typeof state.environment) => {
-          console.log("environment", environment);
           state.environment = environment;
           state.renderingParameters.blurEnvironmentMap = false;
           state.renderingParameters.environmentRotation = 0;
