@@ -3,7 +3,7 @@
 import React from 'react'
 import { mat4, quat, vec3 } from "gl-matrix";
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
-import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader.js';
+import { HDRLoader } from 'three/examples/jsm/loaders/HDRLoader.js';
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { WebGLPathTracer } from 'three-gpu-pathtracer';
@@ -51,7 +51,7 @@ const ThreeGPUPathTracerViewer = React.forwardRef<ViewerRef, ThreeGPUPathTracerV
         camera.matrixWorld.copy(camera.matrix);
 
         const envUrl = "../env_maps/chinese_garden_1k.hdr";
-        const env_map = await new RGBELoader().loadAsync( envUrl );
+        const env_map = await new HDRLoader().loadAsync( envUrl );
         env_map.mapping = THREE.EquirectangularReflectionMapping;
 
         scene.background = env_map;

@@ -17,14 +17,6 @@ const ImageComparison2 = ({imgSrc1, imgSrc2, sliderPosition, setSliderPosition}:
     const containerRef = React.useRef<HTMLDivElement>(null);
     const containerRootRef = React.useRef<HTMLDivElement>(null);
 
-
-    const containerCurrent = imageRef && imageRef.current;
-
-    const elementLeft = (containerCurrent && containerCurrent.offsetLeft) || 0;
-    const elementWidth = (containerCurrent && containerCurrent.clientWidth) || 1;
-    const elementTop = (containerCurrent && containerCurrent.offsetTop) || 0;
-    const elementHeight = (containerCurrent && containerCurrent.clientHeight) || 1;
-  
     const handleDrag = (clientX : number) => {
       const container = imageRef.current;
       if (!container) return;
@@ -91,8 +83,6 @@ const ImageComparison2 = ({imgSrc1, imgSrc2, sliderPosition, setSliderPosition}:
         //height = maxHeight;
         //width = maxHeight * aspectRatio;
       }
-
-      console.log("width, height", width, height);
 
       containerRef.current.style.width = width+"px";
       containerRef.current.style.height = height+"px";
@@ -182,7 +172,6 @@ const ImageComparison2 = ({imgSrc1, imgSrc2, sliderPosition, setSliderPosition}:
               position: "absolute",
               top: 0,
               left: `${sliderPosition}%`,
-              //left: containerCurrent? `${elementLeft + sliderPosition/100 * elementWidth}px` : "50%",
               transform: "translateX(-50%)",
               width: "3px",
               height: "100%",
@@ -196,9 +185,7 @@ const ImageComparison2 = ({imgSrc1, imgSrc2, sliderPosition, setSliderPosition}:
             sx={{
               position: "absolute",
               top: "50%",
-              //top: containerCurrent? `${elementTop + 0.5 * elementHeight}px` : "50%",
               left: `${sliderPosition}%`,
-              //left: containerCurrent? `${elementLeft + sliderPosition/100 * elementWidth}px` : "50%",
               transform: "translate(-50%, -50%)",
               width: "20px",
               height: "20px",
