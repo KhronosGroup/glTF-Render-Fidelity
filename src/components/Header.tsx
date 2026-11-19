@@ -165,7 +165,7 @@ export default function Header() {
                             height={75}
                                     
                             src={encodeURI(`${basePath}/logos/gltf/glTF_Nov17/glTF for web/glTF RGB/glTF_RGB_June16.svg`)}
-                            alt={"3D Commerce"}  
+                            alt={"glTF"}
                             loading="lazy" />
                     </Box>
                     <Box sx={{
@@ -188,7 +188,7 @@ export default function Header() {
                             height={75}
                                     
                             src={encodeURI(`${basePath}/logos/3dcommerce/3DCommerce_Aug20/3DCommerce for web/3DCommerce RGB/3DCommerce_RGB_Aug20.svg`)}
-                            alt={"glTF"}  
+                            alt={"3D Commerce"}
                             loading="lazy" />
                         
                     </Box>
