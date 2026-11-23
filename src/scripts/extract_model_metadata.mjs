@@ -48,7 +48,7 @@ const official_engine_names = new Map([
   ["blender-cycles","Blender Cycles"],
   ["vk-gltf-renderer", "Vulkan RTX Path Tracer"],
   ["phasma-viewer", "Phasma-Viewer"],
-  ["rhodonite", "rhodonite"]
+  ["rhodonite", "RhodoniteTS"]
 ]);
 
 const keep_dict = {
