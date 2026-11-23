@@ -21,12 +21,12 @@
     "@emotion/styled": "^11.14.1",
     "@google/model-viewer": "^4.4.0",
     "@khronosgroup/gltf-viewer": "./glTF-Sample-Renderer",
-    "@mui/icons-material": "^9.5.0",
-    "@mui/material": "^9.5.0",
-    "@mui/material-nextjs": "^9.5.0",
+    "@mui/icons-material": "^9.6.0",
+    "@mui/material": "^9.6.0",
+    "@mui/material-nextjs": "^9.6.0",
     "fuse.js": "^7.5.0",
     "gl-matrix": "^3.4.4",
-    "next": "^16.4.5",
+    "next": "^16.4.6",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "three": "^0.183.0",
@@ -37,15 +37,10 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@types/three": "^0.183.0",
-    "eslint": "^10.14.0",
-    "eslint-config-next": "^16.4.5",
+    "eslint": "^10.15.0",
+    "eslint-config-next": "^16.4.6",
     "marked": "^18.2.1",
     "sharp": "^0.35.5",
     "typescript": "^7.0.2"
-  },
-  "overrides": {
-    "typescript-eslint": {
-      "minimatch": "^11.0.1"
-    }
   }
 }
