@@ -177,7 +177,7 @@ const SampleViewer = React.forwardRef<ViewerRef, SampleViewerProps>(({ src, styl
     React.useEffect(() => {
       const isDracoLoaded = !!document.querySelector('script[src="https://www.gstatic.com/draco/v1/decoders/draco_decoder_gltf.js"]')
       setDracoLoaded(isDracoLoaded);
-      
+
       return () => {};
     }, [])
 
