@@ -1,7 +1,6 @@
 [submodule "glTF-Render-Fidelity-Generator"]
 	path = glTF-Render-Fidelity-Generator
 	url = https://github.com/KhronosGroup/glTF-Render-Fidelity-Generator.git
-	branch = dev
 [submodule "glTF-Sample-Renderer"]
 	path = glTF-Sample-Renderer
 	url = https://github.com/KhronosGroup/glTF-Sample-Renderer.git
