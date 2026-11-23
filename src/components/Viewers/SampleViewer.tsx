@@ -202,7 +202,7 @@ const SampleViewer = React.forwardRef<ViewerRef, SampleViewerProps>(({ src, styl
         canvas.width = canvas.clientWidth;
         canvas.height = canvas.clientHeight;
 
-        const resourceLoader = gltfView.createResourceLoader();
+        const resourceLoader = gltfView.createResourceLoader(undefined, undefined, `${basePath}/libs/`);
         state.gltf = await resourceLoader.loadGltf(src ? src : "");
 
         resourceLoader.loadEnvironment(`${basePath}/assets/chinese_garden_1k.hdr`, {
