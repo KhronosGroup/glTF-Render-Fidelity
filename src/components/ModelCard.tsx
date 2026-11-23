@@ -41,7 +41,6 @@ export default function ModelCard({name, title, thumbnail, tags, selectTagCallba
           <Image
             width={512}
             height={512}
-            quality={90}
             /* Added color: '' because of https://github.com/vercel/next.js/issues/45184 */
             style={{ color: '', aspectRatio: 1, width: '100%', height: "100%", maxWidth: "100%", textAlign: "center", cursor: 'pointer', objectFit: 'contain', borderRadius: '16px'}}
             src={`${basePath}${thumbnail}`}

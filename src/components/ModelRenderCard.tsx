@@ -45,7 +45,6 @@ export default function ModelRenderCard({name, thumbnail, marked, onSelection}: 
                 <Image
                 width={512}
                 height={512}
-                quality={90}
                 style={{ 
                     width: "100%",
                     height: "auto",
