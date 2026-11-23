@@ -433,7 +433,7 @@ const Mesh3DComparisonSlider = ({imgSrc1, imgSrc2, rtEngine1, rtEngine2, src, sl
       document.addEventListener("mousemove", onMouseMove);
       document.addEventListener("mouseup", () => {
         document.removeEventListener("mousemove", onMouseMove);
-      });
+      }, { once: true });
     };
     const handleTouchStart = (event: React.TouchEvent | TouchEvent) => {
         event.preventDefault();
@@ -445,7 +445,7 @@ const Mesh3DComparisonSlider = ({imgSrc1, imgSrc2, rtEngine1, rtEngine2, src, sl
         document.addEventListener("touchmove", onTouchMove);
         document.addEventListener("touchend", () => {
           document.removeEventListener("touchmove", onTouchMove);
-        });
+        }, { once: true });
     };
 
     return (

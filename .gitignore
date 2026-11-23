@@ -46,3 +46,5 @@ next-env.d.ts
 
 /scripts/dist/
 /scripts/libs/
+
+/public/images/
