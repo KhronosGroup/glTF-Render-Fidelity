@@ -172,20 +172,17 @@ const SampleViewer = React.forwardRef<ViewerRef, SampleViewerProps>(({ src, styl
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const cameraRef = React.useRef<any>(null)
 
-    const [ktxLoaded, setKTXLoaded] = React.useState(false);
     const [dracoLoaded, setDracoLoaded] = React.useState(false);
 
     React.useEffect(() => {
       const isDracoLoaded = !!document.querySelector('script[src="https://www.gstatic.com/draco/v1/decoders/draco_decoder_gltf.js"]')
-      const isKTXLoaded = !!document.querySelector(`script[src="${basePath}/libs/libktx.js"]`)
-      setKTXLoaded(isKTXLoaded);
       setDracoLoaded(isDracoLoaded);
- 
+      
       return () => {};
     }, [])
 
     React.useEffect(() => {
-      if((ktxLoaded && dracoLoaded) == false)
+      if(!dracoLoaded)
         return;
 
       if(canvasRef == null || canvasRef.current == null) { return; }
@@ -275,7 +272,7 @@ const SampleViewer = React.forwardRef<ViewerRef, SampleViewerProps>(({ src, styl
         finishedLoading();
       };
       load();
-    }, [src, ktxLoaded, dracoLoaded])
+    }, [src, dracoLoaded])
 
     React.useImperativeHandle(ref, () => ({
       getCanvas: () => canvasRef.current,
@@ -314,7 +311,6 @@ const SampleViewer = React.forwardRef<ViewerRef, SampleViewerProps>(({ src, styl
     return (
       <>
         <Script src="https://www.gstatic.com/draco/v1/decoders/draco_decoder_gltf.js" strategy="lazyOnload" onLoad={() => { console.log("LOADEDDDDDDDD Draco"); setDracoLoaded(true);}} />
-        <Script src={`${basePath}/libs/libktx.js`} strategy="lazyOnload" onLoad={() => { console.log("LOADEDDDDDDDD KTX"); setKTXLoaded(true); }}/>
         <canvas
           ref={canvasRef}
           style={style}

@@ -94,7 +94,7 @@ export default function ModelPage({name, label, renderViews, downloadUrl, descri
         <Snackbar
           open={shareSnackbarOpen}
           onClose={() => {setShareSnackbarOpen(false)}}
-          message="Model Copied"
+          message="Link copied"
           key={"Share"}
           autoHideDuration={1200}
         />
@@ -113,7 +113,7 @@ export default function ModelPage({name, label, renderViews, downloadUrl, descri
         alignItems: 'center',
         mt: 1
       }}>
-      <Link onClick={onShare} href="#" color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>Share <ShareIcon fontSize='small' sx={{color: 'grey.100', ml: 0.5}}/></Link>
+      <Link onClick={onShare} href="#" color="inherit" underline='hover' sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>Share <ShareIcon fontSize='small' sx={{color: 'grey.100', ml: 0.5}}/></Link>
     </Box>
   </Box>;
 
