@@ -48,6 +48,16 @@
         "thumbnail": "/thumbnails/goldens/khronos-ABeautifulGame/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-ABeautifulGame/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ABeautifulGame/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-ABeautifulGame/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ABeautifulGame/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "Dassault STELLAR",
         "image": "/images/goldens/khronos-ABeautifulGame/stellar-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-ABeautifulGame/stellar-golden.thumb.webp"
@@ -102,6 +112,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-AlphaBlendModeTest/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-AlphaBlendModeTest/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-AlphaBlendModeTest/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-AlphaBlendModeTest/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-AlphaBlendModeTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-AlphaBlendModeTest/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -165,6 +185,16 @@
         "thumbnail": "/thumbnails/goldens/khronos-AnimatedColorsCube/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-AnimatedColorsCube/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-AnimatedColorsCube/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-AnimatedColorsCube/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-AnimatedColorsCube/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-AnimatedColorsCube/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-AnimatedColorsCube/three-gpu-pathtracer-golden.thumb.webp"
@@ -213,6 +243,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-AnimatedCube/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-AnimatedCube/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-AnimatedCube/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-AnimatedCube/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-AnimatedCube/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-AnimatedCube/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -273,6 +313,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-AnimatedMorphCube/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-AnimatedMorphCube/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-AnimatedMorphCube/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-AnimatedMorphCube/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-AnimatedMorphCube/three-gpu-pathtracer-golden.thumb.webp"
@@ -327,6 +372,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-AnimatedTriangle/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-AnimatedTriangle/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-AnimatedTriangle/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-AnimatedTriangle/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-AnimatedTriangle/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-AnimatedTriangle/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -407,6 +462,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-AnimationPointerUVs/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-AnimationPointerUVs/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-AnimationPointerUVs/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-AnimationPointerUVs/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-AnimationPointerUVs/three-gpu-pathtracer-golden.thumb.webp"
@@ -472,6 +532,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-AnisotropyBarnLamp/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-AnisotropyBarnLamp/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-AnisotropyBarnLamp/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-AnisotropyBarnLamp/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-AnisotropyBarnLamp/three-gpu-pathtracer-golden.thumb.webp"
@@ -525,6 +590,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-AnisotropyDiscTest/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-AnisotropyDiscTest/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-AnisotropyDiscTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-AnisotropyDiscTest/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -582,6 +652,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-AnisotropyRotationTest/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-AnisotropyRotationTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-AnisotropyRotationTest/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-AnisotropyRotationTest/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-AnisotropyRotationTest/three-gpu-pathtracer-golden.thumb.webp"
@@ -637,6 +712,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-AnisotropyStrengthTest/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-AnisotropyStrengthTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-AnisotropyStrengthTest/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-AnisotropyStrengthTest/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-AnisotropyStrengthTest/three-gpu-pathtracer-golden.thumb.webp"
@@ -686,6 +766,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-AntiqueCamera/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-AntiqueCamera/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-AntiqueCamera/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-AntiqueCamera/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-AntiqueCamera/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-AntiqueCamera/rhodonite-golden.thumb.webp"
       },
       {
         "name": "Dassault STELLAR",
@@ -755,6 +845,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-AttenuationTest/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-AttenuationTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-AttenuationTest/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "Dassault STELLAR",
         "image": "/images/goldens/khronos-AttenuationTest/stellar-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-AttenuationTest/stellar-golden.thumb.webp"
@@ -811,6 +906,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-Avocado/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-Avocado/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-Avocado/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-Avocado/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-Avocado/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-Avocado/rhodonite-golden.thumb.webp"
       },
       {
         "name": "Dassault STELLAR",
@@ -875,6 +980,16 @@
         "thumbnail": "/thumbnails/goldens/khronos-BarramundiFish/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-BarramundiFish/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-BarramundiFish/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-BarramundiFish/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-BarramundiFish/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "Dassault STELLAR",
         "image": "/images/goldens/khronos-BarramundiFish/stellar-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-BarramundiFish/stellar-golden.thumb.webp"
@@ -937,6 +1052,16 @@
         "thumbnail": "/thumbnails/goldens/khronos-BoomBox/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-BoomBox/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-BoomBox/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-BoomBox/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-BoomBox/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "Dassault STELLAR",
         "image": "/images/goldens/khronos-BoomBox/stellar-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-BoomBox/stellar-golden.thumb.webp"
@@ -994,6 +1119,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-BoomBoxWithAxes/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-BoomBoxWithAxes/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-BoomBoxWithAxes/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-BoomBoxWithAxes/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-BoomBoxWithAxes/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-BoomBoxWithAxes/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -1054,6 +1189,16 @@
         "thumbnail": "/thumbnails/goldens/khronos-Box/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-Box/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-Box/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-Box/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-Box/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-Box/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-Box/three-gpu-pathtracer-golden.thumb.webp"
@@ -1110,6 +1255,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-BoxAnimated/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-BoxAnimated/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-BoxAnimated/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-BoxAnimated/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-BoxAnimated/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-BoxAnimated/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -1169,6 +1324,16 @@
         "thumbnail": "/thumbnails/goldens/khronos-BoxTextured/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-BoxTextured/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-BoxTextured/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-BoxTextured/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-BoxTextured/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-BoxTextured/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-BoxTextured/three-gpu-pathtracer-golden.thumb.webp"
@@ -1224,6 +1389,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-BoxTexturedNonPowerOfTwo/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-BoxTexturedNonPowerOfTwo/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-BoxTexturedNonPowerOfTwo/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-BoxTexturedNonPowerOfTwo/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-BoxTexturedNonPowerOfTwo/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-BoxTexturedNonPowerOfTwo/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -1283,6 +1458,16 @@
         "thumbnail": "/thumbnails/goldens/khronos-BoxVertexColors/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-BoxVertexColors/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-BoxVertexColors/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-BoxVertexColors/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-BoxVertexColors/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-BoxVertexColors/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-BoxVertexColors/three-gpu-pathtracer-golden.thumb.webp"
@@ -1337,6 +1522,16 @@
         "thumbnail": "/thumbnails/goldens/khronos-Box With Spaces/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-Box With Spaces/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-Box With Spaces/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-Box With Spaces/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-Box With Spaces/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-Box With Spaces/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-Box With Spaces/three-gpu-pathtracer-golden.thumb.webp"
@@ -1387,6 +1582,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-BoxInterleaved/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-BoxInterleaved/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-BoxInterleaved/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-BoxInterleaved/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-BoxInterleaved/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-BoxInterleaved/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -1450,6 +1655,16 @@
         "thumbnail": "/thumbnails/goldens/khronos-BrainStem/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-BrainStem/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-BrainStem/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-BrainStem/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-BrainStem/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-BrainStem/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-BrainStem/three-gpu-pathtracer-golden.thumb.webp"
@@ -1503,6 +1718,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-Cameras/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-Cameras/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-Cameras/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-Cameras/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-Cameras/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-Cameras/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -1575,6 +1800,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-CarConcept/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-CarConcept/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CarConcept/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-CarConcept/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-CarConcept/three-gpu-pathtracer-golden.thumb.webp"
@@ -1629,6 +1859,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-CarbonFibre/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-CarbonFibre/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CarbonFibre/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-CarbonFibre/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-CarbonFibre/three-gpu-pathtracer-golden.thumb.webp"
@@ -1681,6 +1916,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-CesiumMan/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-CesiumMan/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-CesiumMan/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CesiumMan/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-CesiumMan/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CesiumMan/rhodonite-golden.thumb.webp"
       },
       {
         "name": "Dassault STELLAR",
@@ -1745,6 +1990,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-CesiumMilkTruck/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-CesiumMilkTruck/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-CesiumMilkTruck/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CesiumMilkTruck/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-CesiumMilkTruck/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CesiumMilkTruck/rhodonite-golden.thumb.webp"
       },
       {
         "name": "Dassault STELLAR",
@@ -1815,6 +2070,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-ChairDamaskPurplegold/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-ChairDamaskPurplegold/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ChairDamaskPurplegold/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-ChairDamaskPurplegold/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-ChairDamaskPurplegold/three-gpu-pathtracer-golden.thumb.webp"
@@ -1878,6 +2138,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-ChronographWatch/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-ChronographWatch/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ChronographWatch/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-ChronographWatch/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-ChronographWatch/three-gpu-pathtracer-golden.thumb.webp"
@@ -1935,6 +2200,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-ClearCoatCarPaint/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-ClearCoatCarPaint/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ClearCoatCarPaint/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-ClearCoatCarPaint/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-ClearCoatCarPaint/three-gpu-pathtracer-golden.thumb.webp"
@@ -1988,6 +2258,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-ClearcoatWicker/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-ClearcoatWicker/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-ClearcoatWicker/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ClearcoatWicker/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -2048,6 +2323,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-CommercialRefrigerator/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-CommercialRefrigerator/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CommercialRefrigerator/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-CommercialRefrigerator/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-CommercialRefrigerator/three-gpu-pathtracer-golden.thumb.webp"
@@ -2099,6 +2379,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-CompareAlphaCoverage/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-CompareAlphaCoverage/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CompareAlphaCoverage/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-CompareAlphaCoverage/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-CompareAlphaCoverage/three-gpu-pathtracer-golden.thumb.webp"
@@ -2148,6 +2433,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-CompareAmbientOcclusion/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-CompareAmbientOcclusion/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-CompareAmbientOcclusion/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CompareAmbientOcclusion/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-CompareAmbientOcclusion/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CompareAmbientOcclusion/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -2207,6 +2502,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-CompareAnisotropy/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-CompareAnisotropy/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CompareAnisotropy/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-CompareAnisotropy/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-CompareAnisotropy/three-gpu-pathtracer-golden.thumb.webp"
@@ -2259,6 +2559,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-CompareBaseColor/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-CompareBaseColor/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-CompareBaseColor/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CompareBaseColor/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -2316,6 +2621,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-CompareClearcoat/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-CompareClearcoat/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-CompareClearcoat/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CompareClearcoat/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -2379,6 +2689,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-CompareDispersion/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-CompareDispersion/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CompareDispersion/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-CompareDispersion/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-CompareDispersion/three-gpu-pathtracer-golden.thumb.webp"
@@ -2432,6 +2747,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-CompareEmissiveStrength/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-CompareEmissiveStrength/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-CompareEmissiveStrength/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CompareEmissiveStrength/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-CompareEmissiveStrength/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CompareEmissiveStrength/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -2493,6 +2818,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-CompareIor/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-CompareIor/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CompareIor/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-CompareIor/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-CompareIor/three-gpu-pathtracer-golden.thumb.webp"
@@ -2548,6 +2878,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-CompareIridescence/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-CompareIridescence/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CompareIridescence/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-CompareIridescence/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-CompareIridescence/three-gpu-pathtracer-golden.thumb.webp"
@@ -2597,6 +2932,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-CompareMetallic/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-CompareMetallic/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-CompareMetallic/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CompareMetallic/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-CompareMetallic/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CompareMetallic/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -2650,6 +2995,16 @@
         "thumbnail": "/thumbnails/goldens/khronos-CompareNormal/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-CompareNormal/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CompareNormal/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-CompareNormal/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CompareNormal/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-CompareNormal/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-CompareNormal/three-gpu-pathtracer-golden.thumb.webp"
@@ -2699,6 +3054,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-CompareRoughness/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-CompareRoughness/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-CompareRoughness/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CompareRoughness/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-CompareRoughness/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CompareRoughness/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -2756,6 +3121,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-CompareSheen/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-CompareSheen/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CompareSheen/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-CompareSheen/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-CompareSheen/three-gpu-pathtracer-golden.thumb.webp"
@@ -2811,6 +3181,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-CompareSpecular/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-CompareSpecular/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CompareSpecular/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-CompareSpecular/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-CompareSpecular/three-gpu-pathtracer-golden.thumb.webp"
@@ -2864,6 +3239,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-CompareTransmission/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-CompareTransmission/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-CompareTransmission/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CompareTransmission/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -2923,6 +3303,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-CompareVolume/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-CompareVolume/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CompareVolume/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-CompareVolume/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-CompareVolume/three-gpu-pathtracer-golden.thumb.webp"
@@ -2973,6 +3358,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-Corset/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-Corset/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-Corset/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-Corset/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-Corset/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-Corset/rhodonite-golden.thumb.webp"
       },
       {
         "name": "Dassault STELLAR",
@@ -3032,6 +3427,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-Cube/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-Cube/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-Cube/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-Cube/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-Cube/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-Cube/rhodonite-golden.thumb.webp"
       },
       {
         "name": "Dassault STELLAR",
@@ -3096,6 +3501,16 @@
         "thumbnail": "/thumbnails/goldens/khronos-CubeVisibility/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-CubeVisibility/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CubeVisibility/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-CubeVisibility/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-CubeVisibility/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-CubeVisibility/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-CubeVisibility/three-gpu-pathtracer-golden.thumb.webp"
@@ -3147,6 +3562,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-DamagedHelmet/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-DamagedHelmet/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-DamagedHelmet/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-DamagedHelmet/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-DamagedHelmet/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-DamagedHelmet/rhodonite-golden.thumb.webp"
       },
       {
         "name": "Dassault STELLAR",
@@ -3217,6 +3642,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-DiffuseTransmissionPlant/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-DiffuseTransmissionPlant/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-DiffuseTransmissionPlant/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-DiffuseTransmissionPlant/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-DiffuseTransmissionPlant/three-gpu-pathtracer-golden.thumb.webp"
@@ -3270,6 +3700,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-DiffuseTransmissionTeacup/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-DiffuseTransmissionTeacup/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-DiffuseTransmissionTeacup/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-DiffuseTransmissionTeacup/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -3330,6 +3765,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-DiffuseTransmissionTest/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-DiffuseTransmissionTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-DiffuseTransmissionTest/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-DiffuseTransmissionTest/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-DiffuseTransmissionTest/three-gpu-pathtracer-golden.thumb.webp"
@@ -3382,6 +3822,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-DirectionalLight/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-DirectionalLight/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-DirectionalLight/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-DirectionalLight/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -3445,6 +3890,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-DispersionTest/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-DispersionTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-DispersionTest/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-DispersionTest/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-DispersionTest/three-gpu-pathtracer-golden.thumb.webp"
@@ -3503,6 +3953,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-DragonAttenuation/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-DragonAttenuation/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-DragonAttenuation/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-DragonAttenuation/rhodonite-golden.thumb.webp"
       },
       {
         "name": "Dassault STELLAR",
@@ -3570,6 +4025,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-DragonDispersion/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-DragonDispersion/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-DragonDispersion/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-DragonDispersion/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-DragonDispersion/three-gpu-pathtracer-golden.thumb.webp"
@@ -3622,6 +4082,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-Duck/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-Duck/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-Duck/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-Duck/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-Duck/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-Duck/rhodonite-golden.thumb.webp"
       },
       {
         "name": "Dassault STELLAR",
@@ -3689,6 +4159,16 @@
         "thumbnail": "/thumbnails/goldens/khronos-EmissiveStrengthTest/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-EmissiveStrengthTest/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-EmissiveStrengthTest/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-EmissiveStrengthTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-EmissiveStrengthTest/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "Dassault STELLAR",
         "image": "/images/goldens/khronos-EmissiveStrengthTest/stellar-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-EmissiveStrengthTest/stellar-golden.thumb.webp"
@@ -3748,6 +4228,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-EnvironmentTest/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-EnvironmentTest/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-EnvironmentTest/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-EnvironmentTest/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-EnvironmentTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-EnvironmentTest/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -3810,6 +4300,16 @@
         "thumbnail": "/thumbnails/goldens/khronos-FlightHelmet/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-FlightHelmet/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-FlightHelmet/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-FlightHelmet/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-FlightHelmet/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "Dassault STELLAR",
         "image": "/images/goldens/khronos-FlightHelmet/stellar-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-FlightHelmet/stellar-golden.thumb.webp"
@@ -3870,6 +4370,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-Fox/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-Fox/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-Fox/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-Fox/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -3939,6 +4444,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-GlamVelvetSofa/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-GlamVelvetSofa/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-GlamVelvetSofa/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "Dassault STELLAR",
         "image": "/images/goldens/khronos-GlamVelvetSofa/stellar-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-GlamVelvetSofa/stellar-golden.thumb.webp"
@@ -3998,6 +4508,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-GlassBrokenWindow/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-GlassBrokenWindow/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-GlassBrokenWindow/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-GlassBrokenWindow/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-GlassBrokenWindow/three-gpu-pathtracer-golden.thumb.webp"
@@ -4055,6 +4570,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-GlassHurricaneCandleHolder/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-GlassHurricaneCandleHolder/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-GlassHurricaneCandleHolder/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-GlassHurricaneCandleHolder/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-GlassHurricaneCandleHolder/three-gpu-pathtracer-golden.thumb.webp"
@@ -4109,6 +4629,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-GlassVaseFlowers/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-GlassVaseFlowers/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-GlassVaseFlowers/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-GlassVaseFlowers/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -4171,6 +4696,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-IORTestGrid/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-IORTestGrid/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-IORTestGrid/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-IORTestGrid/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-IORTestGrid/three-gpu-pathtracer-golden.thumb.webp"
@@ -4221,6 +4751,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-InterpolationTest/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-InterpolationTest/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-InterpolationTest/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-InterpolationTest/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-InterpolationTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-InterpolationTest/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -4282,6 +4822,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-IridescenceAbalone/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-IridescenceAbalone/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-IridescenceAbalone/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-IridescenceAbalone/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-IridescenceAbalone/three-gpu-pathtracer-golden.thumb.webp"
@@ -4335,6 +4880,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-IridescenceDielectricSpheres/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-IridescenceDielectricSpheres/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-IridescenceDielectricSpheres/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-IridescenceDielectricSpheres/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -4398,6 +4948,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-IridescenceLamp/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-IridescenceLamp/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-IridescenceLamp/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-IridescenceLamp/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-IridescenceLamp/three-gpu-pathtracer-golden.thumb.webp"
@@ -4451,6 +5006,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-IridescenceMetallicSpheres/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-IridescenceMetallicSpheres/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-IridescenceMetallicSpheres/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-IridescenceMetallicSpheres/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -4516,6 +5076,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-IridescenceSuzanne/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-IridescenceSuzanne/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-IridescenceSuzanne/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-IridescenceSuzanne/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-IridescenceSuzanne/three-gpu-pathtracer-golden.thumb.webp"
@@ -4578,6 +5143,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-IridescentDishWithOlives/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-IridescentDishWithOlives/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-IridescentDishWithOlives/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "Dassault STELLAR",
         "image": "/images/goldens/khronos-IridescentDishWithOlives/stellar-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-IridescentDishWithOlives/stellar-golden.thumb.webp"
@@ -4636,6 +5206,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-ClearCoatTest/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-ClearCoatTest/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-ClearCoatTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ClearCoatTest/rhodonite-golden.thumb.webp"
       },
       {
         "name": "Dassault STELLAR",
@@ -4705,6 +5280,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-LightsPunctualLamp/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-LightsPunctualLamp/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-LightsPunctualLamp/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "Dassault STELLAR",
         "image": "/images/goldens/khronos-LightsPunctualLamp/stellar-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-LightsPunctualLamp/stellar-golden.thumb.webp"
@@ -4766,6 +5346,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-Lantern/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-Lantern/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-Lantern/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-Lantern/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-Lantern/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-Lantern/rhodonite-golden.thumb.webp"
       },
       {
         "name": "Dassault STELLAR",
@@ -4832,6 +5422,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-LightVisibility/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-LightVisibility/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-LightVisibility/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-LightVisibility/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-LightVisibility/three-gpu-pathtracer-golden.thumb.webp"
@@ -4883,6 +5478,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-MandarinOrange/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-MandarinOrange/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-MandarinOrange/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-MandarinOrange/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-MandarinOrange/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-MandarinOrange/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -4940,6 +5545,16 @@
         "thumbnail": "/thumbnails/goldens/khronos-MaterialsVariantsShoe/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-MaterialsVariantsShoe/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-MaterialsVariantsShoe/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-MaterialsVariantsShoe/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-MaterialsVariantsShoe/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "Dassault STELLAR",
         "image": "/images/goldens/khronos-MaterialsVariantsShoe/stellar-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-MaterialsVariantsShoe/stellar-golden.thumb.webp"
@@ -4993,6 +5608,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-MeshPrimitiveModes/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-MeshPrimitiveModes/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-MeshPrimitiveModes/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-MeshPrimitiveModes/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -5052,6 +5672,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-MeshoptCubeTest/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-MeshoptCubeTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-MeshoptCubeTest/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-MeshoptCubeTest/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-MeshoptCubeTest/three-gpu-pathtracer-golden.thumb.webp"
@@ -5101,6 +5726,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-MetalRoughSpheresNoTextures/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-MetalRoughSpheresNoTextures/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-MetalRoughSpheresNoTextures/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-MetalRoughSpheresNoTextures/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-MetalRoughSpheresNoTextures/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-MetalRoughSpheresNoTextures/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -5158,6 +5793,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-MetalRoughSpheres/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-MetalRoughSpheres/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-MetalRoughSpheres/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-MetalRoughSpheres/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-MetalRoughSpheres/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-MetalRoughSpheres/rhodonite-golden.thumb.webp"
       },
       {
         "name": "Dassault STELLAR",
@@ -5224,6 +5869,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-MorphPrimitivesTest/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-MorphPrimitivesTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-MorphPrimitivesTest/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-MorphPrimitivesTest/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-MorphPrimitivesTest/three-gpu-pathtracer-golden.thumb.webp"
@@ -5280,6 +5930,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-MorphStressTest/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-MorphStressTest/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-MorphStressTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-MorphStressTest/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -5346,6 +6001,16 @@
         "thumbnail": "/thumbnails/goldens/khronos-MosquitoInAmber/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-MosquitoInAmber/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-MosquitoInAmber/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-MosquitoInAmber/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-MosquitoInAmber/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "Dassault STELLAR",
         "image": "/images/goldens/khronos-MosquitoInAmber/stellar-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-MosquitoInAmber/stellar-golden.thumb.webp"
@@ -5403,6 +6068,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-MultiUVTest/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-MultiUVTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-MultiUVTest/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-MultiUVTest/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-MultiUVTest/three-gpu-pathtracer-golden.thumb.webp"
@@ -5458,6 +6128,16 @@
         "thumbnail": "/thumbnails/goldens/khronos-MultipleScenes/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-MultipleScenes/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-MultipleScenes/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-MultipleScenes/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-MultipleScenes/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-MultipleScenes/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-MultipleScenes/three-gpu-pathtracer-golden.thumb.webp"
@@ -5507,6 +6187,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-NegativeScaleTest/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-NegativeScaleTest/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-NegativeScaleTest/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-NegativeScaleTest/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-NegativeScaleTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-NegativeScaleTest/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -5617,6 +6307,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-NodeVisibilityTest/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-NodeVisibilityTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-NodeVisibilityTest/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-NodeVisibilityTest/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-NodeVisibilityTest/three-gpu-pathtracer-golden.thumb.webp"
@@ -5666,6 +6361,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-NormalTangentMirrorTest/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-NormalTangentMirrorTest/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-NormalTangentMirrorTest/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-NormalTangentMirrorTest/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-NormalTangentMirrorTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-NormalTangentMirrorTest/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -5724,6 +6429,16 @@
         "thumbnail": "/thumbnails/goldens/khronos-NormalTangentTest/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-NormalTangentTest/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-NormalTangentTest/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-NormalTangentTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-NormalTangentTest/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-NormalTangentTest/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-NormalTangentTest/three-gpu-pathtracer-golden.thumb.webp"
@@ -5779,6 +6494,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-OrientationTest/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-OrientationTest/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-OrientationTest/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-OrientationTest/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-OrientationTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-OrientationTest/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -5841,6 +6566,16 @@
         "thumbnail": "/thumbnails/goldens/khronos-PlaysetLightTest/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-PlaysetLightTest/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-PlaysetLightTest/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-PlaysetLightTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-PlaysetLightTest/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-PlaysetLightTest/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-PlaysetLightTest/three-gpu-pathtracer-golden.thumb.webp"
@@ -5898,6 +6633,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-PointLightIntensityTest/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-PointLightIntensityTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-PointLightIntensityTest/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-PointLightIntensityTest/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-PointLightIntensityTest/three-gpu-pathtracer-golden.thumb.webp"
@@ -5951,6 +6691,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-PotOfCoals/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-PotOfCoals/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-PotOfCoals/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-PotOfCoals/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -6019,6 +6764,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-PotOfCoalsAnimationPointer/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-PotOfCoalsAnimationPointer/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-PotOfCoalsAnimationPointer/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-PotOfCoalsAnimationPointer/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-PotOfCoalsAnimationPointer/three-gpu-pathtracer-golden.thumb.webp"
@@ -6066,6 +6816,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-PrimitiveModeNormalsTest/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-PrimitiveModeNormalsTest/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-PrimitiveModeNormalsTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-PrimitiveModeNormalsTest/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -6118,6 +6873,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-RecursiveSkeletons/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-RecursiveSkeletons/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-RecursiveSkeletons/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-RecursiveSkeletons/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -6179,6 +6939,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-RiggedFigure/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-RiggedFigure/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-RiggedFigure/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-RiggedFigure/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-RiggedFigure/three-gpu-pathtracer-golden.thumb.webp"
@@ -6238,6 +7003,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-RiggedSimple/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-RiggedSimple/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-RiggedSimple/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-RiggedSimple/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-RiggedSimple/three-gpu-pathtracer-golden.thumb.webp"
@@ -6290,6 +7060,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-SciFiHelmet/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-SciFiHelmet/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-SciFiHelmet/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-SciFiHelmet/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-SciFiHelmet/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-SciFiHelmet/rhodonite-golden.thumb.webp"
       },
       {
         "name": "Dassault STELLAR",
@@ -6361,6 +7141,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-SheenChair/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-SheenChair/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-SheenChair/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "Dassault STELLAR",
         "image": "/images/goldens/khronos-SheenChair/stellar-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-SheenChair/stellar-golden.thumb.webp"
@@ -6419,6 +7204,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-SheenCloth/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-SheenCloth/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-SheenCloth/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-SheenCloth/rhodonite-golden.thumb.webp"
       },
       {
         "name": "Dassault STELLAR",
@@ -6483,6 +7273,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-SheenTestGrid/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-SheenTestGrid/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-SheenTestGrid/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-SheenTestGrid/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -6596,6 +7391,16 @@
         "thumbnail": "/thumbnails/goldens/khronos-SimpleInstancing/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-SimpleInstancing/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-SimpleInstancing/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-SimpleInstancing/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-SimpleInstancing/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-SimpleInstancing/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-SimpleInstancing/three-gpu-pathtracer-golden.thumb.webp"
@@ -6646,6 +7451,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-SimpleMaterial/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-SimpleMaterial/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-SimpleMaterial/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-SimpleMaterial/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-SimpleMaterial/three-gpu-pathtracer-golden.thumb.webp"
@@ -6694,6 +7504,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-SimpleMeshes/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-SimpleMeshes/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-SimpleMeshes/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-SimpleMeshes/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-SimpleMeshes/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-SimpleMeshes/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -6753,6 +7573,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-SimpleMorph/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-SimpleMorph/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-SimpleMorph/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-SimpleMorph/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-SimpleMorph/three-gpu-pathtracer-golden.thumb.webp"
@@ -6807,6 +7632,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-SimpleSkin/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-SimpleSkin/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-SimpleSkin/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-SimpleSkin/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -6864,6 +7694,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-SimpleSparseAccessor/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-SimpleSparseAccessor/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-SimpleSparseAccessor/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-SimpleSparseAccessor/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-SimpleSparseAccessor/three-gpu-pathtracer-golden.thumb.webp"
@@ -6917,6 +7752,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-SimpleTexture/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-SimpleTexture/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-SimpleTexture/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-SimpleTexture/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -6983,6 +7823,16 @@
         "thumbnail": "/thumbnails/goldens/khronos-ScatteringSkull/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-ScatteringSkull/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ScatteringSkull/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-ScatteringSkull/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ScatteringSkull/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-ScatteringSkull/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-ScatteringSkull/three-gpu-pathtracer-golden.thumb.webp"
@@ -7036,6 +7886,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-SpecGlossVsMetalRough/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-SpecGlossVsMetalRough/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-SpecGlossVsMetalRough/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-SpecGlossVsMetalRough/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -7100,6 +7955,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-SpecularSilkPouf/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-SpecularSilkPouf/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-SpecularSilkPouf/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-SpecularSilkPouf/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-SpecularSilkPouf/three-gpu-pathtracer-golden.thumb.webp"
@@ -7155,6 +8015,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-SpecularTest/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-SpecularTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-SpecularTest/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-SpecularTest/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-SpecularTest/three-gpu-pathtracer-golden.thumb.webp"
@@ -7201,6 +8066,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-Sponza/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-Sponza/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-Sponza/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-Sponza/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-Sponza/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-Sponza/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -7272,6 +8147,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-StainedGlassLamp/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-StainedGlassLamp/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-StainedGlassLamp/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-StainedGlassLamp/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-StainedGlassLamp/three-gpu-pathtracer-golden.thumb.webp"
@@ -7335,6 +8215,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-SunglassesKhronos/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-SunglassesKhronos/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-SunglassesKhronos/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-SunglassesKhronos/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-SunglassesKhronos/three-gpu-pathtracer-golden.thumb.webp"
@@ -7382,6 +8267,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-Suzanne/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-Suzanne/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-Suzanne/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-Suzanne/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-Suzanne/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-Suzanne/rhodonite-golden.thumb.webp"
       },
       {
         "name": "Dassault STELLAR",
@@ -7446,6 +8341,16 @@
         "thumbnail": "/thumbnails/goldens/khronos-TextureCoordinateTest/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-TextureCoordinateTest/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-TextureCoordinateTest/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-TextureCoordinateTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-TextureCoordinateTest/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-TextureCoordinateTest/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-TextureCoordinateTest/three-gpu-pathtracer-golden.thumb.webp"
@@ -7500,6 +8405,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-TextureEncodingTest/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-TextureEncodingTest/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-TextureEncodingTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-TextureEncodingTest/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -7558,6 +8468,16 @@
         "thumbnail": "/thumbnails/goldens/khronos-TextureLinearInterpolationTest/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-TextureLinearInterpolationTest/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-TextureLinearInterpolationTest/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-TextureLinearInterpolationTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-TextureLinearInterpolationTest/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-TextureLinearInterpolationTest/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-TextureLinearInterpolationTest/three-gpu-pathtracer-golden.thumb.webp"
@@ -7613,6 +8533,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-TextureSettingsTest/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-TextureSettingsTest/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-TextureSettingsTest/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-TextureSettingsTest/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-TextureSettingsTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-TextureSettingsTest/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -7679,6 +8609,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-TextureTransformMultiTest/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-TextureTransformMultiTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-TextureTransformMultiTest/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-TextureTransformMultiTest/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-TextureTransformMultiTest/three-gpu-pathtracer-golden.thumb.webp"
@@ -7730,6 +8665,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-TextureTransformTest/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-TextureTransformTest/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-TextureTransformTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-TextureTransformTest/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -7796,6 +8736,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-ToyCar/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-ToyCar/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-ToyCar/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ToyCar/rhodonite-golden.thumb.webp"
       },
       {
         "name": "Dassault STELLAR",
@@ -7868,6 +8813,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-TrafficCone/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-TrafficCone/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-TrafficCone/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-TrafficCone/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-TrafficCone/three-gpu-pathtracer-golden.thumb.webp"
@@ -7923,6 +8873,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-TransmissionOrderTest/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-TransmissionOrderTest/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-TransmissionOrderTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-TransmissionOrderTest/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -7982,6 +8937,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-TransmissionRoughnessTest/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-TransmissionRoughnessTest/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-TransmissionRoughnessTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-TransmissionRoughnessTest/rhodonite-golden.thumb.webp"
       },
       {
         "name": "Dassault STELLAR",
@@ -8044,6 +9004,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-TransmissionTest/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-TransmissionTest/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-TransmissionTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-TransmissionTest/rhodonite-golden.thumb.webp"
       },
       {
         "name": "Dassault STELLAR",
@@ -8109,6 +9074,16 @@
         "thumbnail": "/thumbnails/goldens/khronos-TransmissionThinwallTestGrid/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-TransmissionThinwallTestGrid/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-TransmissionThinwallTestGrid/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-TransmissionThinwallTestGrid/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-TransmissionThinwallTestGrid/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-TransmissionThinwallTestGrid/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-TransmissionThinwallTestGrid/three-gpu-pathtracer-golden.thumb.webp"
@@ -8157,6 +9132,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-Triangle/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-Triangle/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-Triangle/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-Triangle/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-Triangle/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-Triangle/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -8214,6 +9199,16 @@
         "thumbnail": "/thumbnails/goldens/khronos-TriangleWithoutIndices/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-TriangleWithoutIndices/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-TriangleWithoutIndices/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-TriangleWithoutIndices/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-TriangleWithoutIndices/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-TriangleWithoutIndices/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-TriangleWithoutIndices/three-gpu-pathtracer-golden.thumb.webp"
@@ -8265,6 +9260,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-TwoSidedPlane/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-TwoSidedPlane/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-TwoSidedPlane/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-TwoSidedPlane/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-TwoSidedPlane/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-TwoSidedPlane/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -8329,6 +9334,11 @@
         "thumbnail": "/thumbnails/goldens/khronos-USDShaderBallForGltf/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-USDShaderBallForGltf/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-USDShaderBallForGltf/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-USDShaderBallForGltf/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-USDShaderBallForGltf/three-gpu-pathtracer-golden.thumb.webp"
@@ -8378,6 +9388,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-Unicode❤♻Test/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-Unicode❤♻Test/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-Unicode❤♻Test/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-Unicode❤♻Test/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-Unicode❤♻Test/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-Unicode❤♻Test/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -8430,6 +9450,16 @@
         "thumbnail": "/thumbnails/goldens/khronos-UnlitTest/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-UnlitTest/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-UnlitTest/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-UnlitTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-UnlitTest/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-UnlitTest/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-UnlitTest/three-gpu-pathtracer-golden.thumb.webp"
@@ -8480,6 +9510,11 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-VertexColorTest/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-VertexColorTest/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-VertexColorTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-VertexColorTest/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -8541,6 +9576,16 @@
         "thumbnail": "/thumbnails/goldens/khronos-VirtualCity/model-viewer-golden.thumb.webp"
       },
       {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-VirtualCity/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-VirtualCity/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-VirtualCity/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-VirtualCity/rhodonite-golden.thumb.webp"
+      },
+      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-VirtualCity/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-VirtualCity/three-gpu-pathtracer-golden.thumb.webp"
@@ -8591,6 +9636,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-WaterBottle/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-WaterBottle/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-WaterBottle/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-WaterBottle/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-WaterBottle/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-WaterBottle/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -8646,6 +9701,16 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-XmpMetadataRoundedCube/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-XmpMetadataRoundedCube/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "Phasma-Viewer",
+        "image": "/images/goldens/khronos-XmpMetadataRoundedCube/phasma-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-XmpMetadataRoundedCube/phasma-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "rhodonite",
+        "image": "/images/goldens/khronos-XmpMetadataRoundedCube/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-XmpMetadataRoundedCube/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",

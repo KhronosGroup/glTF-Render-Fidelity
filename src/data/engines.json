@@ -48,5 +48,10 @@
         "name": "Phasma-Viewer",
         "label": "Phasma-Viewer",
         "description": "Phasma-Viewer is Phasmatic's high-performance photorealistic 3D viewer for the web. It renders optimized glTF models in the browser with physically based materials and lighting, so e-commerce products and cultural heritage objects can be shown and customized interactively."
+    },
+    "rhodonite": {
+        "name": "RhodoniteTS",
+        "label": "RhodoniteTS",
+        "description": "RhodoniteTS is a high-performance 3D graphics library based on WebGL2/WebGPU. Written in modern TypeScript, it provides an intuitive API."
     }
 }
