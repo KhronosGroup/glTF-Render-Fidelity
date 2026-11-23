@@ -47,6 +47,7 @@ const official_engine_names = new Map([
   ["vray" ,         "Chaos Group V-Ray"],
   ["blender-cycles","Blender Cycles"],
   ["vk-gltf-renderer", "Vulkan RTX Path Tracer"],
+  ["phasma-viewer", "Phasma-Viewer"]
   //["rhodonite","rhodonite"]
 ]);
 
@@ -76,6 +77,7 @@ const ext_to_label = {
   "EXT_texture_webp": "WebP",
   "KHR_materials_dispersion": "Dispersion",
   "KHR_materials_volume_scatter": "Volume Scatter",
+  "KHR_materials_scatter": "Scatter",
   "EXT_mesh_gpu_instancing": "Mesh GPU Instancing",
   "KHR_materials_diffuse_transmission": "Diffuse Transmission",
   "KHR_animation_pointer": "Animation Pointer",  
@@ -237,7 +239,11 @@ for (const tag in ModelTags) {
   TagList.tags.push(tag);
 }
 
-const jsonData = JSON.stringify(ModelMap2, null, 2); // The `null, 2` makes the output pretty-printed
+const jsonData = JSON.stringify(
+    Object.fromEntries(Object.entries(ModelMap2).sort()),
+    null,
+    2
+);
 fs.writeFileSync('src/data/model-index.Fidelity.json', jsonData);
 
 const jsonDataTagList = JSON.stringify(TagList, null, 2); // The `null, 2` makes the output pretty-printed

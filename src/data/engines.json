@@ -43,5 +43,10 @@
         "name": "Vulkan RTX Path Tracer",
         "label": "Vulkan RTX Path Tracer",
         "description": "Open-source Vulkan RTX path tracer and PBR material reference for glTF 2.0, developed by NVIDIA (nvpro-samples/vk_gltf_renderer). It also includes a rasterizer for fast previews and an integrated scene editor. The source code is available under the Apache License v2."
+    },
+    "phasma-viewer": {
+        "name": "Phasma-Viewer",
+        "label": "Phasma-Viewer",
+        "description": "Phasma-Viewer is Phasmatic's high-performance photorealistic 3D viewer for the web. It renders optimized glTF models in the browser with physically based materials and lighting, so e-commerce products and cultural heritage objects can be shown and customized interactively."
     }
 }
