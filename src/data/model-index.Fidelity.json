@@ -4758,11 +4758,6 @@
         "thumbnail": "/thumbnails/goldens/khronos-InterpolationTest/phasma-viewer-golden.thumb.webp"
       },
       {
-        "name": "RhodoniteTS",
-        "image": "/images/goldens/khronos-InterpolationTest/rhodonite-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-InterpolationTest/rhodonite-golden.thumb.webp"
-      },
-      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-InterpolationTest/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-InterpolationTest/three-gpu-pathtracer-golden.thumb.webp"
@@ -5422,11 +5417,6 @@
         "thumbnail": "/thumbnails/goldens/khronos-LightVisibility/model-viewer-golden.thumb.webp"
       },
       {
-        "name": "RhodoniteTS",
-        "image": "/images/goldens/khronos-LightVisibility/rhodonite-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-LightVisibility/rhodonite-golden.thumb.webp"
-      },
-      {
         "name": "three-gpu-pathtracer",
         "image": "/images/goldens/khronos-LightVisibility/three-gpu-pathtracer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-LightVisibility/three-gpu-pathtracer-golden.thumb.webp"
@@ -6066,11 +6056,6 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-MultiUVTest/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-MultiUVTest/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "RhodoniteTS",
-        "image": "/images/goldens/khronos-MultiUVTest/rhodonite-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-MultiUVTest/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -7024,6 +7009,206 @@
       }
     ]
   },
+  "ScatterAnemone": {
+    "name": "ScatterAnemone",
+    "label": "ScatterAnemone",
+    "description": "Animated waving anemone with glowing fish, demonstrating the KHR_materials_scatter extension.",
+    "tags": [
+      "Showcase",
+      "Extension",
+      "Transmission",
+      "Volume",
+      "Texture Transform",
+      "Lights",
+      "Scatter",
+      "Animation"
+    ],
+    "variants": {
+      "glTF": "ScatterAnemone.gltf",
+      "glTF-Binary": "ScatterAnemone.glb"
+    },
+    "extensionsUsed": [
+      "KHR_materials_transmission",
+      "KHR_materials_volume",
+      "KHR_texture_transform",
+      "KHR_lights_punctual",
+      "KHR_materials_scatter"
+    ],
+    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ScatterAnemone/glTF-Binary/ScatterAnemone.glb",
+    "images": [
+      {
+        "name": "babylon.js",
+        "image": "/images/goldens/khronos-ScatterAnemone/babylon-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ScatterAnemone/babylon-golden.thumb.webp"
+      },
+      {
+        "name": "Blender Cycles",
+        "image": "/images/goldens/khronos-ScatterAnemone/blender-cycles-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ScatterAnemone/blender-cycles-golden.thumb.webp"
+      },
+      {
+        "name": "filament.js",
+        "image": "/images/goldens/khronos-ScatterAnemone/filament-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ScatterAnemone/filament-golden.thumb.webp"
+      },
+      {
+        "name": "gltf-sample-viewer",
+        "image": "/images/goldens/khronos-ScatterAnemone/gltf-sample-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ScatterAnemone/gltf-sample-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "three.js",
+        "image": "/images/goldens/khronos-ScatterAnemone/model-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ScatterAnemone/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "RhodoniteTS",
+        "image": "/images/goldens/khronos-ScatterAnemone/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ScatterAnemone/rhodonite-golden.thumb.webp"
+      },
+      {
+        "name": "three-gpu-pathtracer",
+        "image": "/images/goldens/khronos-ScatterAnemone/three-gpu-pathtracer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ScatterAnemone/three-gpu-pathtracer-golden.thumb.webp"
+      },
+      {
+        "name": "Vulkan RTX Path Tracer",
+        "image": "/images/goldens/khronos-ScatterAnemone/vk-gltf-renderer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ScatterAnemone/vk-gltf-renderer-golden.thumb.webp"
+      }
+    ]
+  },
+  "ScatterPlant": {
+    "name": "ScatterPlant",
+    "label": "ScatterPlant",
+    "description": "Potted plant asset using the KHR_materials_scatter extension.",
+    "tags": [
+      "Showcase",
+      "Extension",
+      "Transmission",
+      "Emissive",
+      "Lights",
+      "Scatter",
+      "Animation"
+    ],
+    "variants": {
+      "glTF": "ScatterPlant.gltf",
+      "glTF-Binary": "ScatterPlant.glb"
+    },
+    "extensionsUsed": [
+      "KHR_materials_transmission",
+      "KHR_materials_emissive_strength",
+      "KHR_lights_punctual",
+      "KHR_materials_scatter"
+    ],
+    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ScatterPlant/glTF-Binary/ScatterPlant.glb",
+    "images": [
+      {
+        "name": "babylon.js",
+        "image": "/images/goldens/khronos-ScatterPlant/babylon-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ScatterPlant/babylon-golden.thumb.webp"
+      },
+      {
+        "name": "Blender Cycles",
+        "image": "/images/goldens/khronos-ScatterPlant/blender-cycles-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ScatterPlant/blender-cycles-golden.thumb.webp"
+      },
+      {
+        "name": "filament.js",
+        "image": "/images/goldens/khronos-ScatterPlant/filament-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ScatterPlant/filament-golden.thumb.webp"
+      },
+      {
+        "name": "gltf-sample-viewer",
+        "image": "/images/goldens/khronos-ScatterPlant/gltf-sample-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ScatterPlant/gltf-sample-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "three.js",
+        "image": "/images/goldens/khronos-ScatterPlant/model-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ScatterPlant/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "RhodoniteTS",
+        "image": "/images/goldens/khronos-ScatterPlant/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ScatterPlant/rhodonite-golden.thumb.webp"
+      },
+      {
+        "name": "three-gpu-pathtracer",
+        "image": "/images/goldens/khronos-ScatterPlant/three-gpu-pathtracer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ScatterPlant/three-gpu-pathtracer-golden.thumb.webp"
+      },
+      {
+        "name": "Vulkan RTX Path Tracer",
+        "image": "/images/goldens/khronos-ScatterPlant/vk-gltf-renderer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ScatterPlant/vk-gltf-renderer-golden.thumb.webp"
+      }
+    ]
+  },
+  "ScatterTest": {
+    "name": "ScatterTest",
+    "label": "ScatterTest",
+    "description": "Test model for KHR_materials_scatter extension.",
+    "tags": [
+      "Extension",
+      "Testing",
+      "Scatter",
+      "Transmission",
+      "Lights"
+    ],
+    "variants": {
+      "glTF": "ScatterTest.gltf",
+      "glTF-Binary": "ScatterTest.glb"
+    },
+    "extensionsUsed": [
+      "KHR_materials_scatter",
+      "KHR_materials_transmission",
+      "KHR_lights_punctual"
+    ],
+    "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ScatterTest/glTF-Binary/ScatterTest.glb",
+    "images": [
+      {
+        "name": "babylon.js",
+        "image": "/images/goldens/khronos-ScatterTest/babylon-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ScatterTest/babylon-golden.thumb.webp"
+      },
+      {
+        "name": "Blender Cycles",
+        "image": "/images/goldens/khronos-ScatterTest/blender-cycles-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ScatterTest/blender-cycles-golden.thumb.webp"
+      },
+      {
+        "name": "filament.js",
+        "image": "/images/goldens/khronos-ScatterTest/filament-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ScatterTest/filament-golden.thumb.webp"
+      },
+      {
+        "name": "gltf-sample-viewer",
+        "image": "/images/goldens/khronos-ScatterTest/gltf-sample-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ScatterTest/gltf-sample-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "three.js",
+        "image": "/images/goldens/khronos-ScatterTest/model-viewer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ScatterTest/model-viewer-golden.thumb.webp"
+      },
+      {
+        "name": "RhodoniteTS",
+        "image": "/images/goldens/khronos-ScatterTest/rhodonite-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ScatterTest/rhodonite-golden.thumb.webp"
+      },
+      {
+        "name": "three-gpu-pathtracer",
+        "image": "/images/goldens/khronos-ScatterTest/three-gpu-pathtracer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ScatterTest/three-gpu-pathtracer-golden.thumb.webp"
+      },
+      {
+        "name": "Vulkan RTX Path Tracer",
+        "image": "/images/goldens/khronos-ScatterTest/vk-gltf-renderer-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-ScatterTest/vk-gltf-renderer-golden.thumb.webp"
+      }
+    ]
+  },
   "SciFiHelmet": {
     "name": "SciFiHelmet",
     "label": "SciFi Helmet",
@@ -7324,6 +7509,11 @@
         "name": "Blender Cycles",
         "image": "/images/goldens/khronos-SheenWoodLeatherSofa/blender-cycles-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-SheenWoodLeatherSofa/blender-cycles-golden.thumb.webp"
+      },
+      {
+        "name": "filament.js",
+        "image": "/images/goldens/khronos-SheenWoodLeatherSofa/filament-golden.webp",
+        "thumbnail": "/thumbnails/goldens/khronos-SheenWoodLeatherSofa/filament-golden.thumb.webp"
       },
       {
         "name": "gltf-sample-viewer",
@@ -7777,10 +7967,10 @@
     "tags": [
       "Testing",
       "XMP JSON LD",
-      "Diffuse Transmission",
+      "Transmission",
       "Volume",
       "Dispersion",
-      "Volume Scatter",
+      "Scatter",
       "IOR"
     ],
     "variants": {
@@ -7789,10 +7979,10 @@
     },
     "extensionsUsed": [
       "KHR_xmp_json_ld",
-      "KHR_materials_diffuse_transmission",
+      "KHR_materials_transmission",
       "KHR_materials_volume",
       "KHR_materials_dispersion",
-      "KHR_materials_volume_scatter",
+      "KHR_materials_scatter",
       "KHR_materials_ior"
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ScatteringSkull/glTF-Binary/ScatteringSkull.glb",
@@ -8344,11 +8534,6 @@
         "name": "Phasma-Viewer",
         "image": "/images/goldens/khronos-TextureCoordinateTest/phasma-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-TextureCoordinateTest/phasma-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "RhodoniteTS",
-        "image": "/images/goldens/khronos-TextureCoordinateTest/rhodonite-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-TextureCoordinateTest/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
@@ -9510,11 +9695,6 @@
         "name": "three.js",
         "image": "/images/goldens/khronos-VertexColorTest/model-viewer-golden.webp",
         "thumbnail": "/thumbnails/goldens/khronos-VertexColorTest/model-viewer-golden.thumb.webp"
-      },
-      {
-        "name": "RhodoniteTS",
-        "image": "/images/goldens/khronos-VertexColorTest/rhodonite-golden.webp",
-        "thumbnail": "/thumbnails/goldens/khronos-VertexColorTest/rhodonite-golden.thumb.webp"
       },
       {
         "name": "three-gpu-pathtracer",
