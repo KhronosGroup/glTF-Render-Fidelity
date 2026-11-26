@@ -41,7 +41,7 @@ function StackedIcons() {
 }
 
 const ComparisonButton = ({handleSelection}:ComparisonButtonProps) => {
-    const options = ['SideBySide', 'Slider', 'Difference', 'Slider 3D (Experimental)'];
+    const options = ['SideBySide', 'Slider', 'Difference', 'Slider 3D'];
 
     const [open, setOpen] = React.useState(false);
     const anchorRef = React.useRef<HTMLDivElement>(null);
