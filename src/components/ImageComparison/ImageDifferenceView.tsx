@@ -4,10 +4,10 @@ import { Box } from "@mui/material";
 
 // Load the images
 const loadImage = (src: string) =>
-  new Promise((resolve) => {
+  new Promise<HTMLImageElement>((resolve) => {
     const img = new Image();
-    img.src = src;
     img.crossOrigin = '';
+    img.src = src;
     img.onload = () => resolve(img);
   }
 );

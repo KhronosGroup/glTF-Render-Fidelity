@@ -3,7 +3,6 @@ import React from 'react'
 import { Box } from "@mui/material";
 import SwitchLeftIcon from '@mui/icons-material/SwitchLeft';
 import SwitchRightIcon from '@mui/icons-material/SwitchRight';
-import { useTheme } from '@mui/material/styles';
 
 export type ImageComparisonSliderProps = {
   imgSrc1: string,
@@ -18,15 +17,6 @@ const ImageComparison2 = ({imgSrc1, imgSrc2, sliderPosition, setSliderPosition}:
     const containerRef = React.useRef<HTMLDivElement>(null);
     const containerRootRef = React.useRef<HTMLDivElement>(null);
 
-    const theme = useTheme();
-
-    const containerCurrent = imageRef && imageRef.current;
-
-    const elementLeft = (containerCurrent && containerCurrent.offsetLeft) || 0;
-    const elementWidth = (containerCurrent && containerCurrent.clientWidth) || 1;
-    const elementTop = (containerCurrent && containerCurrent.offsetTop) || 0;
-    const elementHeight = (containerCurrent && containerCurrent.clientHeight) || 1;
-  
     const handleDrag = (clientX : number) => {
       const container = imageRef.current;
       if (!container) return;
@@ -94,8 +84,6 @@ const ImageComparison2 = ({imgSrc1, imgSrc2, sliderPosition, setSliderPosition}:
         //width = maxHeight * aspectRatio;
       }
 
-      console.log("width, height", width, height);
-
       containerRef.current.style.width = width+"px";
       containerRef.current.style.height = height+"px";
 
@@ -119,99 +107,96 @@ const ImageComparison2 = ({imgSrc1, imgSrc2, sliderPosition, setSliderPosition}:
     }
 
     return (
-      <Box 
-        display='flex'
-        justifyContent='center'
-        ref={containerRootRef} 
-        sx={{
-          width: "100%",        
-          overflow: "hidden",
-          cursor: "pointer",
-          userSelect: "none",
-        }}
-      >
       <Box
-        display='flex'
-        justifyContent='center'
-        ref={containerRef}
+        ref={containerRootRef}
         sx={{
-          position: "relative",
-          width: "100%",        
+          display: 'flex',
+          justifyContent: 'center',
+          width: "100%",
           overflow: "hidden",
           cursor: "pointer",
-          userSelect: "none",
-          //maxWidth: '70vh',
-          //maxHeight: '70vh',
-          touchAction:'none'
-        }}
-        onMouseDown={handleMouseDown}
-        onTouchStart={handleTouchStart}
-      >
-        {/* Background Image */}
-        <img
-          ref={imageRef}
-          src={imgSrc2}
-          alt="Background"
-          style={{
-            width: '100%',
-            objectFit: "contain",
-            position: "absolute",
-            top: 0,
-            //left: 0,
-          }}
-          onLoad={handleOnLoad}
-        />
-  
-        {/* Foreground Image */}
-        <img
-          ref={image2Ref}
-          src={imgSrc1}
-          alt="Foreground"
-          style={{
-            width: '100%',
-            objectFit: "contain",
-            position: "absolute",
-            top: 0,
-            //left: 0,
-            clipPath: `inset(0 ${100 - sliderPosition}% 0 0)`, // Adjust visible area
-            background: `${theme.palette.background.default}`
-          }}
-        />
-  
-        {/* Slider */}
+          userSelect: "none"
+        }}>
         <Box
+          ref={containerRef}
+          onMouseDown={handleMouseDown}
+          onTouchStart={handleTouchStart}
           sx={{
-            position: "absolute",
-            top: 0,
-            left: `${sliderPosition}%`,
-            //left: containerCurrent? `${elementLeft + sliderPosition/100 * elementWidth}px` : "50%",
-            transform: "translateX(-50%)",
-            width: "3px",
-            height: "100%",
-            backgroundColor: "white",
-            pointerEvents: "none", // Avoid slider intercepting mouse events
-          }}
-        />
-  
-        {/* Drag Handle */}
-        <Box
-          sx={{
-            position: "absolute",
-            top: "50%",
-            //top: containerCurrent? `${elementTop + 0.5 * elementHeight}px` : "50%",
-            left: `${sliderPosition}%`,
-            //left: containerCurrent? `${elementLeft + sliderPosition/100 * elementWidth}px` : "50%",
-            transform: "translate(-50%, -50%)",
-            width: "20px",
-            height: "20px",
-            backgroundColor: "white",
-            borderRadius: "50%",
-            border: "2px solid black",
-            zIndex: 11,
-            pointerEvents: "none", // Avoid drag handle intercepting mouse events
-          }}
-        />
-      </Box>
+            display: 'flex',
+            justifyContent: 'center',
+            position: "relative",
+            width: "100%",
+            overflow: "hidden",
+            cursor: "pointer",
+            userSelect: "none",
+
+            //maxWidth: '70vh',
+            //maxHeight: '70vh',
+            touchAction:'none'
+          }}>
+          {/* Background Image */}
+          <img
+            ref={imageRef}
+            src={imgSrc2}
+            alt="Background"
+            style={{
+              width: '100%',
+              objectFit: "contain",
+              position: "absolute",
+              top: 0,
+              //left: 0,
+            }}
+            onLoad={handleOnLoad}
+          />
+    
+          {/* Foreground Image */}
+          <Box
+            component="img"
+            ref={image2Ref}
+            src={imgSrc1}
+            alt="Foreground"
+            sx={{ bgcolor: "background.default" }}
+            style={{
+              width: '100%',
+              objectFit: "contain",
+              position: "absolute",
+              top: 0,
+              //left: 0,
+              clipPath: `inset(0 ${100 - sliderPosition}% 0 0)`, // Adjust visible area
+            }}
+          />
+    
+          {/* Slider */}
+          <Box
+            sx={{
+              position: "absolute",
+              top: 0,
+              left: `${sliderPosition}%`,
+              transform: "translateX(-50%)",
+              width: "3px",
+              height: "100%",
+              backgroundColor: "white",
+              pointerEvents: "none", // Avoid slider intercepting mouse events
+            }}
+          />
+    
+          {/* Drag Handle */}
+          <Box
+            sx={{
+              position: "absolute",
+              top: "50%",
+              left: `${sliderPosition}%`,
+              transform: "translate(-50%, -50%)",
+              width: "20px",
+              height: "20px",
+              backgroundColor: "white",
+              borderRadius: "50%",
+              border: "2px solid black",
+              zIndex: 11,
+              pointerEvents: "none", // Avoid drag handle intercepting mouse events
+            }}
+          />
+        </Box>
       </Box>
     );
   };

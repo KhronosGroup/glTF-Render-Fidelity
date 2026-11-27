@@ -433,7 +433,7 @@ const Mesh3DComparisonSlider = ({imgSrc1, imgSrc2, rtEngine1, rtEngine2, src, sl
       document.addEventListener("mousemove", onMouseMove);
       document.addEventListener("mouseup", () => {
         document.removeEventListener("mousemove", onMouseMove);
-      });
+      }, { once: true });
     };
     const handleTouchStart = (event: React.TouchEvent | TouchEvent) => {
         event.preventDefault();
@@ -445,245 +445,245 @@ const Mesh3DComparisonSlider = ({imgSrc1, imgSrc2, rtEngine1, rtEngine2, src, sl
         document.addEventListener("touchmove", onTouchMove);
         document.addEventListener("touchend", () => {
           document.removeEventListener("touchmove", onTouchMove);
-        });
+        }, { once: true });
     };
 
-    return (<>
-      <Box 
-            display='flex'
-            justifyContent='center'
-            ref={containerRootRef} 
-            sx={{
-              width: "100%",        
-              height: "500px",
-              overflow: "hidden",
-              cursor: "pointer",
-              userSelect: "none",
+    return (
+      <>
+        <Box
+          ref={containerRootRef}
+          sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            width: "100%",
+            height: "500px",
+            overflow: "hidden",
+            cursor: "pointer",
+            userSelect: "none"
+          }}>
+            <Box
+              ref={containerRef}
+              onMouseDown={handleMouseDown}
+              onTouchStart={handleTouchStart}
+              sx={{
+                display: 'flex',
+                justifyContent: 'center',
+                position: "relative",
+                width: "100%",
+                overflow: "hidden",
+                cursor: "pointer",
+                userSelect: "none",
+                touchAction:'none'
+              }}>
+
+          {/* Background Image */}
+          {rtEngine2==="three-gpu-pathtracer" && <ThreeGPUPathTracerViewer 
+            ref={canvasRef}
+            src={src}
+            projection={projection}
+            view={view}
+            fov={fov}
+            aspect={aspect}
+            setBBox={setBoundingBox}
+            finishedLoading={finishedLoading}
+            style={{
+              width: '100%',
+              height: '100%',
+              backgroundColor: "white",
+              objectFit: "contain",
+              position: "absolute",
+              top: 0,
+              //left: 0,
             }}
-          >
-          <Box
-            display='flex'
-            justifyContent='center'
-            ref={containerRef}
-            sx={{
-              position: "relative",
-              width: "100%",        
-              overflow: "hidden",
-              cursor: "pointer",
-              userSelect: "none",
-              touchAction:'none'
+          />}
+
+          {rtEngine2==="gltf-sample-viewer" && <SampleViewer 
+            ref={canvasRef}
+            src={src}
+            projection={projection}
+            view={view}
+            fov={fov}
+            aspect={aspect}
+            setBBox={setBoundingBox}
+            finishedLoading={finishedLoading}
+            style={{
+              width: '100%',
+              height: '100%',
+              backgroundColor: "white",
+              objectFit: "contain",
+              position: "absolute",
+              top: 0,
+              //left: 0,
             }}
-            onMouseDown={handleMouseDown}
-            onTouchStart={handleTouchStart}
-          >
+          />}
+          {rtEngine2==="babylon.js" && <BabylonViewer 
+            ref={canvasRef}
+            src={src}
+            projection={projection}
+            view={view}
+            fov={fov}
+            aspect={aspect}
+            setBBox={setBoundingBox}
+            finishedLoading={finishedLoading}
+            style={{
+              width: '100%',
+              height: '100%',
+              backgroundColor: "white",
+              objectFit: "contain",
+              position: "absolute",
+              top: 0,
+              //left: 0,
+            }}
+          />}
+          {rtEngine2==="model-viewer" && <ModelViewer 
+            ref={canvasRef}
+            src={src}
+            projection={projection}
+            view={view}
+            fov={fov}
+            aspect={aspect}
+            setBBox={setBoundingBox}
+            finishedLoading={finishedLoading}
+            style={{
+              width: '100%',
+              height: '100%',
+              backgroundColor: "white",
+              objectFit: "contain",
+              position: "absolute",
+              top: 0,
+              //left: 0,
+            }}
+          />}
 
-        {/* Background Image */}
-        {rtEngine2==="three-gpu-pathtracer" && <ThreeGPUPathTracerViewer 
-          ref={canvasRef}
-          src={src}
-          projection={projection}
-          view={view}
-          fov={fov}
-          aspect={aspect}
-          setBBox={setBoundingBox}
-          finishedLoading={finishedLoading}
-          style={{
-            width: '100%',
-            height: '100%',
-            backgroundColor: "white",
-            objectFit: "contain",
+          {/* Foreground Image */}
+
+          {rtEngine1==="three-gpu-pathtracer" && <ThreeGPUPathTracerViewer 
+            ref={canvas2Ref}
+            src={src}
+            projection={projection}
+            view={view}
+            fov={fov}
+            aspect={aspect}
+            setBBox={setBoundingBox}
+            finishedLoading={finishedLoading}
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: "contain",
+              position: "absolute",
+              top: 0,
+              //left: 0,
+              userSelect: "none",
+              outline: "none",
+              backgroundColor: "white",
+              clipPath: `inset(0 ${100 - sliderPosition}% 0 0)`, // Adjust visible area
+            }}
+          />}
+
+          {rtEngine1==="gltf-sample-viewer" && <SampleViewer 
+            ref={canvas2Ref}
+            src={src}
+            projection={projection}
+            view={view}
+            fov={fov}
+            aspect={aspect}
+            setBBox={setBoundingBox}
+            finishedLoading={finishedLoading}
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: "contain",
+              position: "absolute",
+              top: 0,
+              //left: 0,
+              userSelect: "none",
+              outline: "none",
+              backgroundColor: "white",
+              clipPath: `inset(0 ${100 - sliderPosition}% 0 0)`, // Adjust visible area
+            }}
+          />}
+          {rtEngine1==="babylon.js" && <BabylonViewer 
+            ref={canvas2Ref}
+            src={src}
+            projection={projection}
+            view={view}
+            fov={fov}
+            aspect={aspect}
+            setBBox={setBoundingBox}
+            finishedLoading={finishedLoading}
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: "contain",
+              position: "absolute",
+              top: 0,
+              //left: 0,
+              userSelect: "none",
+              outline: "none",
+              backgroundColor: "white",
+              clipPath: `inset(0 ${100 - sliderPosition}% 0 0)`, // Adjust visible area
+            }}
+          />}
+          {rtEngine1==="model-viewer" && <ModelViewer 
+            ref={canvas2Ref}
+            src={src}
+            projection={projection}
+            view={view}
+            fov={fov}
+            aspect={aspect}
+            setBBox={setBoundingBox}
+            finishedLoading={finishedLoading}
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: "contain",
+              position: "absolute",
+              top: 0,
+              //left: 0,
+              userSelect: "none",
+              outline: "none",
+              backgroundColor: "white",
+              clipPath: `inset(0 ${100 - sliderPosition}% 0 0)`, // Adjust visible area
+            }}
+          />}
+
+         <Box
+          ref={sliderRef}
+          sx={{
             position: "absolute",
             top: 0,
-            //left: 0,
+            left: `${sliderPosition}%`,
+            //left: containerCurrent? `${elementLeft + sliderPosition/100 * elementWidth}px` : "50%",
+            transform: "translateX(-50%)",
+            width: "3px",
+            height: "100%",
+            backgroundColor: "gray",
+            //pointerEvents: "none", // Avoid slider intercepting mouse events
           }}
-        />}
+        />
 
-        {rtEngine2==="gltf-sample-viewer" && <SampleViewer 
-          ref={canvasRef}
-          src={src}
-          projection={projection}
-          view={view}
-          fov={fov}
-          aspect={aspect}
-          setBBox={setBoundingBox}
-          finishedLoading={finishedLoading}
-          style={{
-            width: '100%',
-            height: '100%',
-            backgroundColor: "white",
-            objectFit: "contain",
+        {/* Drag Handle */}
+        <Box
+          sx={{
             position: "absolute",
-            top: 0,
-            //left: 0,
-          }}
-        />}
-        {rtEngine2==="babylon.js" && <BabylonViewer 
-          ref={canvasRef}
-          src={src}
-          projection={projection}
-          view={view}
-          fov={fov}
-          aspect={aspect}
-          setBBox={setBoundingBox}
-          finishedLoading={finishedLoading}
-          style={{
-            width: '100%',
-            height: '100%',
+            top: "50%",
+            left: `${sliderPosition}%`,
+            transform: "translate(-50%, -50%)",
+            width: "20px",
+            height: "20px",
             backgroundColor: "white",
-            objectFit: "contain",
-            position: "absolute",
-            top: 0,
-            //left: 0,
+            borderRadius: "50%",
+            border: "2px solid black",
+            zIndex: 11,
+            //pointerEvents: "none", // Avoid drag handle intercepting mouse events
           }}
-        />}
-        {rtEngine2==="model-viewer" && <ModelViewer 
-          ref={canvasRef}
-          src={src}
-          projection={projection}
-          view={view}
-          fov={fov}
-          aspect={aspect}
-          setBBox={setBoundingBox}
-          finishedLoading={finishedLoading}
-          style={{
-            width: '100%',
-            height: '100%',
-            backgroundColor: "white",
-            objectFit: "contain",
-            position: "absolute",
-            top: 0,
-            //left: 0,
-          }}
-        />}
+        />
+             
 
-        {/* Foreground Image */}
-
-        {rtEngine1==="three-gpu-pathtracer" && <ThreeGPUPathTracerViewer 
-          ref={canvas2Ref}
-          src={src}
-          projection={projection}
-          view={view}
-          fov={fov}
-          aspect={aspect}
-          setBBox={setBoundingBox}
-          finishedLoading={finishedLoading}
-          style={{
-            width: '100%',
-            height: '100%',
-            objectFit: "contain",
-            position: "absolute",
-            top: 0,
-            //left: 0,
-            userSelect: "none",
-            outline: "none",
-            backgroundColor: "white",
-            clipPath: `inset(0 ${100 - sliderPosition}% 0 0)`, // Adjust visible area
-          }}
-        />}
-
-        {rtEngine1==="gltf-sample-viewer" && <SampleViewer 
-          ref={canvas2Ref}
-          src={src}
-          projection={projection}
-          view={view}
-          fov={fov}
-          aspect={aspect}
-          setBBox={setBoundingBox}
-          finishedLoading={finishedLoading}
-          style={{
-            width: '100%',
-            height: '100%',
-            objectFit: "contain",
-            position: "absolute",
-            top: 0,
-            //left: 0,
-            userSelect: "none",
-            outline: "none",
-            backgroundColor: "white",
-            clipPath: `inset(0 ${100 - sliderPosition}% 0 0)`, // Adjust visible area
-          }}
-        />}
-        {rtEngine1==="babylon.js" && <BabylonViewer 
-          ref={canvas2Ref}
-          src={src}
-          projection={projection}
-          view={view}
-          fov={fov}
-          aspect={aspect}
-          setBBox={setBoundingBox}
-          finishedLoading={finishedLoading}
-          style={{
-            width: '100%',
-            height: '100%',
-            objectFit: "contain",
-            position: "absolute",
-            top: 0,
-            //left: 0,
-            userSelect: "none",
-            outline: "none",
-            backgroundColor: "white",
-            clipPath: `inset(0 ${100 - sliderPosition}% 0 0)`, // Adjust visible area
-          }}
-        />}
-        {rtEngine1==="model-viewer" && <ModelViewer 
-          ref={canvas2Ref}
-          src={src}
-          projection={projection}
-          view={view}
-          fov={fov}
-          aspect={aspect}
-          setBBox={setBoundingBox}
-          finishedLoading={finishedLoading}
-          style={{
-            width: '100%',
-            height: '100%',
-            objectFit: "contain",
-            position: "absolute",
-            top: 0,
-            //left: 0,
-            userSelect: "none",
-            outline: "none",
-            backgroundColor: "white",
-            clipPath: `inset(0 ${100 - sliderPosition}% 0 0)`, // Adjust visible area
-          }}
-        />}
-
-       <Box
-        ref={sliderRef}
-        sx={{
-          position: "absolute",
-          top: 0,
-          left: `${sliderPosition}%`,
-          //left: containerCurrent? `${elementLeft + sliderPosition/100 * elementWidth}px` : "50%",
-          transform: "translateX(-50%)",
-          width: "3px",
-          height: "100%",
-          backgroundColor: "gray",
-          //pointerEvents: "none", // Avoid slider intercepting mouse events
-        }}
-      />
-
-      {/* Drag Handle */}
-      <Box
-        sx={{
-          position: "absolute",
-          top: "50%",
-          left: `${sliderPosition}%`,
-          transform: "translate(-50%, -50%)",
-          width: "20px",
-          height: "20px",
-          backgroundColor: "white",
-          borderRadius: "50%",
-          border: "2px solid black",
-          zIndex: 11,
-          //pointerEvents: "none", // Avoid drag handle intercepting mouse events
-        }}
-      />
-           
-
-          </Box>
-      </Box>
-    </>);
+            </Box>
+        </Box>
+      </>
+    );
   };
 
 

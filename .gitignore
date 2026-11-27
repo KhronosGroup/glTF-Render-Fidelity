@@ -39,3 +39,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+/public/libs/*.js
+/public/libs/*.wasm
+/public/model/libs/
+
+/scripts/dist/
+/scripts/libs/
+
+/public/images/

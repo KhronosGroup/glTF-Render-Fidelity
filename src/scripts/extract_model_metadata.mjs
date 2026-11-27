@@ -8,7 +8,7 @@ async function* getFiles(dir) {
   for (const dirent of dirents) {
     //const res = path.resolve(dir, dirent.name);
     const res = path.join(dir, dirent.name);
-    
+
     if (dirent.isDirectory()) {
       yield* getFiles(res);
     } else {
@@ -17,7 +17,14 @@ async function* getFiles(dir) {
   }
 }
 
-const ModelList = await fetch("https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/model-index.json").then(res => res.json()).catch(e => {return []});
+// Returns an empty object on fail
+async function readJSON(path)
+{
+  return await fs.promises.readFile(path, "utf-8").then(res => {return JSON.parse(res);}).catch(e => {return {}})
+}
+
+const SAMPLE_ASSETS_PATH = "./glTF-Render-Fidelity-Generator/glTF-Sample-Assets"
+const ModelList = await readJSON(`${SAMPLE_ASSETS_PATH}/Models/model-index.json`);
 const ModelTags = {};
 const ModelMap = {};
 ModelList.forEach(item => {
@@ -26,7 +33,7 @@ ModelList.forEach(item => {
 const ModelMap2 = {};
 
 //const model_directory = await fetch("https://api.github.com/repos/KhronosGroup/glTF-Sample-Assets/contents/Models").then(res => res.json()).catch(e => {return []});
-const model_directory = await fs.promises.readdir("./glTF-Sample-Assets/Models", { withFileTypes: true });
+const model_directory = await fs.promises.readdir(`${SAMPLE_ASSETS_PATH}/Models`, { withFileTypes: true });
 
 console.log("Dir #:", Object.keys(model_directory).length);
 
@@ -39,7 +46,9 @@ const official_engine_names = new Map([
   ["stellar",       "Dassault STELLAR"],
   ["vray" ,         "Chaos Group V-Ray"],
   ["blender-cycles","Blender Cycles"],
-  //["rhodonite","rhodonite"]
+  ["vk-gltf-renderer", "Vulkan RTX Path Tracer"],
+  ["phasma-viewer", "Phasma-Viewer"],
+  ["rhodonite", "RhodoniteTS"]
 ]);
 
 const keep_dict = {
@@ -49,7 +58,7 @@ const keep_dict = {
 }
 
 const ext_to_label = {
-  "KHR_materials_transmission":  "Transmission",
+  "KHR_materials_transmission": "Transmission",
   "KHR_materials_volume": "Volume",
   "KHR_materials_variants": "Variants",
   "KHR_materials_clearcoat": "Clearcoat",
@@ -64,12 +73,24 @@ const ext_to_label = {
   "KHR_lights_punctual": "Lights",
   "KHR_texture_transform": "Texture Transform",
   "KHR_xmp": "XMP",
-  "EXT_texture_webp": "WebP"
+  "KHR_xmp_json_ld": "XMP JSON LD",
+  "EXT_texture_webp": "WebP",
+  "KHR_materials_dispersion": "Dispersion",
+  "KHR_materials_volume_scatter": "Volume Scatter",
+  "KHR_materials_scatter": "Scatter",
+  "EXT_mesh_gpu_instancing": "Mesh GPU Instancing",
+  "KHR_materials_diffuse_transmission": "Diffuse Transmission",
+  "KHR_animation_pointer": "Animation Pointer",  
+  "KHR_node_visibility": "Node Visibility",  
+  "KHR_materials_retroreflection": "Retroreflection",
+  "KHR_meshopt_compression": "Meshopt",
+  "KHR_mesh_quantization": "Quantization"
 };
+const unlabelled_extensions = new Map();
 
 const model_directory_local = await fs.promises.readdir("./public/images/goldens", { withFileTypes: true });
 await (async () => {
-  for await (const dir of model_directory_local.filter((e,i) => i>=0)) {
+  for await (const dir of model_directory_local.filter((e, i) => i >= 0)) {
     if(!dir.isDirectory()) continue;
     if(!dir.name.startsWith("khronos-")) continue;
 
@@ -85,9 +106,9 @@ await (async () => {
     }
     
     //const metadata = await fetch(`https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/${folderpath}/metadata.json`).then(res => res.json()).catch(e => null);
-    const metadata = JSON.parse(await fs.promises.readFile(`./glTF-Sample-Assets/${folderpath}/metadata.json`, 'utf-8'));
+    const metadata = await readJSON(`${SAMPLE_ASSETS_PATH}/${folderpath}/metadata.json`);
     //const gltf = await fetch(`https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/${folderpath}/glTF/${name}.gltf`).then(res => res.json()).catch(e => null);
-    const gltf = JSON.parse(await fs.promises.readFile(`./glTF-Sample-Assets/${folderpath}/glTF/${name}.gltf`, 'utf-8'));
+    const gltf = await readJSON(`${SAMPLE_ASSETS_PATH}/${folderpath}/glTF/${name}.gltf`);
     const glb = model && model.variants && model.variants['glTF-Binary'];
     const glb_draco = model && model.variants && Object.keys(model.variants).find(variant => variant.includes('Draco'));
     const glb_meshopt = model && model.variants && model.variants['glTF-Quantized'];
@@ -97,8 +118,8 @@ await (async () => {
     const images = [];
     for(const img_file of images_filenames)
     {
-      const engine = img_file.name.split("-golden.png")[0];
-      const thumbnail_name = img_file.name.slice(0, img_file.name.length - 4)
+      const engine = img_file.name.split("-golden.webp")[0];
+      const thumbnail_name = path.parse(img_file.name).name;
 
       if(official_engine_names.has(engine))
       {
@@ -110,7 +131,7 @@ await (async () => {
       }
       else
       {
-        console.log("It does not have", engine);
+        //console.log("It does not have", engine);
       }
     }
 
@@ -137,11 +158,17 @@ await (async () => {
       ModelMap2[name].extensionsUsed = gltf? gltf.extensionsUsed : [];
       if(gltf && gltf.extensionsUsed) {
         for (const tag of ModelMap2[name].extensionsUsed) {
-          addTag(ModelTags, ext_to_label[tag]);
-          if (tag in ext_to_label) ModelMap2[name].tags.push(ext_to_label[tag]);
+          const label = ext_to_label[tag];
+          if(!label)
+          {
+            unlabelled_extensions.set(tag, (unlabelled_extensions.get(tag) ?? 0) + 1);
+            continue;
+          }
+          addTag(ModelTags, label);
+          ModelMap2[name].tags.push(label);
         }
       }
-      let anim_found =false;
+      let anim_found = false;
       let morph_found = false;
       if(gltf && gltf.animations) {
         addTag(ModelTags, "Animation");
@@ -149,7 +176,7 @@ await (async () => {
         anim_found = true;
       }
       if(gltf && gltf.meshes) {
-          for (const mesh of gltf.meshes) {
+        for (const mesh of gltf.meshes) {
           if ("weights" in mesh && !anim_found) {
             addTag(ModelTags, "Animation");
             ModelMap2[name].tags.push("Animation");
@@ -174,10 +201,9 @@ await (async () => {
         addTag(ModelTags, tag);
         ModelMap2[name].tags.push(tag);
       }
-      if(glb_meshopt) {
+      if(glb_meshopt & !ModelMap2[name].tags.includes("KHR_meshopt_compression")) {
         const tag = "Meshopt";
         addTag(ModelTags, tag);
-        console.log("Hello");
         ModelMap2[name].tags.push(tag);
       }
       if(glb_ktx) {
@@ -189,14 +215,14 @@ await (async () => {
          !glb_ktx &&
          !glb_meshopt &&
          !glb_draco) {
-        const tag = "Core"; 
+        const tag = "Core";
         addTag(ModelTags, tag);
         ModelMap2[name].tags.push(tag);
       }
 
       ModelMap2[name].downloadModel = glb? `https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/${folderpath}/glTF-Binary/${glb}` : undefined
       ModelMap2[name].images = images;
-    }   
+    }
   }
 })();
 
@@ -204,13 +230,20 @@ await (async () => {
 //console.log('ModelMap', Object.keys(ModelMap).length);
 //console.log('ModelMap2', Object.keys(ModelMap2).length);
 console.log('ModelTags', ModelTags);
+if (unlabelled_extensions.size > 0) {
+  console.warn('Extensions with no label in ext_to_label (skipped):', Object.fromEntries(unlabelled_extensions));
+}
 
 const TagList = {tags: []};
 for (const tag in ModelTags) {
   TagList.tags.push(tag);
 }
 
-const jsonData = JSON.stringify(ModelMap2, null, 2); // The `null, 2` makes the output pretty-printed
+const jsonData = JSON.stringify(
+    Object.fromEntries(Object.entries(ModelMap2).sort()),
+    null,
+    2
+);
 fs.writeFileSync('src/data/model-index.Fidelity.json', jsonData);
 
 const jsonDataTagList = JSON.stringify(TagList, null, 2); // The `null, 2` makes the output pretty-printed

@@ -1,9 +1,9 @@
 import React from 'react'
-import { Button, Typography, Box, Grid2 as Grid } from "@mui/material";
 import type { Metadata, ResolvingMetadata  } from 'next'
 import ModelPage, { RenderView } from "@/components/ModelPage";
 import models from "@/data/model-index.Fidelity.json"
 import { baseUrl } from '@/lib/paths';
+import { findModel } from '@/lib/models';
 
 export const dynamicParams = false; // models that are not included in the list, generate 404
 
@@ -30,7 +30,7 @@ export async function generateMetadata( { params, searchParams }: Props, parent:
   // read route params
   const {name} = await params;
 
-  const model = (models as Record<string, ModelData>)[name];
+  const model = findModel<ModelData>(name)!;
  
   // optionally access and extend (rather than replace) parent metadata
   const previousImages = (await parent).openGraph?.images || []
@@ -63,7 +63,7 @@ export async function generateMetadata( { params, searchParams }: Props, parent:
 export default async function Page({params}: { params: Promise<{ name: string, description: string }> }) {
   const { name } = await params;
 
-  const model = (models as Record<string, ModelData>)[name];
+  const model = findModel<ModelData>(name)!;
   const render_views = model.images;
 
   return <ModelPage name={name} label={model.label} description={model.description} renderViews={render_views} downloadUrl={model.downloadModel}/>

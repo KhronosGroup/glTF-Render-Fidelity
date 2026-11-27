@@ -172,20 +172,17 @@ const SampleViewer = React.forwardRef<ViewerRef, SampleViewerProps>(({ src, styl
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const cameraRef = React.useRef<any>(null)
 
-    const [ktxLoaded, setKTXLoaded] = React.useState(false);
     const [dracoLoaded, setDracoLoaded] = React.useState(false);
 
     React.useEffect(() => {
       const isDracoLoaded = !!document.querySelector('script[src="https://www.gstatic.com/draco/v1/decoders/draco_decoder_gltf.js"]')
-      const isKTXLoaded = !!document.querySelector(`script[src="${basePath}/libs/libktx.js"]`)
-      setKTXLoaded(isKTXLoaded);
       setDracoLoaded(isDracoLoaded);
- 
+
       return () => {};
     }, [])
 
     React.useEffect(() => {
-      if((ktxLoaded && dracoLoaded) == false)
+      if(!dracoLoaded)
         return;
 
       if(canvasRef == null || canvasRef.current == null) { return; }
@@ -205,15 +202,14 @@ const SampleViewer = React.forwardRef<ViewerRef, SampleViewerProps>(({ src, styl
         canvas.width = canvas.clientWidth;
         canvas.height = canvas.clientHeight;
 
-        const resourceLoader = gltfView.createResourceLoader();
+        const resourceLoader = gltfView.createResourceLoader(undefined, undefined, `${basePath}/libs/`);
         state.gltf = await resourceLoader.loadGltf(src ? src : "");
 
         resourceLoader.loadEnvironment(`${basePath}/assets/chinese_garden_1k.hdr`, {
           lut_ggx_file: `${basePath}/assets/lut_ggx.png`,
           lut_charlie_file: `${basePath}/assets/lut_charlie.png`,
           lut_sheen_E_file: `${basePath}/assets/lut_sheen_E.png`
-        }).then((environment) => {
-          console.log("environment", environment);
+        }).then((environment: typeof state.environment) => {
           state.environment = environment;
           state.renderingParameters.blurEnvironmentMap = false;
           state.renderingParameters.environmentRotation = 0;
@@ -276,7 +272,7 @@ const SampleViewer = React.forwardRef<ViewerRef, SampleViewerProps>(({ src, styl
         finishedLoading();
       };
       load();
-    }, [src, ktxLoaded, dracoLoaded])
+    }, [src, dracoLoaded])
 
     React.useImperativeHandle(ref, () => ({
       getCanvas: () => canvasRef.current,
@@ -307,15 +303,14 @@ const SampleViewer = React.forwardRef<ViewerRef, SampleViewerProps>(({ src, styl
       const out = mat4.create();
 
       // Invert the matrix
-      const cameraWorldMatrix = mat4.invert(mat4.create(), view);
-      const cameraPosition = vec3.transformMat4(vec3.create(), [0, 0, 0], cameraWorldMatrix);
+      //const cameraWorldMatrix = mat4.invert(mat4.create(), view);
+      //const cameraPosition = cameraWorldMatrix && vec3.transformMat4(vec3.create(), [0, 0, 0], cameraWorldMatrix);
       //rendererRef.current.currentCameraPosition = cameraPosition;
     }, [projection, view, fov, aspect]);
 
     return (
       <>
-        <Script src="https://www.gstatic.com/draco/v1/decoders/draco_decoder_gltf.js" strategy="lazyOnload" onLoad={() => { console.log("LOADEDDDDDDDD Draco"); setDracoLoaded(true);}} />
-        <Script src={`${basePath}/libs/libktx.js`} strategy="lazyOnload" onLoad={() => { console.log("LOADEDDDDDDDD KTX"); setKTXLoaded(true); }}/>
+        <Script src="https://www.gstatic.com/draco/v1/decoders/draco_decoder_gltf.js" strategy="lazyOnload" onLoad={() => { console.log("LOADED Draco"); setDracoLoaded(true);}} />
         <canvas
           ref={canvasRef}
           style={style}

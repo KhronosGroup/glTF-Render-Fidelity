@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { Typography, Button, Box, Grid2 as Grid } from "@mui/material";
+import { Typography, Box, Grid } from "@mui/material";
 import { useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import styles from "./ModelPage.module.css";
@@ -34,11 +34,21 @@ export default function EnginePage({name, label, description, engineViews}: Prop
 
   return (
     <>
-      <Grid container direction="row" className={styles.main} pt={1}>
+      <Grid container direction="row" className={styles.main} sx={{
+        pt: 1
+      }}>
         <Box sx={{overflow: "auto"}} className={styles.description}>
-          <Box sx={{display: "flex", justifyContent: "space-between", alignItems: "center" }} pb={1}> 
+          <Box
+            sx={{
+              pb: 1,
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center"
+            }}> 
             <Typography variant='h6' component="h1">{label}</Typography>
-            <Box onClick={toggleDiv} display={{ xs: 'inline-block', sm: 'none' }}>
+            <Box onClick={toggleDiv} sx={{
+              display: { xs: 'inline-block', sm: 'none' }
+            }}>
               <Box sx={{display: "flex", justifyContent: "space-between", alignItems: "center", height: "100%" }}>
                 {isXs && <InfoIcon />}
               </Box>
@@ -47,10 +57,17 @@ export default function EnginePage({name, label, description, engineViews}: Prop
           {(!isXs) && description}
           {(isXs && isVisible) && description}
         </Box>
-        <Grid className={styles.selection} sx={{overflow: "auto"}} container justifyContent={"center"} spacing={0}>
+        <Grid
+          className={styles.selection}
+          container
+          spacing={0}
+          sx={{
+            justifyContent: "center",
+            overflow: "auto"
+          }}>
           {engineViews.map((e,i) => { return <ModelCard key={e.name} thumbnail={e.thumbnail} tags={[]} name={e.name} title={e.label}/>})}
         </Grid>
       </Grid>
     </>
-  )
+  );
 }

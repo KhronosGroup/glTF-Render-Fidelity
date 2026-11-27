@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { Typography, Box, Grid2 as Grid, ButtonGroup, Button, Popper, Grow, Paper, ClickAwayListener, MenuItem , MenuList, IconButton, Snackbar, Link } from "@mui/material";
+import { Typography, Box, Grid, ButtonGroup, Button, Popper, Grow, Paper, ClickAwayListener, MenuItem , MenuList, IconButton, Snackbar, Link } from "@mui/material";
 import ModelRenderCard from "@/components/ModelRenderCard"
 import ImageComparisonSlider from "@/components/ImageComparison/ImageComparisonSlider";
 import SideBySideComparison from './ImageComparison/SideBySideComparison'
@@ -42,8 +42,14 @@ export default function ComparePage({name, label, renderViews, description, down
   const [sliderPosition, setSliderPosition] = React.useState(50); // Initial slider position (50%)
   const [isVisible, setIsVisible] = React.useState(!isXs); 
   const [isMagnified, setMagnified] = React.useState(false);
-  const [engine1, setEngine1] = React.useState('three.js');
-  const [engine2, setEngine2] = React.useState('filament.js');
+  // Not every model has renders for every engine, so fall back to engines that exist for this model
+  const engineNames = renderViews.map(e => e.name);
+  const pickEngine = (preferred: string, exclude?: string) =>
+    engineNames.includes(preferred) && preferred !== exclude ? preferred : (engineNames.find(n => n !== exclude) ?? preferred);
+  const defaultEngine1 = pickEngine('three.js');
+  const defaultEngine2 = pickEngine('filament.js', defaultEngine1);
+  const [engine1, setEngine1] = React.useState(defaultEngine1);
+  const [engine2, setEngine2] = React.useState(defaultEngine2);
   const [rtEngine1, setRtEngine1] = React.useState('gltf-sample-viewer');
   const [rtEngine2, setRtEngine2] = React.useState('model-viewer');
   const [nextEngine, setNextEngine] = React.useState(0);
@@ -83,8 +89,9 @@ export default function ComparePage({name, label, renderViews, description, down
     const param1 = searchParams.get("engine1");
     const param2 = searchParams.get("engine2");
 
-    if(param1) { setEngine1(param1) }
-    if(param2) { setEngine2(param2) }    
+    // COMMENT: Maybe show a dummy image if the engine does not exists?
+    if(param1 && engineNames.includes(param1)) { setEngine1(param1) }
+    if(param2 && engineNames.includes(param2)) { setEngine2(param2) }
 
   }, []);
 
@@ -126,26 +133,39 @@ export default function ComparePage({name, label, renderViews, description, down
   }
 
   const descriptionComponent = <Box>
-    <Box display='flex' justifyContent='space-between'>
+    <Box
+      sx={{
+        display: 'flex',
+        justifyContent: 'space-between'
+      }}>
       <Typography variant='h6'>Description</Typography>
       <Box>
         {false && <IconButton onClick={onShare}><ShareIcon sx={{color: 'grey.100'}}/></IconButton>}
         <Snackbar
           open={shareSnackbarOpen}
           onClose={() => {setShareSnackbarOpen(false)}}
-          message="Model Copied"
+          message="Link copied"
           key={"Share"}
           autoHideDuration={1200}
         />
         {downloadUrl && <IconButton component="a" href={downloadUrl} download><FileDownloadIcon sx={{color: 'grey.100'}}/></IconButton>}
       </Box>
     </Box>
-    <Typography textAlign='left'>{description}</Typography>
-    <Box mt={2}>
+    <Typography sx={{
+      textAlign: 'left'
+    }}>{description}</Typography>
+    <Box sx={{
+      mt: 2
+    }}>
       <Link href={`https://github.com/KhronosGroup/glTF-Sample-Assets/blob/main/Models/${name}/README.md`} color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>More info <LaunchIcon fontSize='small' sx={{ml:0.5}}/></Link>
     </Box>
-    <Box display='flex' alignItems='center' mt={1}>
-      <Link onClick={onShare} href="#" color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>Share <ShareIcon fontSize='small' sx={{color: 'grey.100', ml: 0.5}}/></Link>
+    <Box
+      sx={{
+        display: 'flex',
+        alignItems: 'center',
+        mt: 1
+      }}>
+      <Link onClick={onShare} href="#" color="inherit" underline='hover' sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>Share <ShareIcon fontSize='small' sx={{color: 'grey.100', ml: 0.5}}/></Link>
     </Box>
   </Box>;
 
@@ -157,11 +177,18 @@ export default function ComparePage({name, label, renderViews, description, down
   
   return (
     <>
-      <Grid container direction={{xs:"column-reverse", sm:'row'}} className={styles.main} sx={{flexWrap: "nowrap"}} spacing={2}>
-        {!isMagnified && <Grid className={styles.description} height={"70vh"} sx={{overflow: "auto"}}>
+      <Grid container className={styles.main} sx={{flexDirection: {xs:"column-reverse", sm:'row'}, flexWrap: "nowrap"}} spacing={2}>
+        {!isMagnified && <Grid
+          className={styles.description}
+          sx={{
+            height: "70vh",
+            overflow: "auto"
+          }}>
           <Box sx={{display: "flex", justifyContent: "space-between", alignItems: "center" }}> 
             <Typography variant='h6' component="h1">{label}</Typography>
-            <Box onClick={toggleDiv} display={{ xs: 'inline-block', sm: 'none' }}>
+            <Box onClick={toggleDiv} sx={{
+              display: { xs: 'inline-block', sm: 'none' }
+            }}>
               <Box sx={{display: "flex", justifyContent: "space-between", alignItems: "center", height: "100%" }}>
                 {isXs && <InfoIcon />}
               </Box>
@@ -171,11 +198,21 @@ export default function ComparePage({name, label, renderViews, description, down
           {(isXs && isVisible) && descriptionComponent}
         </Grid>}
         {/* Main */}
-        <Box ref={zoomOffsetRef} className={styles.tool} width={{xs:'100%', sm: isMagnified? '100%' : '100%'}}>
-          <Box pb={1} sx={{display:'flex', width: "100%", justifyContent: {xs: 'space-between', sm:'space-between'}}}>
+        <Box ref={zoomOffsetRef} className={styles.tool} sx={{
+          width: {xs:'100%', sm: isMagnified? '100%' : '100%'}
+        }}>
+          <Box
+            sx={{
+              pb: 1,
+              display:'flex',
+              width: "100%",
+              justifyContent: {xs: 'space-between', sm:'space-between'}
+            }}>
             {!isXs && isMagnified && <CloseFullscreenIcon onClick={() => toggleMagnified(false)} sx={{cursor: "pointer"}} /> }
             {!isXs && !isMagnified && <OpenInFullIcon onClick={() => toggleMagnified(true)} sx={{cursor: "pointer"}} /> }
-            {isXs && <Box width={"24px"}/>}
+            {isXs && <Box sx={{
+              width: "24px"
+            }}/>}
 
             {comparisonMode===1 && sliderPosition <  50 && <SwitchLeftIcon onClick={() => setSliderPosition(100)} sx={{cursor: "pointer"}} />}
             {comparisonMode===1 && sliderPosition >= 50 && <SwitchRightIcon onClick={() => setSliderPosition(0)} sx={{cursor: "pointer"}} />}
@@ -186,24 +223,75 @@ export default function ComparePage({name, label, renderViews, description, down
           {comparisonMode===1 && <ImageComparisonSlider key={isMagnified.toString()} imgSrc1={image1} imgSrc2={image2} setSliderPosition={changePosition} sliderPosition={sliderPosition}/>}
           {comparisonMode===2 && <ImageDifferenceView key={isMagnified.toString()} imgSrc1={image1} imgSrc2={image2}/>}
           {comparisonMode===3 && <Mesh3DComparisonSlider key={isMagnified.toString()} rtEngine1={rtEngine1} rtEngine2={rtEngine2} imgSrc1={image1} imgSrc2={image2} src={src3D} setSliderPosition={changePosition} sliderPosition={sliderPosition}/>}
-          {comparisonMode!==3 && <><Box display={{xs: 'flex', sm:'none'}} justifyContent='space-between' width='100%' pl={1} pr={1}>
-              <Box flex={1}><EngineSelection engineName={engine1} engineList={renderViews.map(e=> e.name)} handleChange={(name) => { if(name!==engine1 && name!==engine2) {setEngine1(name)} }}/></Box>
-              <Box flex={1} display='flex' justifyContent='flex-end'><EngineSelection engineName={engine2} engineList={renderViews.map(e=> e.name)} handleChange={(name) => { if(name!==engine1 && name!==engine2) {setEngine2(name)} }}/></Box>
+          {comparisonMode!==3 && <><Box
+            sx={{
+              display: {xs: 'flex', sm:'none'},
+              justifyContent: 'space-between',
+              width: '100%',
+              pl: 1,
+              pr: 1
+            }}>
+              <Box sx={{
+                flex: 1
+              }}><EngineSelection engineName={engine1} engineList={renderViews.map(e=> e.name)} handleChange={(name) => { if(name!==engine1 && name!==engine2) {setEngine1(name)} }}/></Box>
+              <Box
+                sx={{
+                  flex: 1,
+                  display: 'flex',
+                  justifyContent: 'flex-end'
+                }}><EngineSelection engineName={engine2} engineList={renderViews.map(e=> e.name)} handleChange={(name) => { if(name!==engine1 && name!==engine2) {setEngine2(name)} }}/></Box>
             </Box>
-            <Box display={{xs: 'none', sm:'flex'}} justifyContent='space-between' width='100%' pl={1} pr={1}>
-              <Box flex={1}><Typography>{engine1}</Typography></Box>
-              <Box flex={1} display='flex' justifyContent='flex-end'><Typography>{engine2}</Typography></Box>
+            <Box
+              sx={{
+                display: {xs: 'none', sm:'flex'},
+                justifyContent: 'space-between',
+                width: '100%',
+                pl: 1,
+                pr: 1
+              }}>
+              <Box sx={{
+                flex: 1
+              }}><Typography>{engine1}</Typography></Box>
+              <Box
+                sx={{
+                  flex: 1,
+                  display: 'flex',
+                  justifyContent: 'flex-end'
+                }}><Typography>{engine2}</Typography></Box>
             </Box>
           </>}
-          {comparisonMode===3 && <Box display='flex' justifyContent='space-between' width='100%' mt="10px" pl={1} pr={1}>
-            <Box flex={1}><EngineSelection engineName={rtEngine1} engineList={viewers_3d.map(e=> e.name)} handleChange={(name) => { if(name!==rtEngine1 && name!==rtEngine2) {setRtEngine1(name)} }}/></Box>
-            <Box flex={1} display='flex' justifyContent='flex-end'><EngineSelection engineName={rtEngine2} engineList={viewers_3d.map(e=> e.name)} handleChange={(name) => { if(name!==rtEngine1 && name!==rtEngine2) {setRtEngine2(name)} }}/></Box>
+          {comparisonMode===3 && <Box
+            sx={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              width: '100%',
+              mt: "10px",
+              pl: 1,
+              pr: 1
+            }}>
+            <Box sx={{
+              flex: 1
+            }}><EngineSelection engineName={rtEngine1} engineList={viewers_3d.map(e=> e.name)} handleChange={(name) => { if(name!==rtEngine1 && name!==rtEngine2) {setRtEngine1(name)} }}/></Box>
+            <Box
+              sx={{
+                flex: 1,
+                display: 'flex',
+                justifyContent: 'flex-end'
+              }}><EngineSelection engineName={rtEngine2} engineList={viewers_3d.map(e=> e.name)} handleChange={(name) => { if(name!==rtEngine1 && name!==rtEngine2) {setRtEngine2(name)} }}/></Box>
           </Box>}
         </Box>
-        {!isMagnified && comparisonMode!==3 && <Grid className={styles.side} display={{xs:'none', sm:'flex'}} sx={{overflow: "auto"}} height={"70vh"} container spacing={2}>
+        {!isMagnified && comparisonMode!==3 && <Grid
+          className={styles.side}
+          container
+          spacing={2}
+          sx={{
+            display: {xs:'none', sm:'flex'},
+            height: "70vh",
+            overflow: "auto"
+          }}>
           {renderViews.map((e,i) => { return <ModelRenderCard key={e.name} name={e.name} thumbnail={e.thumbnail} marked={(engine1 === e.name || engine2 === e.name)} onSelection={toggleSelection}/>})}
         </Grid>}
       </Grid>
     </>
-  )
+  );
 }

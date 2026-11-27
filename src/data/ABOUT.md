@@ -40,11 +40,15 @@ The Render Fidelity web site provides users a means to compare the rendering of 
 | [Dassault STELLAR](https://github.khronos.org/glTF-Render-Fidelity/engine/DassaultSTELLAR) | Path Tracing | Windows, Linux |
 | [Chaos Group V-Ray](https://github.khronos.org/glTF-Render-Fidelity/engine/ChaosGroupV-Ray) (via vray_gltf) | Path Tracing | Linux, Windows, MacOS |
 | [Blender Cycles](https://github.khronos.org/glTF-Render-Fidelity/engine/BlenderCycles) | Path Tracing | Linux, Windows, MacOS |
+| [Vulkan RTX Path Tracer](https://github.khronos.org/glTF-Render-Fidelity/engine/VulkanRTXPathTracer) (via [vk_gltf_renderer](https://github.com/nvpro-samples/vk_gltf_renderer)) | Path Tracing | Windows, Linux |
+| [Phasma-Viewer](https://github.khronos.org/glTF-Render-Fidelity/engine/phasma-viewer) | Real-Time | Web |
+| [RhodoniteTS](https://github.khronos.org/glTF-Render-Fidelity/engine/rhodonite) | Real-Time | Web |
 
 <br>
 
 ## Contributors
 <br>
+
 - Anastasios Gkaravelis, Phasmatic
 - Nikolaos Vitsas, Phasmatic
 - Andreas Vasilakis, Phasmatic

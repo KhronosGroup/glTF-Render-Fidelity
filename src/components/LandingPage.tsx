@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { Box, Chip, Typography, Grid2 as Grid, useMediaQuery } from "@mui/material";
+import { Box, Chip, Typography, Grid, useMediaQuery } from "@mui/material";
 import Search from "@/components/Search";
 import Fuse from 'fuse.js'
 import ModelCard from "@/components/ModelCard";
@@ -15,7 +15,6 @@ import HelpIcon from '@mui/icons-material/Help';
 import Tooltip from '@mui/material/Tooltip';
 import Image from 'next/image'
 import { basePath } from '@/lib/paths';
-import { useTheme } from "@mui/material/styles";
 
 type EngineData = {
   name: string,
@@ -49,7 +48,6 @@ export default function LandingPage({models}: LandingPageProps) {
 
   const tags2 = [tags[0], tags[1], tags[2]];
 
-  const theme = useTheme();
 
 
   const handleSearchValueChange = (e:string) => {
@@ -132,14 +130,41 @@ export default function LandingPage({models}: LandingPageProps) {
   }
 
   const otherChips = (
-    <Box ref={mainContainerRef} width={"100%"} justifyContent={"center"} display={"flex"} flexWrap={"nowrap"} flexDirection={"row"}>
-      <Box ref={tagContainerRef} display={"flex"} flexWrap={"nowrap"} flexDirection={"row"}>
-        <Box display={"flex"} flexWrap={"wrap"} flexDirection={"row"} height={tagsExpanded ? "100%" : 37} justifyContent={"flex-start"} style={{overflow: "hidden" }}>
+    <Box
+      ref={mainContainerRef}
+      sx={{
+        width: "100%",
+        justifyContent: "center",
+        display: "flex",
+        flexWrap: "nowrap",
+        flexDirection: "row"
+      }}>
+      <Box
+        ref={tagContainerRef}
+        sx={{
+          display: "flex",
+          flexWrap: "nowrap",
+          flexDirection: "row"
+        }}>
+        <Box
+          style={{overflow: "hidden" }}
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            flexDirection: "row",
+            height: tagsExpanded ? "100%" : 37,
+            justifyContent: "flex-start"
+          }}>
           {selectedTags.map((t,i) => {return (<Chip key={t.name} sx={{margin: "5px 5px", fontWeight: 'bold'}} label={t.name} color={t.selected? "success" : "default"} clickable onClick={() => handleChipSelection(t)} onDelete={t.selected? () => handleChipDelete(t) : undefined}/>)})}
         </Box>
-        <Box display={"flex"} alignItems={"flex-start"} sx={{position: "relative"}}>
-          {!tagsExpanded && isOverflown && <Tooltip enterTouchDelay={1} placement="top" title={<p style={{ color: `${theme.palette.text.primary}`, fontSize: "16px" }}>Click for more tags</p>}><ExpandMoreIcon onClick={() => setTagsExpanded(true)}/></Tooltip>}
-          { tagsExpanded && isOverflown && <Tooltip enterTouchDelay={1} placement="top" title={<p style={{ color: `${theme.palette.text.primary}`, fontSize: "16px" }}>Click for less tags</p>}><ExpandLessIcon onClick={() => setTagsExpanded(false)}/></Tooltip>}
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "flex-start",
+            position: "relative"
+          }}>
+          {!tagsExpanded && isOverflown && <Tooltip enterTouchDelay={1} placement="top" title={<Box component="p" sx={{ color: "text.primary", fontSize: "16px" }}>Click for more tags</Box>}><ExpandMoreIcon onClick={() => setTagsExpanded(true)}/></Tooltip>}
+          { tagsExpanded && isOverflown && <Tooltip enterTouchDelay={1} placement="top" title={<Box component="p" sx={{ color: "text.primary", fontSize: "16px" }}>Click for less tags</Box>}><ExpandLessIcon onClick={() => setTagsExpanded(false)}/></Tooltip>}
         </Box>
       </Box>
     </Box>
@@ -163,38 +188,55 @@ export default function LandingPage({models}: LandingPageProps) {
 
   return (
     <>
-        <Typography className={styles.text}>
-            One goal of glTF is to standardize Physically-Based Rendering (PBR) materials such that you 
-            can be confident your model will appear as intended in any lighting environment in any renderer. 
-            This is a very ambitious goal, as real-time rendering at this level of quality is still very much 
-            an area of active research with improvements being made constantly. This site demonstrates where 
-            we are on that path to convergence and highlights areas that could still use improvement. 
-            We are comparing the most popular real-time web renderers as well as path tracers 
-            (a rendering technique that uses far fewer approximations than are required by real-time renderers).
-        </Typography>
+      <Typography className={styles.text}>
+          One goal of glTF is to standardize Physically-Based Rendering (PBR) materials such that you 
+          can be confident your model will appear as intended in any lighting environment in any renderer. 
+          This is a very ambitious goal, as real-time rendering at this level of quality is still very much 
+          an area of active research with improvements being made constantly. This site demonstrates where 
+          we are on that path to convergence and highlights areas that could still use improvement. 
+          We are comparing the most popular real-time web renderers as well as path tracers 
+          (a rendering technique that uses far fewer approximations than are required by real-time renderers).
+      </Typography>
 
-        <Typography className={styles.text}>
-          Select the model you would like to compare, use the tags or search to filter the list.  Then click on any two Renders that you would like to compare and select Compare.  You can also select the view mode (Side-by-side, Slider and Difference).
-        </Typography>
+      <Typography className={styles.text}>
+        Select the model you would like to compare, use the tags or search to filter the list.  Then click on any two Renders that you would like to compare and select Compare.  You can also select the view mode (Side-by-side, Slider and Difference).
+      </Typography>
 
-        <Box display='flex' flexDirection='column' alignItems='center' gap={2} >
-          <Box display='flex' sx={{width: "100%"}} flexDirection='row' justifyContent={"space-between"} alignItems='center'>
-            <Search searchValueChange={handleSearchValueChange}/>
-            <Tooltip enterTouchDelay={1} placement="right" title={<p style={{ color: `${theme.palette.text.primary}`, fontSize: "16px" }}>Search in the description and the titles of the models. Tags can be used to further segment the search</p>}>
-              <HelpIcon sx={{margin: "5px"}}/>
-            </Tooltip>
-            <Box flex={1} display={{ xs: 'flex', sm: 'flex' }}  justifyContent='flex-end' flexWrap={"wrap"}>
-            </Box>
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: 2
+        }}>
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: "space-between",
+            alignItems: 'center',
+            width: "100%"
+          }}>
+          <Search searchValueChange={handleSearchValueChange}/>
+          <Tooltip enterTouchDelay={1} placement="right" title={<Box component="p" sx={{ color: "text.primary", fontSize: "16px" }}>Search in the description and the titles of the models. Tags can be used to further segment the search</Box>}>
+            <HelpIcon sx={{margin: "5px"}}/>
+          </Tooltip>
+          <Box
+            sx={{
+              flex: 1,
+              display: { xs: 'flex', sm: 'flex' },
+              justifyContent: 'flex-end',
+              flexWrap: "wrap"
+            }}>
           </Box>
-          {otherChips}
         </Box>
+        {otherChips}
+      </Box>
 
-        
-
-        {/* Models */}
-        <Grid container style={{padding: 0, margin: 0}} spacing={1} sx={{ justifyContent: "center"}}>
-        {result.map((e,i) => { return <ModelCard key={e.item.name} name={e.item.name} title={e.item.label} thumbnail={(e.item.images.find((m) => m.name === "gltf-sample-viewer") || e.item.images[0]).thumbnail} tags={e.item.tags} selectTagCallback={(t)=>{handleChipReplace(t)}}/>})}
-        </Grid>     
+      {/* Models */}
+      <Grid container style={{padding: 0, margin: 0}} spacing={1} sx={{ justifyContent: "center"}}>
+      {result.map((e,i) => { return <ModelCard key={e.item.name} name={e.item.name} title={e.item.label} thumbnail={(e.item.images.find((m) => m.name === "gltf-sample-viewer") || e.item.images[0]).thumbnail} tags={e.item.tags} selectTagCallback={(t)=>{handleChipReplace(t)}}/>})}
+      </Grid>
     </>
   );
 }

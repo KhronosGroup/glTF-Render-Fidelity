@@ -7,15 +7,15 @@ import DarkModeIcon from '@mui/icons-material/DarkMode';
 
 import  { useColorScheme } from '@mui/material/styles'
 
-export default function LightDarkButton({}) {  
+export default function LightDarkButton({}) {
 
-    const { mode, setMode } = useColorScheme();
+    const { mode, systemMode, setMode } = useColorScheme();
 
 
-    if(!mode) { return null; }    
+    if(!mode) { return null; }
 
-    if(mode === 'system')
-        setMode(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    // Resolve 'system' to the actual OS scheme instead of calling setMode during render
+    const resolvedMode = mode === 'system' ? systemMode : mode;
 
     return (
         <IconButton
@@ -23,9 +23,9 @@ export default function LightDarkButton({}) {
             edge="start"
             aria-label="light_dark_menu"
             sx={{ mr: 1 }}
-            onClick={ () => { setMode(mode == 'dark'? 'light' : 'dark') }}
+            onClick={ () => { setMode(resolvedMode == 'dark'? 'light' : 'dark') }}
         >
-            {mode == 'dark'? <LightModeIcon /> : <DarkModeIcon />}
-        </IconButton>                
+            {resolvedMode == 'dark'? <LightModeIcon /> : <DarkModeIcon />}
+        </IconButton>
     )
   }

@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { Typography, Box, Grid2 as Grid, ButtonGroup, Button, Popper, Grow, Paper, ClickAwayListener, MenuItem , MenuList, IconButton } from "@mui/material";
+import { Typography, Box, ButtonGroup, Button, Popper, Grow, Paper, ClickAwayListener, MenuItem , MenuList, IconButton } from "@mui/material";
 import SideBySideIcon from './SideBySideIcon';
 import CollectionsIcon from '@mui/icons-material/Collections';
 import ViewStreamIcon from '@mui/icons-material/ViewStream';
@@ -41,7 +41,7 @@ function StackedIcons() {
 }
 
 const ComparisonButton = ({handleSelection}:ComparisonButtonProps) => {
-    const options = ['SideBySide', 'Slider', 'Difference', 'Slider 3D (Experimental)'];
+    const options = ['SideBySide', 'Slider', 'Difference', 'Slider 3D'];
 
     const [open, setOpen] = React.useState(false);
     const anchorRef = React.useRef<HTMLDivElement>(null);

@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { Typography, Button, Box, Grid2 as Grid, IconButton, Snackbar, Link } from "@mui/material";
+import { Typography, Button, Box, Grid, IconButton, Snackbar, Link } from "@mui/material";
 import { useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import ModelRenderCard from "@/components/ModelRenderCard"
@@ -83,14 +83,18 @@ export default function ModelPage({name, label, renderViews, downloadUrl, descri
   }
   
   const descriptionComponent = <Box>
-    <Box display='flex' justifyContent='space-between'>
+    <Box
+      sx={{
+        display: 'flex',
+        justifyContent: 'space-between'
+      }}>
       <Typography variant='h6'>Description</Typography>
       <Box>
         {false && <IconButton onClick={onShare}><ShareIcon sx={{color: 'grey.100'}}/></IconButton>}
         <Snackbar
           open={shareSnackbarOpen}
           onClose={() => {setShareSnackbarOpen(false)}}
-          message="Model Copied"
+          message="Link copied"
           key={"Share"}
           autoHideDuration={1200}
         />
@@ -98,11 +102,18 @@ export default function ModelPage({name, label, renderViews, downloadUrl, descri
       </Box>
     </Box>
     <Typography>{description}</Typography>
-    <Box mt={2}>
+    <Box sx={{
+      mt: 2
+    }}>
       <Link href={`https://github.com/KhronosGroup/glTF-Sample-Assets/blob/main/Models/${name}/README.md`} color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>More info <LaunchIcon fontSize='small' sx={{ml:0.5}}/></Link>
     </Box>
-    <Box display='flex' alignItems='center' mt={1}>
-      <Link onClick={onShare} href="#" color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>Share <ShareIcon fontSize='small' sx={{color: 'grey.100', ml: 0.5}}/></Link>
+    <Box
+      sx={{
+        display: 'flex',
+        alignItems: 'center',
+        mt: 1
+      }}>
+      <Link onClick={onShare} href="#" color="inherit" underline='hover' sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>Share <ShareIcon fontSize='small' sx={{color: 'grey.100', ml: 0.5}}/></Link>
     </Box>
   </Box>;
 
@@ -117,11 +128,21 @@ export default function ModelPage({name, label, renderViews, downloadUrl, descri
         href={`/compare/${name}?engine1=${engineA}&engine2=${engineB}`}
         startIcon={<CompareIcon />}
       > {(count == 0) ? "compare" : `select ${count} image(s) to compare`} </Button>
-      <Grid container direction="row" className={styles.main} pt={1}>
+      <Grid container direction="row" className={styles.main} sx={{
+        pt: 1
+      }}>
         <Box sx={{overflow: "auto"}} className={styles.description}>
-          <Box sx={{display: "flex", justifyContent: "space-between", alignItems: "center" }} pb={1}> 
+          <Box
+            sx={{
+              pb: 1,
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center"
+            }}> 
             <Typography variant='h6' component="h1">{label}</Typography>
-            <Box onClick={toggleDiv} display={{ xs: 'inline-block', sm: 'none' }}>
+            <Box onClick={toggleDiv} sx={{
+              display: { xs: 'inline-block', sm: 'none' }
+            }}>
               <Box sx={{display: "flex", justifyContent: "space-between", alignItems: "center", height: "100%" }}>
                 {isXs && <InfoIcon />}
               </Box>
@@ -130,10 +151,17 @@ export default function ModelPage({name, label, renderViews, downloadUrl, descri
           {(!isXs) && descriptionComponent}
           {(isXs && isVisible) && descriptionComponent}
         </Box>
-        <Grid className={styles.selection} sx={{overflow: "auto"}} container justifyContent={"center"} spacing={0}>
+        <Grid
+          className={styles.selection}
+          container
+          spacing={0}
+          sx={{
+            justifyContent: "center",
+            overflow: "auto"
+          }}>
           {renderViews.map((e,i) => { return <ModelRenderCard key={e.name} thumbnail={e.thumbnail} name={e.name} marked={(engineA === e.name || engineB === e.name)} onSelection={toggleSelection}/>})}
         </Grid>
       </Grid>
     </>
-  )
+  );
 }

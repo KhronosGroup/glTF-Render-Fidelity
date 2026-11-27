@@ -2,8 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link';
-import { Box, Chip, Typography, Grid2 as Grid, Checkbox } from "@mui/material";
-import { useTheme } from '@mui/material/styles';
+import { Box, Typography, Checkbox } from "@mui/material";
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
 import { basePath } from '@/lib/paths';
@@ -24,22 +23,28 @@ export default function ModelRenderCard({name, thumbnail, marked, onSelection}: 
   }
 
   return (
-      <Box onClick={() => markCard(!marked)} width={'100%'} maxWidth={{xs: '100%', sm: '400px' }} 
-            sx={{
-                width: "100%",
-                 margin: '5px',
-                 "&:hover": {
-                    backgroundColor: 'grey.700',
-                    boxShadow: 3,
-                    borderRadius: "16px"
-                },
+      <Box
+          onClick={() => markCard(!marked)}
+          sx={{
+              width: '100%',
+              maxWidth: {xs: '100%', sm: '400px' },
+              margin: '5px',
+
+              "&:hover": {
+                 backgroundColor: 'grey.700',
+                 boxShadow: 3,
+                 borderRadius: "16px"
+             }
+          }}>
+          <Box sx={{
+              position: "relative"
+          }}>
+            <Box style={{width: "100%"}} sx={{
+                width: "100%"
             }}>
-          <Box position="relative">
-            <Box width={"100%"} style={{width: "100%"}}>
                 <Image
                 width={512}
                 height={512}
-                quality={90}
                 style={{ 
                     width: "100%",
                     height: "auto",
@@ -59,7 +64,7 @@ export default function ModelRenderCard({name, thumbnail, marked, onSelection}: 
                 checked={marked}
                 onChange={() => markCard(!marked)}
                 icon={<RadioButtonUncheckedIcon />}
-                checkedIcon={<CheckCircleIcon sx={{background: theme => theme.palette.grey[900], borderRadius:'50%'}}/>}
+                checkedIcon={<CheckCircleIcon sx={{bgcolor: "grey.900", borderRadius:'50%'}}/>}
                 sx={{
                     position: 'absolute',
                     top: 8,
@@ -72,9 +77,21 @@ export default function ModelRenderCard({name, thumbnail, marked, onSelection}: 
                 }}
             />
           </Box>
-          <Box display="flex" flexDirection="column" p={1} justifyContent='center'>
-            <Typography fontSize={18} fontWeight={'bold'} textAlign='center' sx={{overflowWrap: "anywhere"}}>{name}</Typography>
-          </Box>          
+          <Box
+              sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  p: 1,
+                  justifyContent: 'center'
+              }}>
+            <Typography
+                sx={{
+                    fontSize: 18,
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                    overflowWrap: "anywhere"
+                }}>{name}</Typography>
+          </Box>
       </Box>
   );
 }
